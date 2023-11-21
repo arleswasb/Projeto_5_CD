@@ -1,0 +1,40 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\PROJETO_5\Projeto_5_CD\simulation\modelsim
+Edemux_1x6
+Z1 w1700589260
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dD:\PROJETO_5\Projeto_5_CD\simulation\modelsim
+Z5 8D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/Demux_1x6.vhd
+Z6 FD:/PROJETO_5/Projeto_5_CD/arquivos VHDL/Demux_1x6.vhd
+l0
+L4
+VN8OSmYT6Ecmd[2Smf5HK80
+!s100 zc:j@NCf9PfQIE4afN;8;3
+Z7 OV;C;10.1d;51
+31
+!i10b 1
+Z8 !s108 1700589333.574000
+Z9 !s90 -reportprogress|300|-93|-work|work|D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/Demux_1x6.vhd|
+Z10 !s107 D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/Demux_1x6.vhd|
+Z11 o-93 -work work -O0
+Z12 tExplicit 1
+Ackt
+R2
+R3
+DEx4 work 9 demux_1x6 0 22 N8OSmYT6Ecmd[2Smf5HK80
+l13
+L10
+VW4@gBSdRTjA[H^TSLOlin3
+!s100 4O6oSkE@>J6Q_f<KBMHm?2
+R7
+31
+!i10b 1
+R8
+R9
+R10
+R11
+R12

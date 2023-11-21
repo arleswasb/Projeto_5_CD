@@ -1,0 +1,59 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do projeto_5_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/Demux_1x6.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Demux_1x6
+# -- Compiling architecture ckt of Demux_1x6
+# 
+vsim +altera -do projeto_5_run_msim_rtl_vhdl.do -l msim_transcript -gui work.demux_1x6
+# vsim +altera -do projeto_5_run_msim_rtl_vhdl.do -l msim_transcript -gui work.demux_1x6 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.demux_1x6(ckt)
+# do projeto_5_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/Demux_1x6.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Demux_1x6
+# -- Compiling architecture ckt of Demux_1x6
+# 
+add wave -position insertpoint sim:/demux_1x6/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Samsung  Hostname: ARLESWASB  ProcessID: 13436
+# 
+#           Attempting to use alternate WLF file "./wlft3dszsj".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlft3dszsj
+# 
+force -freeze sim:/demux_1x6/Vt 011001 0
+force -freeze sim:/demux_1x6/sel 011 0
+run
+force -freeze sim:/demux_1x6/sel 100 0
+run
+force -freeze sim:/demux_1x6/sel 111 0
+run
