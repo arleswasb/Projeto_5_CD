@@ -4,7 +4,7 @@ K3
 cModel Technology
 Z0 dD:\PROJETO_5\Projeto_5_CD\simulation\modelsim
 Edemux_1x6
-Z1 w1700589260
+Z1 w1700591460
 Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
 Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
 Z4 dD:\PROJETO_5\Projeto_5_CD\simulation\modelsim
@@ -17,7 +17,7 @@ VN8OSmYT6Ecmd[2Smf5HK80
 Z7 OV;C;10.1d;51
 31
 !i10b 1
-Z8 !s108 1700589333.574000
+Z8 !s108 1700595517.398000
 Z9 !s90 -reportprogress|300|-93|-work|work|D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/Demux_1x6.vhd|
 Z10 !s107 D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/Demux_1x6.vhd|
 Z11 o-93 -work work -O0

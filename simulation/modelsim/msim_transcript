@@ -18,12 +18,20 @@
 # -- Compiling entity Demux_1x6
 # -- Compiling architecture ckt of Demux_1x6
 # 
-vsim +altera -do projeto_5_run_msim_rtl_vhdl.do -l msim_transcript -gui work.demux_1x6
-# vsim +altera -do projeto_5_run_msim_rtl_vhdl.do -l msim_transcript -gui work.demux_1x6 
+# Load canceled
+vcom -reportprogress 300 -work work {D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/Mux_6x1.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux_6x1
+# -- Compiling architecture ckt of mux_6x1
+vsim +altera -do projeto_5_run_msim_rtl_vhdl.do -l msim_transcript -gui work.mux_6x1
+# vsim +altera -do projeto_5_run_msim_rtl_vhdl.do -l msim_transcript -gui work.mux_6x1 
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.demux_1x6(ckt)
+# Loading work.mux_6x1(ckt)
 # do projeto_5_run_msim_rtl_vhdl.do 
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
@@ -40,20 +48,76 @@ vsim +altera -do projeto_5_run_msim_rtl_vhdl.do -l msim_transcript -gui work.dem
 # -- Compiling entity Demux_1x6
 # -- Compiling architecture ckt of Demux_1x6
 # 
-add wave -position insertpoint sim:/demux_1x6/*
+view -new wave
+# -new not supported on PE
+add wave -position insertpoint sim:/mux_6x1/*
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 # 
 #           File in use by: Samsung  Hostname: ARLESWASB  ProcessID: 13436
 # 
-#           Attempting to use alternate WLF file "./wlft3dszsj".
+#           Attempting to use alternate WLF file "./wlftnixitb".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
 # 
-#           Using alternate file: ./wlft3dszsj
+#           Using alternate file: ./wlftnixitb
 # 
-force -freeze sim:/demux_1x6/Vt 011001 0
-force -freeze sim:/demux_1x6/sel 011 0
+# Load canceled
+vcom -reportprogress 300 -work work {D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/Mux_6x1.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux_6x1
+# -- Compiling architecture ckt of mux_6x1
+vsim +altera -do projeto_5_run_msim_rtl_vhdl.do -l msim_transcript -gui work.mux_6x1
+# vsim +altera -do projeto_5_run_msim_rtl_vhdl.do -l msim_transcript -gui work.mux_6x1 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.mux_6x1(ckt)
+# do projeto_5_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/Demux_1x6.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Demux_1x6
+# -- Compiling architecture ckt of Demux_1x6
+# 
+add wave -position insertpoint sim:/mux_6x1/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Samsung  Hostname: ARLESWASB  ProcessID: 13436
+# 
+#           Attempting to use alternate WLF file "./wlftq7zxe3".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftq7zxe3
+# 
+force -freeze sim:/mux_6x1/d0 000001 0
+force -freeze sim:/mux_6x1/d1 000011 0
+force -freeze sim:/mux_6x1/d2 000111 0
+force -freeze sim:/mux_6x1/d3 001111 0
+force -freeze sim:/mux_6x1/d4 011111 0
+force -freeze sim:/mux_6x1/d5 111111 0
+force -freeze sim:/mux_6x1/SEL 001 0
 run
-force -freeze sim:/demux_1x6/sel 100 0
+force -freeze sim:/mux_6x1/SEL 000 0
 run
-force -freeze sim:/demux_1x6/sel 111 0
+force -freeze sim:/mux_6x1/SEL 011 0
+run
+force -freeze sim:/mux_6x1/SEL 010 0
+run
+force -freeze sim:/mux_6x1/SEL 010 0
+force -freeze sim:/mux_6x1/SEL 100 0
+run
+force -freeze sim:/mux_6x1/SEL 110 0
+run
+force -freeze sim:/mux_6x1/SEL 111 0
 run
