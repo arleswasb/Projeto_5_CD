@@ -1,5 +1,5 @@
 Analysis & Synthesis report for PROJETO_5
-Fri Nov 24 18:58:11 2023
+Fri Nov 24 20:25:23 2023
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -43,7 +43,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Nov 24 18:58:11 2023           ;
+; Analysis & Synthesis Status        ; Successful - Fri Nov 24 20:25:23 2023           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; PROJETO_5                                       ;
 ; Top-level Entity Name              ; M_J_7BITS                                       ;
@@ -269,7 +269,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Fri Nov 24 18:58:10 2023
+    Info: Processing started: Fri Nov 24 20:25:22 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off PROJETO_5 -c PROJETO_5
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file arquivos vhdl/subtrator_10_bits.vhd
@@ -344,6 +344,15 @@ Info (12021): Found 2 design units, including 1 entities, in source file arquivo
 Info (12021): Found 2 design units, including 1 entities, in source file arquivos vhdl/reg_estados_2.vhd
     Info (12022): Found design unit 1: REG_ESTADOS_2-CKT
     Info (12023): Found entity 1: REG_ESTADOS_2
+Info (12021): Found 2 design units, including 1 entities, in source file arquivos vhdl/sinal_estado.vhd
+    Info (12022): Found design unit 1: SINAL_ESTADO-CKT
+    Info (12023): Found entity 1: SINAL_ESTADO
+Info (12021): Found 2 design units, including 1 entities, in source file arquivos vhdl/vt.vhd
+    Info (12022): Found design unit 1: VT-ckt
+    Info (12023): Found entity 1: VT
+Info (12021): Found 2 design units, including 1 entities, in source file arquivos vhdl/contador_7_bits.vhd
+    Info (12022): Found design unit 1: contador_7_bits-ckt
+    Info (12023): Found entity 1: contador_7_bits
 Info (12127): Elaborating entity "M_J_7BITS" for the top level hierarchy
 Info (12128): Elaborating entity "mux_2x1_7BITS" for hierarchy "mux_2x1_7BITS:U0"
 Info (12128): Elaborating entity "REGISTRADOR_7_BITS" for hierarchy "REGISTRADOR_7_BITS:C0"
@@ -355,9 +364,9 @@ Info (21057): Implemented 25 device resources after synthesis - the final resour
     Info (21059): Implemented 7 output pins
     Info (21061): Implemented 8 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4653 megabytes
-    Info: Processing ended: Fri Nov 24 18:58:11 2023
+    Info: Peak virtual memory: 4641 megabytes
+    Info: Processing ended: Fri Nov 24 20:25:23 2023
     Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:00
+    Info: Total CPU time (on all processors): 00:00:01
 
 

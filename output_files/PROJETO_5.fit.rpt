@@ -1,5 +1,5 @@
 Fitter report for PROJETO_5
-Fri Nov 24 18:58:16 2023
+Fri Nov 24 20:25:27 2023
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -62,7 +62,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                       ;
 +------------------------------------+-------------------------------------------------+
-; Fitter Status                      ; Successful - Fri Nov 24 18:58:16 2023           ;
+; Fitter Status                      ; Successful - Fri Nov 24 20:25:27 2023           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; PROJETO_5                                       ;
 ; Top-level Entity Name              ; M_J_7BITS                                       ;
@@ -302,37 +302,37 @@ The pin-out file can be found in D:/PROJETO_5/Projeto_5_CD/output_files/PROJETO_
 +---------------------------------------------+---------------------+--------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Input Pins                                                                                                                                                                                                                                                   ;
-+--------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
-; Name   ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination ; Location assigned by ;
-+--------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
-; CLK    ; P2    ; 1        ; 0            ; 18           ; 2           ; 1                     ; 0                  ; yes    ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; EA[0]  ; C13   ; 3        ; 31           ; 36           ; 2           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; EA[1]  ; B24   ; 5        ; 65           ; 32           ; 0           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; EA[2]  ; F26   ; 5        ; 65           ; 29           ; 1           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; EA[3]  ; J21   ; 5        ; 65           ; 30           ; 2           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; EA[4]  ; K22   ; 5        ; 65           ; 28           ; 2           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; EA[5]  ; P18   ; 5        ; 65           ; 29           ; 3           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; EA[6]  ; N18   ; 5        ; 65           ; 29           ; 2           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; LOAD_M ; F25   ; 5        ; 65           ; 29           ; 0           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; SET_M  ; D13   ; 3        ; 31           ; 36           ; 3           ; 8                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-+--------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Input Pins                                                                                                                                                                                                                                                    ;
++---------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
+; Name    ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination ; Location assigned by ;
++---------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
+; CLK     ; P2    ; 1        ; 0            ; 18           ; 2           ; 1                     ; 0                  ; yes    ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; LOAD_M  ; F25   ; 5        ; 65           ; 29           ; 0           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; SET_M   ; D13   ; 3        ; 31           ; 36           ; 3           ; 8                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; SUBT[0] ; C13   ; 3        ; 31           ; 36           ; 2           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; SUBT[1] ; B24   ; 5        ; 65           ; 32           ; 0           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; SUBT[2] ; F26   ; 5        ; 65           ; 29           ; 1           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; SUBT[3] ; J21   ; 5        ; 65           ; 30           ; 2           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; SUBT[4] ; K22   ; 5        ; 65           ; 28           ; 2           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; SUBT[5] ; P18   ; 5        ; 65           ; 29           ; 3           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; SUBT[6] ; N18   ; 5        ; 65           ; 29           ; 2           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
++---------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Output Pins                                                                                                                                                                                                                                                                                                                            ;
-+----------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+------+----------------------+---------------------+
-; Name     ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Output Register ; Output Enable Register ; Power Up High ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Termination ; Location assigned by ; Load ; Output Enable Source ; Output Enable Group ;
-+----------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+------+----------------------+---------------------+
-; OUT_B[0] ; D21   ; 4        ; 63           ; 36           ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; OUT_B[1] ; D26   ; 5        ; 65           ; 31           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; OUT_B[2] ; J18   ; 4        ; 59           ; 36           ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; OUT_B[3] ; F23   ; 5        ; 65           ; 30           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; OUT_B[4] ; J20   ; 5        ; 65           ; 30           ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; OUT_B[5] ; F24   ; 5        ; 65           ; 30           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; OUT_B[6] ; D25   ; 5        ; 65           ; 31           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-+----------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+------+----------------------+---------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Output Pins                                                                                                                                                                                                                                                                                                                        ;
++------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+------+----------------------+---------------------+
+; Name ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Output Register ; Output Enable Register ; Power Up High ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Termination ; Location assigned by ; Load ; Output Enable Source ; Output Enable Group ;
++------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+------+----------------------+---------------------+
+; M[0] ; D21   ; 4        ; 63           ; 36           ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; M[1] ; D26   ; 5        ; 65           ; 31           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; M[2] ; J18   ; 4        ; 59           ; 36           ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; M[3] ; F23   ; 5        ; 65           ; 30           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; M[4] ; J20   ; 5        ; 65           ; 30           ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; M[5] ; F24   ; 5        ; 65           ; 30           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; M[6] ; D25   ; 5        ; 65           ; 31           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
++------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+------+----------------------+---------------------+
 
 
 +------------------------------------------------------------+
@@ -557,7 +557,7 @@ The pin-out file can be found in D:/PROJETO_5/Projeto_5_CD/output_files/PROJETO_
 ; B21      ; 381        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; B22      ; 380        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; B23      ; 377        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; B24      ; 363        ; 5        ; EA[1]                                    ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; B24      ; 363        ; 5        ; SUBT[1]                                  ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; B25      ; 362        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; B26      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; C1       ;            ; 2        ; VCCIO2                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
@@ -572,7 +572,7 @@ The pin-out file can be found in D:/PROJETO_5/Projeto_5_CD/output_files/PROJETO_
 ; C10      ; 450        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; C11      ; 436        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; C12      ; 434        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; C13      ; 431        ; 3        ; EA[0]                                    ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; C13      ; 431        ; 3        ; SUBT[0]                                  ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; C14      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; C15      ; 421        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; C16      ; 418        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -606,12 +606,12 @@ The pin-out file can be found in D:/PROJETO_5/Projeto_5_CD/output_files/PROJETO_
 ; D18      ; 396        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; D19      ; 392        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; D20      ; 387        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; D21      ; 376        ; 4        ; OUT_B[0]                                 ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; D21      ; 376        ; 4        ; M[0]                                     ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; D22      ;            ; 4        ; VCCIO4                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; D23      ; 369        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; D24      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; D25      ; 358        ; 5        ; OUT_B[6]                                 ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
-; D26      ; 359        ; 5        ; OUT_B[1]                                 ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; D25      ; 358        ; 5        ; M[6]                                     ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; D26      ; 359        ; 5        ; M[1]                                     ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; E1       ; 20         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; E2       ; 19         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; E3       ; 0          ; 2        ; ~ASDO~ / RESERVED_INPUT_WITH_WEAK_PULLUP ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; On           ;
@@ -660,10 +660,10 @@ The pin-out file can be found in D:/PROJETO_5/Projeto_5_CD/output_files/PROJETO_
 ; F20      ; 372        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; F21      ; 371        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; F22      ;            ; 5        ; VCCIO5                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
-; F23      ; 353        ; 5        ; OUT_B[3]                                 ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
-; F24      ; 354        ; 5        ; OUT_B[5]                                 ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; F23      ; 353        ; 5        ; M[3]                                     ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; F24      ; 354        ; 5        ; M[5]                                     ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; F25      ; 350        ; 5        ; LOAD_M                                   ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
-; F26      ; 349        ; 5        ; EA[2]                                    ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; F26      ; 349        ; 5        ; SUBT[2]                                  ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; G1       ; 30         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; G2       ; 31         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; G3       ; 24         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
@@ -733,10 +733,10 @@ The pin-out file can be found in D:/PROJETO_5/Projeto_5_CD/output_files/PROJETO_
 ; J15      ;            ; 4        ; VCCIO4                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; J16      ; 385        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; J17      ; 399        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; J18      ; 383        ; 4        ; OUT_B[2]                                 ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; J18      ; 383        ; 4        ; M[2]                                     ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; J19      ;            ; 5        ; VCCIO5                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
-; J20      ; 351        ; 5        ; OUT_B[4]                                 ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
-; J21      ; 352        ; 5        ; EA[3]                                    ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; J20      ; 351        ; 5        ; M[4]                                     ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; J21      ; 352        ; 5        ; SUBT[3]                                  ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; J22      ; 357        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
 ; J23      ; 339        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; J24      ; 338        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
@@ -763,7 +763,7 @@ The pin-out file can be found in D:/PROJETO_5/Projeto_5_CD/output_files/PROJETO_
 ; K19      ; 333        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; K20      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; K21      ; 332        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; K22      ; 344        ; 5        ; EA[4]                                    ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; K22      ; 344        ; 5        ; SUBT[4]                                  ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; K23      ; 331        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; K24      ; 330        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; K25      ; 321        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
@@ -837,7 +837,7 @@ The pin-out file can be found in D:/PROJETO_5/Projeto_5_CD/output_files/PROJETO_
 ; N15      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; N16      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; N17      ;            ;          ; VCCINT                                   ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
-; N18      ; 348        ; 5        ; EA[6]                                    ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; N18      ; 348        ; 5        ; SUBT[6]                                  ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; N19      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; N20      ; 315        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; N21      ;            ;          ; NC                                       ;        ;              ;         ; --         ;                 ; --       ; --           ;
@@ -863,7 +863,7 @@ The pin-out file can be found in D:/PROJETO_5/Projeto_5_CD/output_files/PROJETO_
 ; P15      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; P16      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; P17      ; 293        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; P18      ; 347        ; 5        ; EA[5]                                    ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; P18      ; 347        ; 5        ; SUBT[5]                                  ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; P19      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; P20      ; 301        ; 6        ; ^MSEL0                                   ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; P21      ; 300        ; 6        ; ^MSEL1                                   ;        ;              ;         ; --         ;                 ; --       ; --           ;
@@ -1088,29 +1088,29 @@ Note: User assignments will override these defaults. The user specified values a
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+-----------------------------------------------------------------------------------+
-; Delay Chain Summary                                                               ;
-+----------+----------+---------------+---------------+-----------------------+-----+
-; Name     ; Pin Type ; Pad to Core 0 ; Pad to Core 1 ; Pad to Input Register ; TCO ;
-+----------+----------+---------------+---------------+-----------------------+-----+
-; OUT_B[0] ; Output   ; --            ; --            ; --                    ; --  ;
-; OUT_B[1] ; Output   ; --            ; --            ; --                    ; --  ;
-; OUT_B[2] ; Output   ; --            ; --            ; --                    ; --  ;
-; OUT_B[3] ; Output   ; --            ; --            ; --                    ; --  ;
-; OUT_B[4] ; Output   ; --            ; --            ; --                    ; --  ;
-; OUT_B[5] ; Output   ; --            ; --            ; --                    ; --  ;
-; OUT_B[6] ; Output   ; --            ; --            ; --                    ; --  ;
-; EA[0]    ; Input    ; (0) 170 ps    ; (0) 170 ps    ; --                    ; --  ;
-; SET_M    ; Input    ; (0) 170 ps    ; (0) 170 ps    ; --                    ; --  ;
-; CLK      ; Input    ; (0) 171 ps    ; (0) 171 ps    ; --                    ; --  ;
-; LOAD_M   ; Input    ; (6) 2523 ps   ; (6) 2523 ps   ; --                    ; --  ;
-; EA[1]    ; Input    ; (6) 2523 ps   ; (6) 2523 ps   ; --                    ; --  ;
-; EA[2]    ; Input    ; (6) 2523 ps   ; (6) 2523 ps   ; --                    ; --  ;
-; EA[3]    ; Input    ; (6) 2523 ps   ; (6) 2523 ps   ; --                    ; --  ;
-; EA[4]    ; Input    ; (6) 2523 ps   ; (6) 2523 ps   ; --                    ; --  ;
-; EA[5]    ; Input    ; (6) 2523 ps   ; (6) 2523 ps   ; --                    ; --  ;
-; EA[6]    ; Input    ; (6) 2523 ps   ; (6) 2523 ps   ; --                    ; --  ;
-+----------+----------+---------------+---------------+-----------------------+-----+
++----------------------------------------------------------------------------------+
+; Delay Chain Summary                                                              ;
++---------+----------+---------------+---------------+-----------------------+-----+
+; Name    ; Pin Type ; Pad to Core 0 ; Pad to Core 1 ; Pad to Input Register ; TCO ;
++---------+----------+---------------+---------------+-----------------------+-----+
+; M[0]    ; Output   ; --            ; --            ; --                    ; --  ;
+; M[1]    ; Output   ; --            ; --            ; --                    ; --  ;
+; M[2]    ; Output   ; --            ; --            ; --                    ; --  ;
+; M[3]    ; Output   ; --            ; --            ; --                    ; --  ;
+; M[4]    ; Output   ; --            ; --            ; --                    ; --  ;
+; M[5]    ; Output   ; --            ; --            ; --                    ; --  ;
+; M[6]    ; Output   ; --            ; --            ; --                    ; --  ;
+; SUBT[0] ; Input    ; (0) 170 ps    ; (0) 170 ps    ; --                    ; --  ;
+; SET_M   ; Input    ; (0) 170 ps    ; (0) 170 ps    ; --                    ; --  ;
+; CLK     ; Input    ; (0) 171 ps    ; (0) 171 ps    ; --                    ; --  ;
+; LOAD_M  ; Input    ; (6) 2523 ps   ; (6) 2523 ps   ; --                    ; --  ;
+; SUBT[1] ; Input    ; (6) 2523 ps   ; (6) 2523 ps   ; --                    ; --  ;
+; SUBT[2] ; Input    ; (6) 2523 ps   ; (6) 2523 ps   ; --                    ; --  ;
+; SUBT[3] ; Input    ; (6) 2523 ps   ; (6) 2523 ps   ; --                    ; --  ;
+; SUBT[4] ; Input    ; (6) 2523 ps   ; (6) 2523 ps   ; --                    ; --  ;
+; SUBT[5] ; Input    ; (6) 2523 ps   ; (6) 2523 ps   ; --                    ; --  ;
+; SUBT[6] ; Input    ; (6) 2523 ps   ; (6) 2523 ps   ; --                    ; --  ;
++---------+----------+---------------+---------------+-----------------------+-----+
 
 
 +--------------------------------------------------------------+
@@ -1118,22 +1118,22 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------------------+-------------------+---------+
 ; Source Pin / Fanout            ; Pad To Core Index ; Setting ;
 +--------------------------------+-------------------+---------+
-; EA[0]                          ;                   ;         ;
+; SUBT[0]                        ;                   ;         ;
 ; SET_M                          ;                   ;         ;
 ; CLK                            ;                   ;         ;
 ; LOAD_M                         ;                   ;         ;
 ;      - mux_2x1_7BITS:U1|O[6]~1 ; 0                 ; 6       ;
-; EA[1]                          ;                   ;         ;
+; SUBT[1]                        ;                   ;         ;
 ;      - mux_2x1_7BITS:U1|O~2    ; 1                 ; 6       ;
-; EA[2]                          ;                   ;         ;
+; SUBT[2]                        ;                   ;         ;
 ;      - mux_2x1_7BITS:U1|O[2]~3 ; 0                 ; 6       ;
-; EA[3]                          ;                   ;         ;
+; SUBT[3]                        ;                   ;         ;
 ;      - mux_2x1_7BITS:U1|O~4    ; 0                 ; 6       ;
-; EA[4]                          ;                   ;         ;
+; SUBT[4]                        ;                   ;         ;
 ;      - mux_2x1_7BITS:U1|O~5    ; 0                 ; 6       ;
-; EA[5]                          ;                   ;         ;
+; SUBT[5]                        ;                   ;         ;
 ;      - mux_2x1_7BITS:U1|O[5]~6 ; 1                 ; 6       ;
-; EA[6]                          ;                   ;         ;
+; SUBT[6]                        ;                   ;         ;
 ;      - mux_2x1_7BITS:U1|O[6]~7 ; 0                 ; 6       ;
 +--------------------------------+-------------------+---------+
 
@@ -1164,14 +1164,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------+---------+
 ; SET_M                           ; 8       ;
 ; mux_2x1_7BITS:U1|O[6]~1         ; 7       ;
-; EA[6]                           ; 1       ;
-; EA[5]                           ; 1       ;
-; EA[4]                           ; 1       ;
-; EA[3]                           ; 1       ;
-; EA[2]                           ; 1       ;
-; EA[1]                           ; 1       ;
+; SUBT[6]                         ; 1       ;
+; SUBT[5]                         ; 1       ;
+; SUBT[4]                         ; 1       ;
+; SUBT[3]                         ; 1       ;
+; SUBT[2]                         ; 1       ;
+; SUBT[1]                         ; 1       ;
 ; LOAD_M                          ; 1       ;
-; EA[0]                           ; 1       ;
+; SUBT[0]                         ; 1       ;
 ; mux_2x1_7BITS:U1|O[6]~7         ; 1       ;
 ; mux_2x1_7BITS:U1|O[5]~6         ; 1       ;
 ; mux_2x1_7BITS:U1|O~5            ; 1       ;
@@ -1342,23 +1342,23 @@ Info (169124): Fitter converted 3 user pins into dedicated programming pins
     Info (169125): Pin ~nCSO~ is reserved at location D3
     Info (169125): Pin ~LVDS150p/nCEO~ is reserved at location AE24
 Critical Warning (169085): No exact pin location assignment(s) for 17 pins of 17 total pins
-    Info (169086): Pin OUT_B[0] not assigned to an exact location on the device
-    Info (169086): Pin OUT_B[1] not assigned to an exact location on the device
-    Info (169086): Pin OUT_B[2] not assigned to an exact location on the device
-    Info (169086): Pin OUT_B[3] not assigned to an exact location on the device
-    Info (169086): Pin OUT_B[4] not assigned to an exact location on the device
-    Info (169086): Pin OUT_B[5] not assigned to an exact location on the device
-    Info (169086): Pin OUT_B[6] not assigned to an exact location on the device
-    Info (169086): Pin EA[0] not assigned to an exact location on the device
+    Info (169086): Pin M[0] not assigned to an exact location on the device
+    Info (169086): Pin M[1] not assigned to an exact location on the device
+    Info (169086): Pin M[2] not assigned to an exact location on the device
+    Info (169086): Pin M[3] not assigned to an exact location on the device
+    Info (169086): Pin M[4] not assigned to an exact location on the device
+    Info (169086): Pin M[5] not assigned to an exact location on the device
+    Info (169086): Pin M[6] not assigned to an exact location on the device
+    Info (169086): Pin SUBT[0] not assigned to an exact location on the device
     Info (169086): Pin SET_M not assigned to an exact location on the device
     Info (169086): Pin CLK not assigned to an exact location on the device
     Info (169086): Pin LOAD_M not assigned to an exact location on the device
-    Info (169086): Pin EA[1] not assigned to an exact location on the device
-    Info (169086): Pin EA[2] not assigned to an exact location on the device
-    Info (169086): Pin EA[3] not assigned to an exact location on the device
-    Info (169086): Pin EA[4] not assigned to an exact location on the device
-    Info (169086): Pin EA[5] not assigned to an exact location on the device
-    Info (169086): Pin EA[6] not assigned to an exact location on the device
+    Info (169086): Pin SUBT[1] not assigned to an exact location on the device
+    Info (169086): Pin SUBT[2] not assigned to an exact location on the device
+    Info (169086): Pin SUBT[3] not assigned to an exact location on the device
+    Info (169086): Pin SUBT[4] not assigned to an exact location on the device
+    Info (169086): Pin SUBT[5] not assigned to an exact location on the device
+    Info (169086): Pin SUBT[6] not assigned to an exact location on the device
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'PROJETO_5.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332144): No user constrained base clocks found in the design
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
@@ -1380,7 +1380,7 @@ Info (176215): I/O bank details before I/O pin placement
         Info (176213): I/O bank number 6 does not use VREF pins and has undetermined VCCIO pins. 1 total pin(s) used --  58 pins available
         Info (176213): I/O bank number 7 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  58 pins available
         Info (176213): I/O bank number 8 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  56 pins available
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:00
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info (170191): Fitter placement operations beginning
@@ -1393,25 +1393,25 @@ Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
-Info (11888): Total time spent on timing analysis during the Fitter is 0.08 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.03 seconds.
 Info (306004): Started post-fitting delay annotation
 Warning (306006): Found 7 output pins without output pin load capacitance assignment
-    Info (306007): Pin "OUT_B[0]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
-    Info (306007): Pin "OUT_B[1]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
-    Info (306007): Pin "OUT_B[2]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
-    Info (306007): Pin "OUT_B[3]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
-    Info (306007): Pin "OUT_B[4]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
-    Info (306007): Pin "OUT_B[5]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
-    Info (306007): Pin "OUT_B[6]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "M[0]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "M[1]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "M[2]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "M[3]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "M[4]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "M[5]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "M[6]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
 Info (306005): Delay annotation completed successfully
 Info (306004): Started post-fitting delay annotation
 Info (306005): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
 Warning (169174): The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
 Info (144001): Generated suppressed messages file D:/PROJETO_5/Projeto_5_CD/output_files/PROJETO_5.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 4881 megabytes
-    Info: Processing ended: Fri Nov 24 18:58:16 2023
+    Info: Peak virtual memory: 4877 megabytes
+    Info: Processing ended: Fri Nov 24 20:25:27 2023
     Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:02
 
