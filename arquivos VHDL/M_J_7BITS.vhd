@@ -2,9 +2,9 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
 entity M_J_7BITS is -- 
-   Port ( EA: in std_logic_vector(7 downto 0);
+   Port ( EA: in std_logic_vector(6 downto 0);
 			CLK,LOAD_M,SET_M:  in std_logic;
-         OUT_B: out std_logic_vector(7 downto 0));
+         OUT_B: out std_logic_vector(6 downto 0));
 end M_J_7BITS;
 
 architecture ckt of M_J_7BITS is
@@ -22,16 +22,18 @@ COMPONENT REGISTRADOR_7_BITS is
 end COMPONENT;
 
 SIGNAL MUX00,MUX01:std_logic_vector(6 downto 0);
-SIGNAL SAIDA_INT:std_logic_vector(6 downto 0); 
+SIGNAL SAIDA_INT:std_logic_vector(6 downto 0);
+SIGNAL CEM:std_logic_vector(6 downto 0); --- VALOR CONSTARANTE 100 NA ENTRADA DO MUX2X1
+ 
 
 
 begin
 
 OUT_B <= SAIDA_INT;
-    
-	 
+CEM <= '1'&'1'&'0'&'0'&'1'&'0'&'0';   
+--CEM <= ('1100100');	 
 U0: mux_2x1_7BITS PORT MAP (SAIDA_INT,EA,LOAD_M,MUX00);
-U1: mux_2x1_7BITS PORT MAP (MUX00,"1100100",SET_M,MUX01);
+U1: mux_2x1_7BITS PORT MAP (MUX00,CEM,SET_M,MUX01);
 C0: REGISTRADOR_7_BITS PORT MAP (CLK,'1','1',MUX01,SAIDA_INT);
 	 
 	 

@@ -1,5 +1,5 @@
-Analysis & Elaboration report for projeto_5
-Tue Nov 21 16:46:12 2023
+Analysis & Synthesis report for PROJETO_5
+Fri Nov 24 17:23:00 2023
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -7,10 +7,17 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Elaboration Summary
-  3. Parallel Compilation
-  4. Analysis & Elaboration Settings
-  5. Analysis & Elaboration Messages
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Port Connectivity Checks: "REGISTRADOR_7_BITS:C0"
+ 10. Port Connectivity Checks: "mux_2x1_7BITS:U1"
+ 11. Elapsed Time Per Partition
+ 12. Analysis & Synthesis Messages
 
 
 
@@ -34,43 +41,32 @@ applicable agreement for further details.
 
 
 +--------------------------------------------------------------------------------------+
-; Analysis & Elaboration Summary                                                       ;
+; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Elaboration Status      ; Successful - Tue Nov 21 16:46:12 2023           ;
+; Analysis & Synthesis Status        ; Successful - Fri Nov 24 17:23:00 2023           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
-; Revision Name                      ; projeto_5                                       ;
-; Top-level Entity Name              ; Demux_1x6                                       ;
+; Revision Name                      ; PROJETO_5                                       ;
+; Top-level Entity Name              ; M_J_7BITS                                       ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; N/A until Partition Merge                       ;
-;     Total combinational functions  ; N/A until Partition Merge                       ;
-;     Dedicated logic registers      ; N/A until Partition Merge                       ;
-; Total registers                    ; N/A until Partition Merge                       ;
-; Total pins                         ; N/A until Partition Merge                       ;
-; Total virtual pins                 ; N/A until Partition Merge                       ;
-; Total memory bits                  ; N/A until Partition Merge                       ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                       ;
-; Total PLLs                         ; N/A until Partition Merge                       ;
+; Total logic elements               ; 8                                               ;
+;     Total combinational functions  ; 8                                               ;
+;     Dedicated logic registers      ; 7                                               ;
+; Total registers                    ; 7                                               ;
+; Total pins                         ; 17                                              ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0                                               ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
 +------------------------------------+-------------------------------------------------+
-
-
-Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
-+-------------------------------------+
-; Parallel Compilation                ;
-+----------------------------+--------+
-; Processors                 ; Number ;
-+----------------------------+--------+
-; Number detected on machine ; 4      ;
-; Maximum allowed            ; 1      ;
-+----------------------------+--------+
 
 
 +----------------------------------------------------------------------------------------------------------------------+
-; Analysis & Elaboration Settings                                                                                      ;
+; Analysis & Synthesis Settings                                                                                        ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP2C35F672C6       ;                    ;
-; Top-level entity name                                                      ; Demux_1x6          ; projeto_5          ;
+; Top-level entity name                                                      ; M_J_7BITS          ; PROJETO_5          ;
 ; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -149,33 +145,207 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+---------------------------------+
-; Analysis & Elaboration Messages ;
-+---------------------------------+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                              ;
++--------------------------------------+-----------------+-----------------+----------------------------------------------------------------+---------+
+; File Name with User-Entered Path     ; Used in Netlist ; File Type       ; File Name with Absolute Path                                   ; Library ;
++--------------------------------------+-----------------+-----------------+----------------------------------------------------------------+---------+
+; arquivos VHDL/registrador_7_bits.vhd ; yes             ; User VHDL File  ; D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/registrador_7_bits.vhd ;         ;
+; arquivos VHDL/mux_2x1_7BITS.vhd      ; yes             ; User VHDL File  ; D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/mux_2x1_7BITS.vhd      ;         ;
+; arquivos VHDL/M_J_7BITS.vhd          ; yes             ; User VHDL File  ; D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/M_J_7BITS.vhd          ;         ;
+; arquivos VHDL/FFD.vhd                ; yes             ; User VHDL File  ; D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/FFD.vhd                ;         ;
++--------------------------------------+-----------------+-----------------+----------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Estimated Total logic elements              ; 8     ;
+;                                             ;       ;
+; Total combinational functions               ; 8     ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 0     ;
+;     -- 3 input functions                    ; 0     ;
+;     -- <=2 input functions                  ; 8     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 8     ;
+;     -- arithmetic mode                      ; 0     ;
+;                                             ;       ;
+; Total registers                             ; 7     ;
+;     -- Dedicated logic registers            ; 7     ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 17    ;
+; Embedded Multiplier 9-bit elements          ; 0     ;
+; Maximum fan-out node                        ; SET_M ;
+; Maximum fan-out                             ; 8     ;
+; Total fan-out                               ; 44    ;
+; Average fan-out                             ; 1.38  ;
++---------------------------------------------+-------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                              ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                      ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------+--------------+
+; |M_J_7BITS                 ; 8 (0)             ; 7 (0)        ; 0           ; 0            ; 0       ; 0         ; 17   ; 0            ; |M_J_7BITS                               ; work         ;
+;    |REGISTRADOR_7_BITS:C0| ; 0 (0)             ; 7 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |M_J_7BITS|REGISTRADOR_7_BITS:C0         ; work         ;
+;       |ffd:FF0|            ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |M_J_7BITS|REGISTRADOR_7_BITS:C0|ffd:FF0 ; work         ;
+;       |ffd:FF1|            ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |M_J_7BITS|REGISTRADOR_7_BITS:C0|ffd:FF1 ; work         ;
+;       |ffd:FF2|            ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |M_J_7BITS|REGISTRADOR_7_BITS:C0|ffd:FF2 ; work         ;
+;       |ffd:FF3|            ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |M_J_7BITS|REGISTRADOR_7_BITS:C0|ffd:FF3 ; work         ;
+;       |ffd:FF4|            ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |M_J_7BITS|REGISTRADOR_7_BITS:C0|ffd:FF4 ; work         ;
+;       |ffd:FF5|            ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |M_J_7BITS|REGISTRADOR_7_BITS:C0|ffd:FF5 ; work         ;
+;       |ffd:FF6|            ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |M_J_7BITS|REGISTRADOR_7_BITS:C0|ffd:FF6 ; work         ;
+;    |mux_2x1_7BITS:U1|      ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |M_J_7BITS|mux_2x1_7BITS:U1              ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 7     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 7     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++---------------------------------------------------+
+; Port Connectivity Checks: "REGISTRADOR_7_BITS:C0" ;
++------+-------+----------+-------------------------+
+; Port ; Type  ; Severity ; Details                 ;
++------+-------+----------+-------------------------+
+; clr  ; Input ; Info     ; Stuck at VCC            ;
+; set  ; Input ; Info     ; Stuck at VCC            ;
++------+-------+----------+-------------------------+
+
+
++----------------------------------------------+
+; Port Connectivity Checks: "mux_2x1_7BITS:U1" ;
++----------+-------+----------+----------------+
+; Port     ; Type  ; Severity ; Details        ;
++----------+-------+----------+----------------+
+; eb[6..5] ; Input ; Info     ; Stuck at VCC   ;
+; eb[4..3] ; Input ; Info     ; Stuck at GND   ;
+; eb[1..0] ; Input ; Info     ; Stuck at GND   ;
+; eb[2]    ; Input ; Info     ; Stuck at VCC   ;
++----------+-------+----------+----------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus II 64-Bit Analysis & Elaboration
+Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Tue Nov 21 16:46:11 2023
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off projeto_5 -c projeto_5 --analysis_and_elaboration
+    Info: Processing started: Fri Nov 24 17:22:59 2023
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off PROJETO_5 -c PROJETO_5
 Warning (20028): Parallel compilation is not licensed and has been disabled
-Warning (12019): Can't analyze file -- file arquivos VHDL/MUX1.vhd is missing
-Info (12021): Found 2 design units, including 1 entities, in source file arquivos vhdl/demux_1x6.vhd
-    Info (12022): Found design unit 1: Demux_1x6-ckt
-    Info (12023): Found entity 1: Demux_1x6
+Info (12021): Found 2 design units, including 1 entities, in source file arquivos vhdl/subtrator_10_bits.vhd
+    Info (12022): Found design unit 1: SUBTRATOR_10_BITS-ckt
+    Info (12023): Found entity 1: SUBTRATOR_10_BITS
+Info (12021): Found 2 design units, including 1 entities, in source file arquivos vhdl/subtrator_7_bits.vhd
+    Info (12022): Found design unit 1: SUBTRATOR_7_BITS-ckt
+    Info (12023): Found entity 1: SUBTRATOR_7_BITS
+Info (12021): Found 2 design units, including 1 entities, in source file arquivos vhdl/subtrator_1_bit.vhd
+    Info (12022): Found design unit 1: SUBTRATOR_1_BIT-ckt
+    Info (12023): Found entity 1: SUBTRATOR_1_BIT
+Info (12021): Found 2 design units, including 1 entities, in source file arquivos vhdl/registrador_10_bits.vhd
+    Info (12022): Found design unit 1: REGISTRADOR_10_BITS-ckt
+    Info (12023): Found entity 1: REGISTRADOR_10_BITS
+Info (12021): Found 2 design units, including 1 entities, in source file arquivos vhdl/registrador_7_bits.vhd
+    Info (12022): Found design unit 1: REGISTRADOR_7_BITS-ckt
+    Info (12023): Found entity 1: REGISTRADOR_7_BITS
+Info (12021): Found 2 design units, including 1 entities, in source file arquivos vhdl/registrador_3_bits.vhd
+    Info (12022): Found design unit 1: REGISTRADOR_3_BITS-ckt
+    Info (12023): Found entity 1: REGISTRADOR_3_BITS
+Info (12021): Found 2 design units, including 1 entities, in source file arquivos vhdl/registrador_2_bits.vhd
+    Info (12022): Found design unit 1: REGISTRADOR_2_BITS-ckt
+    Info (12023): Found entity 1: REGISTRADOR_2_BITS
 Info (12021): Found 2 design units, including 1 entities, in source file arquivos vhdl/mux_6x1.vhd
     Info (12022): Found design unit 1: mux_6x1-ckt
     Info (12023): Found entity 1: mux_6x1
-Info (12021): Found 2 design units, including 1 entities, in source file arquivos vhdl/bnt_sincrono.vhd
-    Info (12022): Found design unit 1: bnt_sincrono-ckt
-    Info (12023): Found entity 1: bnt_sincrono
+Info (12021): Found 2 design units, including 1 entities, in source file arquivos vhdl/mux_2x1_7bits.vhd
+    Info (12022): Found design unit 1: mux_2x1_7BITS-ckt
+    Info (12023): Found entity 1: mux_2x1_7BITS
+Info (12021): Found 2 design units, including 1 entities, in source file arquivos vhdl/mux_2x1_1bit.vhd
+    Info (12022): Found design unit 1: MUX_2x1_1bit-ckt
+    Info (12023): Found entity 1: MUX_2x1_1bit
+Info (12021): Found 2 design units, including 1 entities, in source file arquivos vhdl/mux_1x2.vhd
+    Info (12022): Found design unit 1: MUX_1x2-ckt
+    Info (12023): Found entity 1: MUX_1x2
+Info (12021): Found 2 design units, including 1 entities, in source file arquivos vhdl/moeda_j.vhd
+    Info (12022): Found design unit 1: MOEDA_J-CKT
+    Info (12023): Found entity 1: MOEDA_J
+Info (12021): Found 2 design units, including 1 entities, in source file arquivos vhdl/m_j_7bits.vhd
+    Info (12022): Found design unit 1: M_J_7BITS-ckt
+    Info (12023): Found entity 1: M_J_7BITS
+Info (12021): Found 2 design units, including 1 entities, in source file arquivos vhdl/ffjk.vhd
+    Info (12022): Found design unit 1: ffjk-logica
+    Info (12023): Found entity 1: ffjk
 Info (12021): Found 2 design units, including 1 entities, in source file arquivos vhdl/ffd.vhd
     Info (12022): Found design unit 1: ffd-logica
     Info (12023): Found entity 1: ffd
-Info (12127): Elaborating entity "Demux_1x6" for the top level hierarchy
-Info: Quartus II 64-Bit Analysis & Elaboration was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 4623 megabytes
-    Info: Processing ended: Tue Nov 21 16:46:12 2023
+Info (12021): Found 2 design units, including 1 entities, in source file arquivos vhdl/demux_1x6.vhd
+    Info (12022): Found design unit 1: Demux_1x6-ckt
+    Info (12023): Found entity 1: Demux_1x6
+Info (12021): Found 2 design units, including 1 entities, in source file arquivos vhdl/contador_up_dw_7_bits.vhd
+    Info (12022): Found design unit 1: contador_up_dw_7_bits-ckt
+    Info (12023): Found entity 1: contador_up_dw_7_bits
+Info (12021): Found 2 design units, including 1 entities, in source file arquivos vhdl/comparador_zero_10.vhd
+    Info (12022): Found design unit 1: COMPARADOR_ZERO_10-CKT
+    Info (12023): Found entity 1: COMPARADOR_ZERO_10
+Info (12021): Found 2 design units, including 1 entities, in source file arquivos vhdl/comparador_zero_7.vhd
+    Info (12022): Found design unit 1: COMPARADOR_ZERO_7-CKT
+    Info (12023): Found entity 1: COMPARADOR_ZERO_7
+Info (12021): Found 2 design units, including 1 entities, in source file arquivos vhdl/bnt_sincrono.vhd
+    Info (12022): Found design unit 1: bnt_sincrono-ckt
+    Info (12023): Found entity 1: bnt_sincrono
+Info (12127): Elaborating entity "M_J_7BITS" for the top level hierarchy
+Info (12128): Elaborating entity "mux_2x1_7BITS" for hierarchy "mux_2x1_7BITS:U0"
+Info (12128): Elaborating entity "REGISTRADOR_7_BITS" for hierarchy "REGISTRADOR_7_BITS:C0"
+Info (12128): Elaborating entity "ffd" for hierarchy "REGISTRADOR_7_BITS:C0|ffd:FF6"
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 25 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 10 input pins
+    Info (21059): Implemented 7 output pins
+    Info (21061): Implemented 8 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4648 megabytes
+    Info: Processing ended: Fri Nov 24 17:23:00 2023
     Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:00
+    Info: Total CPU time (on all processors): 00:00:01
 
 

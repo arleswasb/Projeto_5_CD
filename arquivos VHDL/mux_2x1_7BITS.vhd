@@ -1,10 +1,10 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
-entity mux_2x1_7BITS is -- 
-   Port ( EA,EB: in std_logic_vector(7 downto 0);
+entity mux_2x1_7BITS is
+   Port ( EA,EB: in std_logic_vector(6 downto 0);
 			S:  in std_logic;
-         O: out std_logic_vector(7 downto 0));
+         O: out std_logic_vector(6 downto 0));
 end mux_2x1_7BITS;
 
 architecture ckt of mux_2x1_7BITS is
