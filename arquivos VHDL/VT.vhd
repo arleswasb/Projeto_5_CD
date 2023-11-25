@@ -9,10 +9,10 @@ end VT;
 
 architecture ckt of VT is
 
-COMPONENT mux_2x1_7BITS is -- 
-   Port ( EA,EB: in std_logic_vector(6 downto 0);
+COMPONENT mux_2x1_10BITS is -- 
+   Port ( EA,EB: in std_logic_vector(9 downto 0);
 			S:  in std_logic;
-         O: out std_logic_vector(6 downto 0));
+         O: out std_logic_vector(9 downto 0));
 end COMPONENT;
 
 COMPONENT REGISTRADOR_10_BITS is
@@ -29,7 +29,7 @@ begin
 
 -------------------------------------------------------------------------------------------------------
 
-U0: mux_2x1_7BITS PORT MAP (ENTRADA_INT,D,LOAD_VT,MUX00);
+U0: mux_2x1_10BITS PORT MAP (ENTRADA_INT,D,LOAD_VT,MUX00);
 -------------------------------------------------------------------------------------------------------
 C0: REGISTRADOR_10_BITS PORT MAP (CLK,'1','1',MUX00,SAIDA_INT);
 
