@@ -1,5 +1,5 @@
 Analysis & Synthesis report for PROJETO_5
-Fri Nov 24 20:25:23 2023
+Sat Nov 25 18:48:38 2023
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -10,14 +10,33 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Port Connectivity Checks: "REGISTRADOR_7_BITS:C0"
- 10. Port Connectivity Checks: "mux_2x1_7BITS:U1"
- 11. Elapsed Time Per Partition
- 12. Analysis & Synthesis Messages
+  5. Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J:MOEDA_100|contador_up_dw_7_bits:CONT_M|ffjk:FF6"
+  6. Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J:MOEDA_100|contador_up_dw_7_bits:CONT_M|ffjk:FF5"
+  7. Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J:MOEDA_100|contador_up_dw_7_bits:CONT_M|ffjk:FF4"
+  8. Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J:MOEDA_100|contador_up_dw_7_bits:CONT_M|ffjk:FF3"
+  9. Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J:MOEDA_100|contador_up_dw_7_bits:CONT_M|ffjk:FF2"
+ 10. Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J:MOEDA_100|contador_up_dw_7_bits:CONT_M|ffjk:FF1"
+ 11. Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J:MOEDA_100|contador_up_dw_7_bits:CONT_M|ffjk:FF0"
+ 12. Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J:MOEDA_100|SUBTRATOR_7_BITS:SUB0|SUBTRATOR_1_BIT:FF0"
+ 13. Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J:MOEDA_100|SUBTRATOR_7_BITS:SUB0"
+ 14. Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J:MOEDA_100|M_J_7BITS:REG00|REGISTRADOR_7_BITS:C0"
+ 15. Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J:MOEDA_100|M_J_7BITS:REG00|mux_2x1_7BITS:U1"
+ 16. Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J:MOEDA_100|M_J_7BITS:REG00"
+ 17. Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|SUBTRATOR_10_BITS:SUBTRATOR|SUBTRATOR_1_BIT:FF0"
+ 18. Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|SUBTRATOR_10_BITS:SUBTRATOR"
+ 19. Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|mux_6x1:MUX_J2"
+ 20. Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|mux_6x1:MUX_J1"
+ 21. Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|contador_3_bits:CONTJ|ffjk:FF2"
+ 22. Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|contador_3_bits:CONTJ|MUX_2x1_1bit:mx2"
+ 23. Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|contador_3_bits:CONTJ|ffjk:FF1"
+ 24. Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|contador_3_bits:CONTJ|MUX_2x1_1bit:mx1"
+ 25. Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|contador_3_bits:CONTJ|ffjk:FF0"
+ 26. Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1"
+ 27. Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|VT:V0|REGISTRADOR_10_BITS:C000"
+ 28. Port Connectivity Checks: "BLOCO_OPERACIONAL:U3"
+ 29. Port Connectivity Checks: "bnt_sincrono:U0|ffd:FFD2"
+ 30. Port Connectivity Checks: "bnt_sincrono:U0|ffd:FFD1"
+ 31. Analysis & Synthesis Messages
 
 
 
@@ -43,20 +62,20 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Nov 24 20:25:23 2023           ;
+; Analysis & Synthesis Status        ; Failed - Sat Nov 25 18:48:38 2023               ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; PROJETO_5                                       ;
-; Top-level Entity Name              ; M_J_7BITS                                       ;
+; Top-level Entity Name              ; MAQUINA_DE_TROCO                                ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 8                                               ;
-;     Total combinational functions  ; 8                                               ;
-;     Dedicated logic registers      ; 7                                               ;
-; Total registers                    ; 7                                               ;
-; Total pins                         ; 17                                              ;
-; Total virtual pins                 ; 0                                               ;
-; Total memory bits                  ; 0                                               ;
-; Embedded Multiplier 9-bit elements ; 0                                               ;
-; Total PLLs                         ; 0                                               ;
+; Total logic elements               ; N/A until Partition Merge                       ;
+;     Total combinational functions  ; N/A until Partition Merge                       ;
+;     Dedicated logic registers      ; N/A until Partition Merge                       ;
+; Total registers                    ; N/A until Partition Merge                       ;
+; Total pins                         ; N/A until Partition Merge                       ;
+; Total virtual pins                 ; N/A until Partition Merge                       ;
+; Total memory bits                  ; N/A until Partition Merge                       ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                       ;
+; Total PLLs                         ; N/A until Partition Merge                       ;
 +------------------------------------+-------------------------------------------------+
 
 
@@ -66,7 +85,7 @@ applicable agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP2C35F672C6       ;                    ;
-; Top-level entity name                                                      ; M_J_7BITS          ; PROJETO_5          ;
+; Top-level entity name                                                      ; MAQUINA_DE_TROCO   ; PROJETO_5          ;
 ; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -156,111 +175,264 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                              ;
-+--------------------------------------+-----------------+-----------------+----------------------------------------------------------------+---------+
-; File Name with User-Entered Path     ; Used in Netlist ; File Type       ; File Name with Absolute Path                                   ; Library ;
-+--------------------------------------+-----------------+-----------------+----------------------------------------------------------------+---------+
-; arquivos VHDL/registrador_7_bits.vhd ; yes             ; User VHDL File  ; D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/registrador_7_bits.vhd ;         ;
-; arquivos VHDL/mux_2x1_7BITS.vhd      ; yes             ; User VHDL File  ; D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/mux_2x1_7BITS.vhd      ;         ;
-; arquivos VHDL/M_J_7BITS.vhd          ; yes             ; User VHDL File  ; D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/M_J_7BITS.vhd          ;         ;
-; arquivos VHDL/FFD.vhd                ; yes             ; User VHDL File  ; D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/FFD.vhd                ;         ;
-+--------------------------------------+-----------------+-----------------+----------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J:MOEDA_100|contador_up_dw_7_bits:CONT_M|ffjk:FF6" ;
++------+-------+----------+-----------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                 ;
++------+-------+----------+-----------------------------------------------------------------------------------------+
+; clr  ; Input ; Info     ; Stuck at GND                                                                            ;
+; set  ; Input ; Info     ; Stuck at GND                                                                            ;
++------+-------+----------+-----------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary         ;
-+---------------------------------------------+-------+
-; Resource                                    ; Usage ;
-+---------------------------------------------+-------+
-; Estimated Total logic elements              ; 8     ;
-;                                             ;       ;
-; Total combinational functions               ; 8     ;
-; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 0     ;
-;     -- 3 input functions                    ; 0     ;
-;     -- <=2 input functions                  ; 8     ;
-;                                             ;       ;
-; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 8     ;
-;     -- arithmetic mode                      ; 0     ;
-;                                             ;       ;
-; Total registers                             ; 7     ;
-;     -- Dedicated logic registers            ; 7     ;
-;     -- I/O registers                        ; 0     ;
-;                                             ;       ;
-; I/O pins                                    ; 17    ;
-; Embedded Multiplier 9-bit elements          ; 0     ;
-; Maximum fan-out node                        ; SET_M ;
-; Maximum fan-out                             ; 8     ;
-; Total fan-out                               ; 44    ;
-; Average fan-out                             ; 1.38  ;
-+---------------------------------------------+-------+
++-------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J:MOEDA_100|contador_up_dw_7_bits:CONT_M|ffjk:FF5" ;
++------+-------+----------+-----------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                 ;
++------+-------+----------+-----------------------------------------------------------------------------------------+
+; clr  ; Input ; Info     ; Stuck at GND                                                                            ;
+; set  ; Input ; Info     ; Stuck at GND                                                                            ;
++------+-------+----------+-----------------------------------------------------------------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                              ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                      ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------+--------------+
-; |M_J_7BITS                 ; 8 (0)             ; 7 (0)        ; 0           ; 0            ; 0       ; 0         ; 17   ; 0            ; |M_J_7BITS                               ; work         ;
-;    |REGISTRADOR_7_BITS:C0| ; 0 (0)             ; 7 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |M_J_7BITS|REGISTRADOR_7_BITS:C0         ; work         ;
-;       |ffd:FF0|            ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |M_J_7BITS|REGISTRADOR_7_BITS:C0|ffd:FF0 ; work         ;
-;       |ffd:FF1|            ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |M_J_7BITS|REGISTRADOR_7_BITS:C0|ffd:FF1 ; work         ;
-;       |ffd:FF2|            ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |M_J_7BITS|REGISTRADOR_7_BITS:C0|ffd:FF2 ; work         ;
-;       |ffd:FF3|            ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |M_J_7BITS|REGISTRADOR_7_BITS:C0|ffd:FF3 ; work         ;
-;       |ffd:FF4|            ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |M_J_7BITS|REGISTRADOR_7_BITS:C0|ffd:FF4 ; work         ;
-;       |ffd:FF5|            ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |M_J_7BITS|REGISTRADOR_7_BITS:C0|ffd:FF5 ; work         ;
-;       |ffd:FF6|            ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |M_J_7BITS|REGISTRADOR_7_BITS:C0|ffd:FF6 ; work         ;
-;    |mux_2x1_7BITS:U1|      ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |M_J_7BITS|mux_2x1_7BITS:U1              ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
++-------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J:MOEDA_100|contador_up_dw_7_bits:CONT_M|ffjk:FF4" ;
++------+-------+----------+-----------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                 ;
++------+-------+----------+-----------------------------------------------------------------------------------------+
+; clr  ; Input ; Info     ; Stuck at GND                                                                            ;
+; set  ; Input ; Info     ; Stuck at GND                                                                            ;
++------+-------+----------+-----------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J:MOEDA_100|contador_up_dw_7_bits:CONT_M|ffjk:FF3" ;
++------+-------+----------+-----------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                 ;
++------+-------+----------+-----------------------------------------------------------------------------------------+
+; clr  ; Input ; Info     ; Stuck at GND                                                                            ;
+; set  ; Input ; Info     ; Stuck at GND                                                                            ;
++------+-------+----------+-----------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J:MOEDA_100|contador_up_dw_7_bits:CONT_M|ffjk:FF2" ;
++------+-------+----------+-----------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                 ;
++------+-------+----------+-----------------------------------------------------------------------------------------+
+; clr  ; Input ; Info     ; Stuck at GND                                                                            ;
+; set  ; Input ; Info     ; Stuck at GND                                                                            ;
++------+-------+----------+-----------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J:MOEDA_100|contador_up_dw_7_bits:CONT_M|ffjk:FF1" ;
++------+-------+----------+-----------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                 ;
++------+-------+----------+-----------------------------------------------------------------------------------------+
+; clr  ; Input ; Info     ; Stuck at GND                                                                            ;
+; set  ; Input ; Info     ; Stuck at GND                                                                            ;
++------+-------+----------+-----------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J:MOEDA_100|contador_up_dw_7_bits:CONT_M|ffjk:FF0" ;
++------+-------+----------+-----------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                 ;
++------+-------+----------+-----------------------------------------------------------------------------------------+
+; clr  ; Input ; Info     ; Stuck at GND                                                                            ;
+; set  ; Input ; Info     ; Stuck at GND                                                                            ;
++------+-------+----------+-----------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J:MOEDA_100|SUBTRATOR_7_BITS:SUB0|SUBTRATOR_1_BIT:FF0" ;
++------+-------+----------+---------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                     ;
++------+-------+----------+---------------------------------------------------------------------------------------------+
+; cin  ; Input ; Info     ; Stuck at GND                                                                                ;
++------+-------+----------+---------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J:MOEDA_100|SUBTRATOR_7_BITS:SUB0"              ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; cin  ; Input  ; Info     ; Stuck at GND                                                                        ;
+; cout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J:MOEDA_100|M_J_7BITS:REG00|REGISTRADOR_7_BITS:C0" ;
++------+-------+----------+-----------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                 ;
++------+-------+----------+-----------------------------------------------------------------------------------------+
+; clr  ; Input ; Info     ; Stuck at VCC                                                                            ;
+; set  ; Input ; Info     ; Stuck at VCC                                                                            ;
++------+-------+----------+-----------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J:MOEDA_100|M_J_7BITS:REG00|mux_2x1_7BITS:U1" ;
++----------+-------+----------+--------------------------------------------------------------------------------+
+; Port     ; Type  ; Severity ; Details                                                                        ;
++----------+-------+----------+--------------------------------------------------------------------------------+
+; eb[6..5] ; Input ; Info     ; Stuck at VCC                                                                   ;
+; eb[4..3] ; Input ; Info     ; Stuck at GND                                                                   ;
+; eb[1..0] ; Input ; Info     ; Stuck at GND                                                                   ;
+; eb[2]    ; Input ; Info     ; Stuck at VCC                                                                   ;
++----------+-------+----------+--------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J:MOEDA_100|M_J_7BITS:REG00"                                                                                       ;
++-------+---------+------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type    ; Severity         ; Details                                                                                                                                      ;
++-------+---------+------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; EA    ; Unknown ; Critical Warning ; Named port was not declared by the instantiated entity                                                                                       ;
+; OUT_B ; Unknown ; Critical Warning ; Named port was not declared by the instantiated entity                                                                                       ;
+; subt  ; Input   ; Warning          ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; m     ; Output  ; Warning          ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                     ;
++-------+---------+------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|SUBTRATOR_10_BITS:SUBTRATOR|SUBTRATOR_1_BIT:FF0" ;
++------+-------+----------+---------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                         ;
++------+-------+----------+---------------------------------------------------------------------------------+
+; cin  ; Input ; Info     ; Stuck at GND                                                                    ;
++------+-------+----------+---------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|SUBTRATOR_10_BITS:SUBTRATOR"                          ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; cin  ; Input  ; Info     ; Stuck at GND                                                                        ;
+; cout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|mux_6x1:MUX_J2"                                                                                                         ;
++------+---------+------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type    ; Severity         ; Details                                                                                                                                      ;
++------+---------+------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; d    ; Unknown ; Critical Warning ; Named port was not declared by the instantiated entity                                                                                       ;
+; ent  ; Input   ; Warning          ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++------+---------+------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|mux_6x1:MUX_J1"                                                                                                         ;
++------+---------+------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type    ; Severity         ; Details                                                                                                                                      ;
++------+---------+------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; d    ; Unknown ; Critical Warning ; Named port was not declared by the instantiated entity                                                                                       ;
+; ent  ; Input   ; Warning          ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++------+---------+------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|contador_3_bits:CONTJ|ffjk:FF2" ;
++------+-------+----------+----------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                        ;
++------+-------+----------+----------------------------------------------------------------+
+; clr  ; Input ; Info     ; Stuck at GND                                                   ;
+; set  ; Input ; Info     ; Stuck at GND                                                   ;
++------+-------+----------+----------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|contador_3_bits:CONTJ|MUX_2x1_1bit:mx2"               ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; a    ; Input  ; Info     ; Stuck at GND                                                                        ;
+; s    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|contador_3_bits:CONTJ|ffjk:FF1" ;
++------+-------+----------+----------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                        ;
++------+-------+----------+----------------------------------------------------------------+
+; clr  ; Input ; Info     ; Stuck at GND                                                   ;
+; set  ; Input ; Info     ; Stuck at GND                                                   ;
++------+-------+----------+----------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|contador_3_bits:CONTJ|MUX_2x1_1bit:mx1"               ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; s    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|contador_3_bits:CONTJ|ffjk:FF0" ;
++------+-------+----------+----------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                        ;
++------+-------+----------+----------------------------------------------------------------+
+; clr  ; Input ; Info     ; Stuck at GND                                                   ;
+; set  ; Input ; Info     ; Stuck at GND                                                   ;
++------+-------+----------+----------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1"                                                                                                                         ;
++-------+---------+------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type    ; Severity         ; Details                                                                                                                                      ;
++-------+---------+------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock ; Unknown ; Critical Warning ; Named port was not declared by the instantiated entity                                                                                       ;
+; clk   ; Input   ; Warning          ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++-------+---------+------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------+
+; Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|VT:V0|REGISTRADOR_10_BITS:C000" ;
++------+-------+----------+-------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                               ;
++------+-------+----------+-------------------------------------------------------+
+; clr  ; Input ; Info     ; Stuck at VCC                                          ;
+; set  ; Input ; Info     ; Stuck at VCC                                          ;
++------+-------+----------+-------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "BLOCO_OPERACIONAL:U3"                                                               ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; i    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 7     ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 7     ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
+; Port Connectivity Checks: "bnt_sincrono:U0|ffd:FFD2" ;
++------+-------+----------+----------------------------+
+; Port ; Type  ; Severity ; Details                    ;
++------+-------+----------+----------------------------+
+; clr  ; Input ; Info     ; Stuck at GND               ;
+; set  ; Input ; Info     ; Stuck at GND               ;
++------+-------+----------+----------------------------+
 
 
-+---------------------------------------------------+
-; Port Connectivity Checks: "REGISTRADOR_7_BITS:C0" ;
-+------+-------+----------+-------------------------+
-; Port ; Type  ; Severity ; Details                 ;
-+------+-------+----------+-------------------------+
-; clr  ; Input ; Info     ; Stuck at VCC            ;
-; set  ; Input ; Info     ; Stuck at VCC            ;
-+------+-------+----------+-------------------------+
-
-
-+----------------------------------------------+
-; Port Connectivity Checks: "mux_2x1_7BITS:U1" ;
-+----------+-------+----------+----------------+
-; Port     ; Type  ; Severity ; Details        ;
-+----------+-------+----------+----------------+
-; eb[6..5] ; Input ; Info     ; Stuck at VCC   ;
-; eb[4..3] ; Input ; Info     ; Stuck at GND   ;
-; eb[1..0] ; Input ; Info     ; Stuck at GND   ;
-; eb[2]    ; Input ; Info     ; Stuck at VCC   ;
-+----------+-------+----------+----------------+
-
-
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:00     ;
-+----------------+--------------+
++------------------------------------------------------+
+; Port Connectivity Checks: "bnt_sincrono:U0|ffd:FFD1" ;
++------+-------+----------+----------------------------+
+; Port ; Type  ; Severity ; Details                    ;
++------+-------+----------+----------------------------+
+; clr  ; Input ; Info     ; Stuck at GND               ;
+; set  ; Input ; Info     ; Stuck at GND               ;
++------+-------+----------+----------------------------+
 
 
 +-------------------------------+
@@ -269,7 +441,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Fri Nov 24 20:25:22 2023
+    Info: Processing started: Sat Nov 25 18:48:37 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off PROJETO_5 -c PROJETO_5
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file arquivos vhdl/subtrator_10_bits.vhd
@@ -302,9 +474,6 @@ Info (12021): Found 2 design units, including 1 entities, in source file arquivo
 Info (12021): Found 2 design units, including 1 entities, in source file arquivos vhdl/mux_2x1_1bit.vhd
     Info (12022): Found design unit 1: MUX_2x1_1bit-ckt
     Info (12023): Found entity 1: MUX_2x1_1bit
-Info (12021): Found 2 design units, including 1 entities, in source file arquivos vhdl/mux_1x2.vhd
-    Info (12022): Found design unit 1: MUX_1x2-ckt
-    Info (12023): Found entity 1: MUX_1x2
 Info (12021): Found 2 design units, including 1 entities, in source file arquivos vhdl/moeda_j.vhd
     Info (12022): Found design unit 1: MOEDA_J-CKT
     Info (12023): Found entity 1: MOEDA_J
@@ -353,20 +522,83 @@ Info (12021): Found 2 design units, including 1 entities, in source file arquivo
 Info (12021): Found 2 design units, including 1 entities, in source file arquivos vhdl/contador_7_bits.vhd
     Info (12022): Found design unit 1: contador_7_bits-ckt
     Info (12023): Found entity 1: contador_7_bits
-Info (12127): Elaborating entity "M_J_7BITS" for the top level hierarchy
-Info (12128): Elaborating entity "mux_2x1_7BITS" for hierarchy "mux_2x1_7BITS:U0"
-Info (12128): Elaborating entity "REGISTRADOR_7_BITS" for hierarchy "REGISTRADOR_7_BITS:C0"
-Info (12128): Elaborating entity "ffd" for hierarchy "REGISTRADOR_7_BITS:C0|ffd:FF6"
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 25 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 10 input pins
-    Info (21059): Implemented 7 output pins
-    Info (21061): Implemented 8 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4641 megabytes
-    Info: Processing ended: Fri Nov 24 20:25:23 2023
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+Info (12021): Found 2 design units, including 1 entities, in source file arquivos vhdl/bloco_de_controle.vhd
+    Info (12022): Found design unit 1: BLOCO_DE_CONTROLE-CKT
+    Info (12023): Found entity 1: BLOCO_DE_CONTROLE
+Info (12021): Found 2 design units, including 1 entities, in source file arquivos vhdl/bloco_operacional.vhd
+    Info (12022): Found design unit 1: BLOCO_OPERACIONAL-CKT
+    Info (12023): Found entity 1: BLOCO_OPERACIONAL
+Info (12021): Found 2 design units, including 1 entities, in source file arquivos vhdl/cofre.vhd
+    Info (12022): Found design unit 1: COFRE-ckt
+    Info (12023): Found entity 1: COFRE
+Info (12021): Found 2 design units, including 1 entities, in source file arquivos vhdl/comparador_10_bits.vhd
+    Info (12022): Found design unit 1: COMPARADOR_10_BITS-CKT
+    Info (12023): Found entity 1: COMPARADOR_10_BITS
+Info (12021): Found 2 design units, including 1 entities, in source file arquivos vhdl/maquina_de_troco.vhd
+    Info (12022): Found design unit 1: MAQUINA_DE_TROCO-CKT
+    Info (12023): Found entity 1: MAQUINA_DE_TROCO
+Info (12021): Found 2 design units, including 1 entities, in source file arquivos vhdl/ck_div.vhd
+    Info (12022): Found design unit 1: ck_div-logica
+    Info (12023): Found entity 1: ck_div
+Info (12021): Found 2 design units, including 1 entities, in source file arquivos vhdl/mux_2x1_10bits.vhd
+    Info (12022): Found design unit 1: mux_2x1_10BITS-ckt
+    Info (12023): Found entity 1: mux_2x1_10BITS
+Info (12127): Elaborating entity "MAQUINA_DE_TROCO" for the top level hierarchy
+Warning (10036): Verilog HDL or VHDL warning at MAQUINA_DE_TROCO.vhd(52): object "I_OUT" assigned a value but never read
+Info (12128): Elaborating entity "bnt_sincrono" for hierarchy "bnt_sincrono:U0"
+Info (12128): Elaborating entity "ffd" for hierarchy "bnt_sincrono:U0|ffd:FFD1"
+Info (12128): Elaborating entity "BLOCO_DE_CONTROLE" for hierarchy "BLOCO_DE_CONTROLE:U1"
+Info (12128): Elaborating entity "REG_ESTADOS_2" for hierarchy "REG_ESTADOS_2:U2"
+Warning (10541): VHDL Signal Declaration warning at REG_ESTADOS_2.vhd(19): used implicit default value for signal "COMUM1" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at REG_ESTADOS_2.vhd(19): used implicit default value for signal "comum2" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Info (12128): Elaborating entity "BLOCO_OPERACIONAL" for hierarchy "BLOCO_OPERACIONAL:U3"
+Info (12128): Elaborating entity "SINAL_ESTADO" for hierarchy "BLOCO_OPERACIONAL:U3|SINAL_ESTADO:S0"
+Info (12128): Elaborating entity "mux_2x1_10BITS" for hierarchy "BLOCO_OPERACIONAL:U3|mux_2x1_10BITS:M000"
+Info (12128): Elaborating entity "VT" for hierarchy "BLOCO_OPERACIONAL:U3|VT:V0"
+Info (12128): Elaborating entity "REGISTRADOR_10_BITS" for hierarchy "BLOCO_OPERACIONAL:U3|VT:V0|REGISTRADOR_10_BITS:C000"
+Info (12128): Elaborating entity "COMPARADOR_ZERO_10" for hierarchy "BLOCO_OPERACIONAL:U3|COMPARADOR_ZERO_10:C0"
+Info (12128): Elaborating entity "COFRE" for hierarchy "BLOCO_OPERACIONAL:U3|COFRE:C1"
+Warning (10036): Verilog HDL or VHDL warning at COFRE.vhd(27): object "COUT_SUB" assigned a value but never read
+Info (12128): Elaborating entity "contador_3_bits" for hierarchy "BLOCO_OPERACIONAL:U3|COFRE:C1|contador_3_bits:CONTJ"
+Warning (10541): VHDL Signal Declaration warning at contador_3_bits.vhd(23): used implicit default value for signal "S_MUX_1" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at contador_3_bits.vhd(23): used implicit default value for signal "S_MUX_2" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Info (12128): Elaborating entity "MUX_2x1_1bit" for hierarchy "BLOCO_OPERACIONAL:U3|COFRE:C1|contador_3_bits:CONTJ|MUX_2x1_1bit:mx0"
+Info (12128): Elaborating entity "ffjk" for hierarchy "BLOCO_OPERACIONAL:U3|COFRE:C1|contador_3_bits:CONTJ|ffjk:FF0"
+Info (12128): Elaborating entity "COMP_5" for hierarchy "BLOCO_OPERACIONAL:U3|COFRE:C1|COMP_5:COMP5"
+Info (12128): Elaborating entity "VALOR_M" for hierarchy "BLOCO_OPERACIONAL:U3|COFRE:C1|VALOR_M:CONT_M"
+Info (12128): Elaborating entity "mux_6x1" for hierarchy "BLOCO_OPERACIONAL:U3|COFRE:C1|mux_6x1:MUX_J1"
+Info (12128): Elaborating entity "Demux_1x6" for hierarchy "BLOCO_OPERACIONAL:U3|COFRE:C1|Demux_1x6:DEMUX_000"
+Info (12128): Elaborating entity "COMPARADOR_10_BITS" for hierarchy "BLOCO_OPERACIONAL:U3|COFRE:C1|COMPARADOR_10_BITS:COMPARADOR"
+Info (12128): Elaborating entity "SUBTRATOR_10_BITS" for hierarchy "BLOCO_OPERACIONAL:U3|COFRE:C1|SUBTRATOR_10_BITS:SUBTRATOR"
+Info (12128): Elaborating entity "SUBTRATOR_1_BIT" for hierarchy "BLOCO_OPERACIONAL:U3|COFRE:C1|SUBTRATOR_10_BITS:SUBTRATOR|SUBTRATOR_1_BIT:FF0"
+Info (12128): Elaborating entity "MOEDA_J" for hierarchy "BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J:MOEDA_100"
+Warning (10036): Verilog HDL or VHDL warning at MOEDA_J.vhd(44): object "Cout" assigned a value but never read
+Info (12128): Elaborating entity "M_J_7BITS" for hierarchy "BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J:MOEDA_100|M_J_7BITS:REG00"
+Info (12128): Elaborating entity "mux_2x1_7BITS" for hierarchy "BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J:MOEDA_100|M_J_7BITS:REG00|mux_2x1_7BITS:U0"
+Info (12128): Elaborating entity "REGISTRADOR_7_BITS" for hierarchy "BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J:MOEDA_100|M_J_7BITS:REG00|REGISTRADOR_7_BITS:C0"
+Info (12128): Elaborating entity "SUBTRATOR_7_BITS" for hierarchy "BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J:MOEDA_100|SUBTRATOR_7_BITS:SUB0"
+Info (12128): Elaborating entity "COMPARADOR_ZERO_7" for hierarchy "BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J:MOEDA_100|COMPARADOR_ZERO_7:COMP_Z1"
+Info (12128): Elaborating entity "contador_up_dw_7_bits" for hierarchy "BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J:MOEDA_100|contador_up_dw_7_bits:CONT_M"
+Error (12002): Port "EA" does not exist in macrofunction "REG00" File: D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/MOEDA_J.vhd Line: 51
+Error (12002): Port "OUT_B" does not exist in macrofunction "REG00" File: D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/MOEDA_J.vhd Line: 51
+Error (12002): Port "EA" does not exist in macrofunction "REG00" File: D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/MOEDA_J.vhd Line: 51
+Error (12002): Port "OUT_B" does not exist in macrofunction "REG00" File: D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/MOEDA_J.vhd Line: 51
+Error (12002): Port "EA" does not exist in macrofunction "REG00" File: D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/MOEDA_J.vhd Line: 51
+Error (12002): Port "OUT_B" does not exist in macrofunction "REG00" File: D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/MOEDA_J.vhd Line: 51
+Error (12002): Port "EA" does not exist in macrofunction "REG00" File: D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/MOEDA_J.vhd Line: 51
+Error (12002): Port "OUT_B" does not exist in macrofunction "REG00" File: D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/MOEDA_J.vhd Line: 51
+Error (12002): Port "EA" does not exist in macrofunction "REG00" File: D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/MOEDA_J.vhd Line: 51
+Error (12002): Port "OUT_B" does not exist in macrofunction "REG00" File: D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/MOEDA_J.vhd Line: 51
+Error (12002): Port "EA" does not exist in macrofunction "REG00" File: D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/MOEDA_J.vhd Line: 51
+Error (12002): Port "OUT_B" does not exist in macrofunction "REG00" File: D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/MOEDA_J.vhd Line: 51
+Error (12002): Port "d" does not exist in macrofunction "MUX_J2" File: D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/COFRE.vhd Line: 154
+Error (12002): Port "d" does not exist in macrofunction "MUX_J1" File: D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/COFRE.vhd Line: 153
+Error (12002): Port "Clock" does not exist in macrofunction "C1" File: D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/BLOCO_OPERACIONAL.vhd Line: 59
+Warning (12241): 4 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 15 errors, 9 warnings
+    Error: Peak virtual memory: 4623 megabytes
+    Error: Processing ended: Sat Nov 25 18:48:38 2023
+    Error: Elapsed time: 00:00:01
+    Error: Total CPU time (on all processors): 00:00:01
 
 

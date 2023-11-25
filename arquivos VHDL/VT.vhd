@@ -21,7 +21,7 @@ COMPONENT REGISTRADOR_10_BITS is
          	S : out STD_LOGIC_VECTOR(9 downto 0));
 end COMPONENT;
 
-SIGNAL MUX00:std_logic_vector(9 downto 0);
+SIGNAL MUX_sig:std_logic_vector(9 downto 0);
 SIGNAL ENTRADA_INT:std_logic_vector(9 downto 0); ---SINAIS INTERNOS NA ENTRADA DO MUX
 SIGNAL SAIDA_INT:std_logic_vector(9 downto 0); ---SINAIS INTERNOS NA SAIDA DO REGISTRADOR
 
@@ -29,9 +29,9 @@ begin
 
 -------------------------------------------------------------------------------------------------------
 
-U0: mux_2x1_10BITS PORT MAP (ENTRADA_INT,D,LOAD_VT,MUX00);
+U000: mux_2x1_10BITS PORT MAP (ENTRADA_INT,D,LOAD_VT,MUX_sig);
 -------------------------------------------------------------------------------------------------------
-C0: REGISTRADOR_10_BITS PORT MAP (CLK,'1','1',MUX00,SAIDA_INT);
+C000: REGISTRADOR_10_BITS PORT MAP (CLK,'1','1',MUX_sig,SAIDA_INT);
 
 ENTRADA_INT <= SAIDA_INT;
 VT 			<= SAIDA_INT;	 

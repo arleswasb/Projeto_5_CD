@@ -17,6 +17,10 @@ signal 	INTER_AUX0,INTER_AUX4A,INTER_AUX4B  :  std_logic; ---SINAIS INTERMEDIARU
 begin
 
 --------------------------------------------------------------------
+A<=J(2);
+B<=J(1);
+C<=J(0);
+
 INTER_AUX0 <= B AND C;
 AUX0 <= A OR INTER_AUX0;
 

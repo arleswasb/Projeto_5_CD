@@ -38,7 +38,7 @@ architecture CKT of BLOCO_OPERACIONAL is
 		port (Clock, load_M, setup, standby, teste, troco: in std_logic;
 				VT: in std_logic_vector(9 downto 0);
 				LOAD_VT, F: out std_logic;
-				i, c: out std_logic_vector(6 downto 0);
+				i, c: out std_logic_vector(5 downto 0);
 				D: out std_logic_vector(9 downto 0));
 	end component;
 	
@@ -48,7 +48,7 @@ begin
    S0: SINAL_ESTADO port map(S, setup, standby, teste, troco);
 	
 	loadM <= F_signal and TT_signal;
-	M0: mux_2x1_10BITS port map(D, V, standby, saida);
+	M000: mux_2x1_10BITS port map(D, V, standby, saida);
 	
 	loadVT <= standby and LOAD_VT;
 	

@@ -21,20 +21,22 @@ COMPONENT REGISTRADOR_7_BITS is
          	S : out STD_LOGIC_VECTOR(6 downto 0));
 end COMPONENT;
 
-SIGNAL MUX00,MUX01:std_logic_vector(6 downto 0);
-SIGNAL SAIDA_INT:std_logic_vector(6 downto 0);
+SIGNAL S0_MUX,S1_MUX:std_logic_vector(6 downto 0);
+SIGNAL ENTRADA_INT,SAIDA_INT,SAIDA_REG:std_logic_vector(6 downto 0);
 SIGNAL CEM:std_logic_vector(6 downto 0); --- VALOR CONSTARANTE 100 NA ENTRADA DO MUX2X1
  
 
 
 begin
 
-M <= SAIDA_INT;
-CEM <= '1'&'1'&'0'&'0'&'1'&'0'&'0';   
---CEM <= ('1100100');	 
-U0: mux_2x1_7BITS PORT MAP (SAIDA_INT,SUBT,LOAD_M,MUX00);
-U1: mux_2x1_7BITS PORT MAP (MUX00,CEM,SET_M,MUX01);
-C0: REGISTRADOR_7_BITS PORT MAP (CLK,'1','1',MUX01,SAIDA_INT);
+M <= SAIDA_REG;
+ENTRADA_INT <= SAIDA_REG;
+
+--CEM <= '1'&'1'&'0'&'0'&'1'&'0'&'0';   
+CEM <= "1100100";	 
+U0: mux_2x1_7BITS PORT MAP (ENTRADA_INT,SUBT,LOAD_M,S0_MUX);
+U1: mux_2x1_7BITS PORT MAP (S0_MUX,CEM,SET_M,S1_MUX);
+C0: REGISTRADOR_7_BITS PORT MAP (CLK,'1','1',S1_MUX,SAIDA_REG);
 	 
 	 
 end ckt;

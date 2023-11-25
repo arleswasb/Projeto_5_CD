@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone II"
 set_global_assignment -name DEVICE EP2C35F672C6
-set_global_assignment -name TOP_LEVEL_ENTITY M_J_7BITS
+set_global_assignment -name TOP_LEVEL_ENTITY MAQUINA_DE_TROCO
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "17:16:06  NOVEMBER 24, 2023"
 set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
@@ -52,7 +52,6 @@ set_global_assignment -name VHDL_FILE "arquivos VHDL/registrador_2_bits.vhd"
 set_global_assignment -name VHDL_FILE "arquivos VHDL/Mux_6x1.vhd"
 set_global_assignment -name VHDL_FILE "arquivos VHDL/mux_2x1_7BITS.vhd"
 set_global_assignment -name VHDL_FILE "arquivos VHDL/MUX_2x1_1bit.vhd"
-set_global_assignment -name VHDL_FILE "arquivos VHDL/MUX_1x2.vhd"
 set_global_assignment -name VHDL_FILE "arquivos VHDL/MOEDA_J.vhd"
 set_global_assignment -name VHDL_FILE "arquivos VHDL/M_J_7BITS.vhd"
 set_global_assignment -name VHDL_FILE "arquivos VHDL/ffjk.vhd"
@@ -67,9 +66,6 @@ set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name DEVICE_FILTER_PIN_COUNT 672
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name VHDL_FILE "arquivos VHDL/contador_3_bits.vhd"
 set_global_assignment -name VHDL_FILE "arquivos VHDL/VALOR_M.vhd"
 set_global_assignment -name VHDL_FILE "arquivos VHDL/COMP_5.vhd"
@@ -77,5 +73,14 @@ set_global_assignment -name VHDL_FILE "arquivos VHDL/REG_ESTADOS_2.vhd"
 set_global_assignment -name VHDL_FILE "arquivos VHDL/SINAL_ESTADO.vhd"
 set_global_assignment -name VHDL_FILE "arquivos VHDL/VT.vhd"
 set_global_assignment -name VHDL_FILE "arquivos VHDL/contador_7_bits.vhd"
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name VHDL_FILE "arquivos VHDL/BLOCO_DE_CONTROLE.vhd"
+set_global_assignment -name VHDL_FILE "arquivos VHDL/BLOCO_OPERACIONAL.vhd"
+set_global_assignment -name VHDL_FILE "arquivos VHDL/COFRE.vhd"
+set_global_assignment -name VHDL_FILE "arquivos VHDL/COMPARADOR_10_BITS.vhd"
+set_global_assignment -name VHDL_FILE "arquivos VHDL/MAQUINA_DE_TROCO.vhd"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VHDL_FILE "arquivos VHDL/ck_div.vhd"
+set_global_assignment -name VHDL_FILE "arquivos VHDL/mux_2x1_10BITS.vhd"
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

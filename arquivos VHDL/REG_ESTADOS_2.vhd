@@ -16,14 +16,14 @@ COMPONENT ffd is
                        q : out std_logic);
 end COMPONENT;
 
-SIGNAL COMUM:std_logic; ---LIGA O CLEAR DO FFD0 AO PRESET DO FFD1
+SIGNAL COMUM1,comum2:std_logic; ---LIGA O CLEAR DO FFD0 AO PRESET DO FFD1
 SIGNAL FDD0Q,FDD1Q:std_logic; ---LIGA O CLEAR DO FFD0 AO PRESET DO FFD1
 
 begin
    
-U0: FFD PORT MAP (CLK, comum,comum,N(0),FDD0Q);
+U0: FFD PORT MAP (CLK, comum1,comum2,N(0),FDD0Q);
 
-U1: FFD PORT MAP (CLK, comum,comum,N(1),FDD1Q);
+U1: FFD PORT MAP (CLK, comum1,comum2,N(1),FDD1Q);
 
 S(1) <= FDD1Q;
 S(0) <= FDD0Q;

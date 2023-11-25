@@ -26,8 +26,8 @@ end component;
 
 ----------------------------------------------------------------------------------------
 component contador_up_dw_7_bits is
-   Port ( up, dw,clr,ck : in STD_LOGIC;
-         	S: out std_logic_vector(6 downto 0));
+   Port ( up, dw,clr,ck	: in STD_LOGIC;
+							S	: out std_logic_vector(6 downto 0));
 end component;
 
 ----------------------------------------------------------------------------------------
@@ -48,7 +48,7 @@ begin
 COMP_ZERO1_IN <= CONT_M_OUT;--- SINAL INTERNO NA  SAIDA DO CONTADOR M
 COMP_ZERO2_IN <= CONT_M_OUT;--- SINAL INTERNO NA  SAIDA DO CONTADOR M
 --------------------------------------------------------------------------------------------------------
-REG0: M_J_7BITS PORT MAP (SUBTRACT_OUT,CLK,LOAD_M,SET_M,SUBTRACT_IN);
+REG00: M_J_7BITS PORT MAP (SUBTRACT_OUT,CLK,LOAD_M,SET_M,SUBTRACT_IN);
 --------------------------------------------------------------------------------------------------------
 SUB0: SUBTRATOR_7_BITS PORT MAP (SUBTRACT_IN,CONT_M_OUT,'0',SUBTRACT_OUT,Cout);
 --------------------------------------------------------------------------------------------------------
@@ -64,12 +64,6 @@ CONT_Z_J <= COMP_ZERO2_OUT;
 
 --- OBS: UP_CONT_M É A ENTRADA PARA CONTAR POSITIVAMENTE NO CONTADOR M
 ---------------------------------------------------------------------------------------------------------
-
-
-
-
-
-   
 
 	
 	
