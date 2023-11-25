@@ -10,11 +10,12 @@ end MOEDA_J_100;
 
 architecture CKT of MOEDA_J_100 is
 
-component M_J_7BITS is -- 
-   Port ( EA: in std_logic_vector(6 downto 0);
+COMPONENT M_J_7BITS is -- 
+   Port ( SUBT: in std_logic_vector(6 downto 0);
 			CLK,LOAD_M,SET_M:  in std_logic;
-         OUT_B: out std_logic_vector(6 downto 0));
-end component;
+         M: out std_logic_vector(6 downto 0));
+end COMPONENT;
+
 ----------------------------------------------------------------------------------------
 component SUBTRATOR_7_BITS is
    Port (A, B :  in std_logic_vector(6 downto 0); -- números de 7 bits a serem subtraídos

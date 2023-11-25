@@ -3,7 +3,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity contador_7_bits is ---
    Port ( up,clr,ck : in STD_LOGIC;
-         	S: out std_logic_vector(2 downto 0));
+         	S: out std_logic_vector(6 downto 0));
 end contador_7_bits;
 
 architecture ckt of contador_7_bits is

@@ -34,13 +34,13 @@ architecture CKT of BLOCO_OPERACIONAL is
 				setup, standby, teste, troco : out std_logic);
 	end component;
 	
-	component COFRE is
-		port (Clock, load_M, setup, standby, teste, troco: in std_logic;
-				VT: in std_logic_vector(9 downto 0);
-				LOAD_VT, F: out std_logic;
-				i, c: out std_logic_vector(5 downto 0);
-				D: out std_logic_vector(9 downto 0));
-	end component;
+	COMPONENT COFRE is
+	port (Clk, load_M, setup, standby, teste, troco: in std_logic; --ENTRADAS DO COFRE
+				VT: in std_logic_vector(9 downto 0); -- ENTRADA EXTERNAA (VALOR DE TESTE)
+				LOAD_VT,F: out std_logic; -- SAIDA INTERNA AO COFRE
+				I,C: out std_logic_vector(5 downto 0); --SAIDA EXTERNA PARA INDICAR A SITUAÇÃO DOS COFRES(CHEIO OU VAZIO)
+				D: out std_logic_vector(9 downto 0)); -- SAIDA DE RETROALIMENTAÇÃO PARACOMPARAR COM V(VALOR DE ENTRADA)
+	end COMPONENT;
 	
 	signal setup, standby, teste, troco, loadM, LOAD_VT, loadVT, TT_signal, F_signal: std_logic;
 	signal VT_signal, D, saida: std_logic_vector(9 downto 0);

@@ -52,7 +52,6 @@ set_global_assignment -name VHDL_FILE "arquivos VHDL/registrador_2_bits.vhd"
 set_global_assignment -name VHDL_FILE "arquivos VHDL/Mux_6x1.vhd"
 set_global_assignment -name VHDL_FILE "arquivos VHDL/mux_2x1_7BITS.vhd"
 set_global_assignment -name VHDL_FILE "arquivos VHDL/MUX_2x1_1bit.vhd"
-set_global_assignment -name VHDL_FILE "arquivos VHDL/MOEDA_J.vhd"
 set_global_assignment -name VHDL_FILE "arquivos VHDL/M_J_7BITS.vhd"
 set_global_assignment -name VHDL_FILE "arquivos VHDL/ffjk.vhd"
 set_global_assignment -name VHDL_FILE "arquivos VHDL/FFD.vhd"
@@ -83,4 +82,10 @@ set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_RO
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name VHDL_FILE "arquivos VHDL/ck_div.vhd"
 set_global_assignment -name VHDL_FILE "arquivos VHDL/mux_2x1_10BITS.vhd"
+set_global_assignment -name VHDL_FILE "arquivos VHDL/MOEDA_J_100.vhd"
+set_global_assignment -name VHDL_FILE "arquivos VHDL/MOEDA_J_50.vhd"
+set_global_assignment -name VHDL_FILE "arquivos VHDL/MOEDA_J_10.vhd"
+set_global_assignment -name VHDL_FILE "arquivos VHDL/MOEDA_J_5.vhd"
+set_global_assignment -name VHDL_FILE "arquivos VHDL/MOEDA_J_25.vhd"
+set_global_assignment -name VHDL_FILE "arquivos VHDL/MOEDA_J_1.vhd"
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

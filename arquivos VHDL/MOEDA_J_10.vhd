@@ -1,20 +1,21 @@
 library ieee;
 use ieee.std_logic_1164.all;
 
-entity MOEDA_J_100 is
+entity MOEDA_J_10 is
    port (cLk,LOAD_M, SET_M,UP_CONT_M, TROCO_J,clr_CONT_M : in  std_logic;
 		
                      C_J, CONT_Z_J, I_J 						: out std_logic);
 							
-end MOEDA_J_100;
+end MOEDA_J_10;
 
-architecture CKT of MOEDA_J_100 is
+architecture CKT of MOEDA_J_10 is
 
-component M_J_7BITS is -- 
-   Port ( EA: in std_logic_vector(6 downto 0);
+COMPONENT M_J_7BITS is -- 
+   Port ( SUBT: in std_logic_vector(6 downto 0);
 			CLK,LOAD_M,SET_M:  in std_logic;
-         OUT_B: out std_logic_vector(6 downto 0));
-end component;
+         M: out std_logic_vector(6 downto 0));
+end COMPONENT;
+
 ----------------------------------------------------------------------------------------
 component SUBTRATOR_7_BITS is
    Port (A, B :  in std_logic_vector(6 downto 0); -- números de 7 bits a serem subtraídos
