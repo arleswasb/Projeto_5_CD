@@ -35,10 +35,10 @@ architecture CKT of BLOCO_OPERACIONAL is
 	end component;
 	
 	component COFRE is
-		port (Clock, loadM, setup, standby, teste, troco: in std_logic;
+		port (Clock, load_M, setup, standby, teste, troco: in std_logic;
 				VT: in std_logic_vector(9 downto 0);
 				LOAD_VT, F: out std_logic;
-				i, c: out std_logic_vector(5 downto 0);
+				i, c: out std_logic_vector(6 downto 0);
 				D: out std_logic_vector(9 downto 0));
 	end component;
 	
