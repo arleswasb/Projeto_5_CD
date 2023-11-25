@@ -1,2 +1,8 @@
 *.bak
 "arquivos VHDL"/*.bak
+*.cdb
+*.hdb
+*.flock
+db/*.cdb
+db/*.hdb
+db/*.flock
