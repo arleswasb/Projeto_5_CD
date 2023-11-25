@@ -6,7 +6,7 @@ entity COFRE is
   port (Clk, load_M, setup, standby, teste, troco: in std_logic; --ENTRADAS DO COFRE
 				VT: in std_logic_vector(9 downto 0); -- ENTRADA EXTERNAA (VALOR DE TESTE)
 				LOAD_VT, F: out std_logic; -- SAIDA INTERNA AO COFRE
-				i, c: out std_logic_vector(6 downto 0); --SAIDA EXTERNA PARA INDICAR A SITUAÇÃO DOS COFRES(CHEIO OU VAZIO)
+				I,C: out std_logic_vector(5 downto 0); --SAIDA EXTERNA PARA INDICAR A SITUAÇÃO DOS COFRES(CHEIO OU VAZIO)
 				D: out std_logic_vector(9 downto 0)); -- SAIDA DE RETROALIMENTAÇÃO PARACOMPARAR COM V(VALOR DE ENTRADA)
 end entity COFRE;
 
@@ -18,13 +18,13 @@ SIGNAL J_UP																		:	STD_LOGIC; --(J++) É O SINAL GERADO NA SAIDA DO 
 SIGNAL C_OUT																	:	STD_LOGIC; --C_OUT É O SINAL GERADO NA SAIDA DO BLOCO DE MUX 6X1 DO J++
 SIGNAL Z_OUT																	:	STD_LOGIC; --Z_OUT É O SINAL GERADO NA SAIDA DO BLOCO DE MUX 6X1 DO J++
 SIGNAL C_EXTERNO, I_EXTERNO												:  std_logic_vector(6 downto 0);
-SIGNAL C9,C8,C7,C6,C5,C4,C3,C2,C1,C0									:	STD_LOGIC; --C(X) É O SINAL GERADO NA SAIDA DAS LOGICAS DAS MOEDAS USADO NO MUX_000 
-SIGNAL Z9,Z8,Z7,Z6,Z5,Z4,Z3,Z2,Z1,Z0									:	STD_LOGIC; --Z(X) É O SINAL GERADO NA SAIDA DAS LOGICAS DAS MOEDAS USADO NO MUX_001
-SIGNAL I9,I8,I7,I6,I5,I4,I3,I2,I1,I0									:	STD_LOGIC; --Z(X) É O SINAL GERADO NA SAIDA DAS LOGICAS DAS MOEDAS USADO NO MUX_001
+SIGNAL C5,C4,C3,C2,C1,C0													:	STD_LOGIC; --C(X) É O SINAL GERADO NA SAIDA DAS LOGICAS DAS MOEDAS USADO NO MUX_000 
+SIGNAL Z5,Z4,Z3,Z2,Z1,Z0													:	STD_LOGIC; --Z(X) É O SINAL GERADO NA SAIDA DAS LOGICAS DAS MOEDAS USADO NO MUX_001
+SIGNAL I5,I4,I3,I2,I1,I0													:	STD_LOGIC; --Z(X) É O SINAL GERADO NA SAIDA DAS LOGICAS DAS MOEDAS USADO NO MUX_001
 SIGNAL TROCO6,TROCO5,TROCO4,TROCO3,TROCO2,TROCO1,TROCO0			:	STD_LOGIC; --Z(X) É O SINAL GERADO NA SAIDA DAS LOGICAS DAS MOEDAS USADO NO MUX_001
 SIGNAL CONT_M6,CONT_M5,CONT_M4,CONT_M3,CONT_M2,CONT_M1,CONT_M0	:	STD_LOGIC; --Z(X) É O SINAL GERADO NA SAIDA DAS LOGICAS DAS MOEDAS USADO NO MUX_001
 SIGNAL MAIOR_IGUAL	:	STD_LOGIC; --É O SINAL GERADO NA SAIDA DO COMPARADOR DE 10 BITS
-
+SIGNAL COUT_SUB																:	STD_LOGIC; -- SINAL DE COUT NO SUBTRATOR
 
 -------------------------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------------------
@@ -88,7 +88,7 @@ SIGNAL mux3_out 					:  std_logic; --SAIDA DO VALOR do mux de 2 canais
 COMPONENT Demux_1x6 is -- entrada de valor teste E CONT_M  para ENTRADA por moeda
    Port (ENT: in std_logic;
 			sel:  in std_logic_vector(2 downto 0);
-        S6,S5,S4,S3,S2,S1,S0: out std_logic);
+         S5,S4,S3,S2,S1,S0: out std_logic);
 end COMPONENT;
 
 -- COMPONENTES DO VALOR DE CONT_M(X) DE 0 A 5
@@ -104,6 +104,28 @@ COMPONENT MOEDA_J is
 							
 end COMPONENT;
 ---------------------------------------------------------------------------------------------------------------------------------------------
+-- COMPONENTES DO LOAD VT
+
+COMPONENT COMPARADOR_10_BITS is
+   port (A,B : in  std_logic_VECTOR(9 downto 0);
+         QS : out std_logic); -- MAIOR OU IGUAL SERÁ O SINAL DE SAIDA
+end COMPONENT;
+
+SIGNAL AUX_5 					:  std_logic; -- SINAL AUXILIAR RETIRADO NA SAIDA DO COMPARADOR 10 BITS
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+-- COMPONENTES DO COMPARADOR D
+
+COMPONENT SUBTRATOR_10_BITS is
+   Port (A, B :  in std_logic_vector(9 downto 0); -- números de 10 bits a serem subtraídos
+			 Cin : in std_logic; -- bit de carry in
+			 S : out std_logic_vector(9 downto 0); -- resultado da subtração de 10 bits
+			 Cout : out std_logic -- bit de carry out;
+			 );
+end COMPONENT;
+
+
+
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
 begin
@@ -144,7 +166,40 @@ DEMUX_000: Demux_1x6 PORT MAP (TROCO,J,TROCO0,TROCO1,TROCO2,TROCO3,TROCO4,TROCO5
 DEMUX_001: Demux_1x6 PORT MAP (AUX_4,J,CONT_M0,CONT_M1,CONT_M2,CONT_M3,CONT_M4,CONT_M5);
 AUX_4 <= MAIOR_IGUAL AND (NOT C_OUT);
 ---------------------------------------------------------------------------------------------------------------------------------------------
+-- CALCULO DE LOAD VT
 
+COMPARADOR: COMPARADOR_10_BITS PORT MAP (VT,VAL_M,AUX_4);
+MAIOR_IGUAL <= AUX_4;
+LOAD_VT <= (NOT C_OUT) AND AUX_4; 
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+-- CALCULO DO D (PARA RETROALIMENTAR O VALOR DE VT)
+
+SUBTRATOR: SUBTRATOR_10_BITS PORT MAP (VT,VAL_M, '0', D, Cout_SUB);
+
+-- SAIDA I E C
+
+I(5) <= I5;
+I(4) <= I4;
+I(3) <= I3;
+I(2) <= I2;
+I(1) <= I1;
+I(0) <= I0;
+ 
+C(5) <= C5;
+C(4) <= C4;
+C(3) <= C3;
+C(2) <= C2;
+C(1) <= C1;
+C(0) <= C0;
+
+
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------
 -- CONTADOR DE MOEDAS
 
 
