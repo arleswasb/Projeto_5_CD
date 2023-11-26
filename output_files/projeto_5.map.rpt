@@ -1,5 +1,5 @@
 Analysis & Synthesis report for PROJETO_5
-Sat Nov 25 20:26:37 2023
+Sun Nov 26 08:19:08 2023
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -16,35 +16,36 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   8. Registers Removed During Synthesis
   9. Removed Registers Triggering Further Register Optimizations
  10. General Register Statistics
- 11. Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_1:MOEDA_1|SUBTRATOR_7_BITS:SUB0"
- 12. Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_5:MOEDA_5|SUBTRATOR_7_BITS:SUB0"
- 13. Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_10:MOEDA_15|SUBTRATOR_7_BITS:SUB0"
- 14. Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_25:MOEDA_25|SUBTRATOR_7_BITS:SUB0"
- 15. Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_50:MOEDA_50|SUBTRATOR_7_BITS:SUB0"
- 16. Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_100:MOEDA_100|contador_up_dw_7_bits:CONT_M|ffjk:FF6"
- 17. Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_100:MOEDA_100|contador_up_dw_7_bits:CONT_M|ffjk:FF5"
- 18. Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_100:MOEDA_100|contador_up_dw_7_bits:CONT_M|ffjk:FF4"
- 19. Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_100:MOEDA_100|contador_up_dw_7_bits:CONT_M|ffjk:FF3"
- 20. Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_100:MOEDA_100|contador_up_dw_7_bits:CONT_M|ffjk:FF2"
- 21. Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_100:MOEDA_100|contador_up_dw_7_bits:CONT_M|ffjk:FF1"
- 22. Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_100:MOEDA_100|contador_up_dw_7_bits:CONT_M|ffjk:FF0"
- 23. Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_100:MOEDA_100|SUBTRATOR_7_BITS:SUB0|SUBTRATOR_1_BIT:FF0"
- 24. Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_100:MOEDA_100|SUBTRATOR_7_BITS:SUB0"
- 25. Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_100:MOEDA_100|M_J_7BITS:REG00|REGISTRADOR_7_BITS:C0"
- 26. Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_100:MOEDA_100|M_J_7BITS:REG00|mux_2x1_7BITS:U1"
- 27. Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|SUBTRATOR_10_BITS:SUBTRATOR|SUBTRATOR_1_BIT:FF0"
- 28. Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|SUBTRATOR_10_BITS:SUBTRATOR"
- 29. Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|contador_3_bits:CONTJ|ffjk:FF2"
- 30. Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|contador_3_bits:CONTJ|MUX_2x1_1bit:mx2"
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_1:MOEDA_1|SUBTRATOR_7_BITS:SUB0"
+ 13. Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_5:MOEDA_5|SUBTRATOR_7_BITS:SUB0"
+ 14. Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_10:MOEDA_15|SUBTRATOR_7_BITS:SUB0"
+ 15. Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_25:MOEDA_25|SUBTRATOR_7_BITS:SUB0"
+ 16. Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_50:MOEDA_50|SUBTRATOR_7_BITS:SUB0"
+ 17. Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_100:MOEDA_100|contador_up_dw_7_bits:CONT_M|ffjk:FF6"
+ 18. Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_100:MOEDA_100|contador_up_dw_7_bits:CONT_M|ffjk:FF5"
+ 19. Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_100:MOEDA_100|contador_up_dw_7_bits:CONT_M|ffjk:FF4"
+ 20. Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_100:MOEDA_100|contador_up_dw_7_bits:CONT_M|ffjk:FF3"
+ 21. Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_100:MOEDA_100|contador_up_dw_7_bits:CONT_M|ffjk:FF2"
+ 22. Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_100:MOEDA_100|contador_up_dw_7_bits:CONT_M|ffjk:FF1"
+ 23. Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_100:MOEDA_100|contador_up_dw_7_bits:CONT_M|ffjk:FF0"
+ 24. Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_100:MOEDA_100|SUBTRATOR_7_BITS:SUB0|SUBTRATOR_1_BIT:FF0"
+ 25. Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_100:MOEDA_100|SUBTRATOR_7_BITS:SUB0"
+ 26. Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_100:MOEDA_100|M_J_7BITS:REG00|REGISTRADOR_7_BITS:C0"
+ 27. Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_100:MOEDA_100|M_J_7BITS:REG00|mux_2x1_7BITS:U1"
+ 28. Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|SUBTRATOR_10_BITS:SUBTRATOR|SUBTRATOR_1_BIT:FF0"
+ 29. Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|SUBTRATOR_10_BITS:SUBTRATOR"
+ 30. Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|contador_3_bits:CONTJ|ffjk:FF2"
  31. Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|contador_3_bits:CONTJ|ffjk:FF1"
- 32. Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|contador_3_bits:CONTJ|MUX_2x1_1bit:mx1"
- 33. Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|contador_3_bits:CONTJ|ffjk:FF0"
- 34. Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|VT:V0|REGISTRADOR_10_BITS:C000"
- 35. Port Connectivity Checks: "BLOCO_OPERACIONAL:U3"
- 36. Port Connectivity Checks: "bnt_sincrono:U0|ffd:FFD2"
- 37. Port Connectivity Checks: "bnt_sincrono:U0|ffd:FFD1"
- 38. Elapsed Time Per Partition
- 39. Analysis & Synthesis Messages
+ 32. Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|contador_3_bits:CONTJ|ffjk:FF0"
+ 33. Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|VT:V0|REGISTRADOR_10_BITS:C000"
+ 34. Port Connectivity Checks: "BLOCO_DE_CONTROLE:U1|bnt_sincrono:BC2|ffd:FFD2"
+ 35. Port Connectivity Checks: "BLOCO_DE_CONTROLE:U1|bnt_sincrono:BC2|ffd:FFD1"
+ 36. Port Connectivity Checks: "BLOCO_DE_CONTROLE:U1|MAQUINA_ESTADOS:BC0|ffd:U1"
+ 37. Port Connectivity Checks: "BLOCO_DE_CONTROLE:U1|MAQUINA_ESTADOS:BC0|ffd:U0"
+ 38. Port Connectivity Checks: "BLOCO_DE_CONTROLE:U1"
+ 39. Elapsed Time Per Partition
+ 40. Analysis & Synthesis Messages
 
 
 
@@ -70,16 +71,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Nov 25 20:26:37 2023           ;
+; Analysis & Synthesis Status        ; Successful - Sun Nov 26 08:19:08 2023           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; PROJETO_5                                       ;
 ; Top-level Entity Name              ; MAQUINA_DE_TROCO                                ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 0                                               ;
-;     Total combinational functions  ; 0                                               ;
-;     Dedicated logic registers      ; 0                                               ;
-; Total registers                    ; 0                                               ;
-; Total pins                         ; 19                                              ;
+; Total logic elements               ; 25                                              ;
+;     Total combinational functions  ; 25                                              ;
+;     Dedicated logic registers      ; 15                                              ;
+; Total registers                    ; 15                                              ;
+; Total pins                         ; 25                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -207,7 +208,6 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; arquivos VHDL/contador_3_bits.vhd       ; yes             ; User VHDL File  ; D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/contador_3_bits.vhd       ;         ;
 ; arquivos VHDL/VALOR_M.vhd               ; yes             ; User VHDL File  ; D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/VALOR_M.vhd               ;         ;
 ; arquivos VHDL/COMP_5.vhd                ; yes             ; User VHDL File  ; D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/COMP_5.vhd                ;         ;
-; arquivos VHDL/REG_ESTADOS_2.vhd         ; yes             ; User VHDL File  ; D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/REG_ESTADOS_2.vhd         ;         ;
 ; arquivos VHDL/SINAL_ESTADO.vhd          ; yes             ; User VHDL File  ; D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/SINAL_ESTADO.vhd          ;         ;
 ; arquivos VHDL/VT.vhd                    ; yes             ; User VHDL File  ; D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/VT.vhd                    ;         ;
 ; arquivos VHDL/BLOCO_DE_CONTROLE.vhd     ; yes             ; User VHDL File  ; D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/BLOCO_DE_CONTROLE.vhd     ;         ;
@@ -222,6 +222,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; arquivos VHDL/MOEDA_J_5.vhd             ; yes             ; User VHDL File  ; D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/MOEDA_J_5.vhd             ;         ;
 ; arquivos VHDL/MOEDA_J_25.vhd            ; yes             ; User VHDL File  ; D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/MOEDA_J_25.vhd            ;         ;
 ; arquivos VHDL/MOEDA_J_1.vhd             ; yes             ; User VHDL File  ; D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/MOEDA_J_1.vhd             ;         ;
+; arquivos VHDL/MAQUINA_ESTADOS.vhd       ; yes             ; User VHDL File  ; D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/MAQUINA_ESTADOS.vhd       ;         ;
+; arquivos VHDL/CIRCUITO_COMB.vhd         ; yes             ; User VHDL File  ; D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/CIRCUITO_COMB.vhd         ;         ;
 +-----------------------------------------+-----------------+-----------------+-------------------------------------------------------------------+---------+
 
 
@@ -230,124 +232,128 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
+; Estimated Total logic elements              ; 25    ;
 ;                                             ;       ;
-; Total combinational functions               ; 0     ;
+; Total combinational functions               ; 25    ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 0     ;
-;     -- 3 input functions                    ; 0     ;
-;     -- <=2 input functions                  ; 0     ;
+;     -- 4 input functions                    ; 13    ;
+;     -- 3 input functions                    ; 6     ;
+;     -- <=2 input functions                  ; 6     ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 0     ;
+;     -- normal mode                          ; 25    ;
 ;     -- arithmetic mode                      ; 0     ;
 ;                                             ;       ;
-; Total registers                             ; 0     ;
-;     -- Dedicated logic registers            ; 0     ;
+; Total registers                             ; 15    ;
+;     -- Dedicated logic registers            ; 15    ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
-; I/O pins                                    ; 19    ;
+; I/O pins                                    ; 25    ;
 ; Embedded Multiplier 9-bit elements          ; 0     ;
+; Maximum fan-out node                        ; CLK   ;
+; Maximum fan-out                             ; 15    ;
+; Total fan-out                               ; 116   ;
+; Average fan-out                             ; 1.78  ;
 +---------------------------------------------+-------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |MAQUINA_DE_TROCO          ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 19   ; 0            ; |MAQUINA_DE_TROCO   ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                 ;
++--------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                 ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                         ; Library Name ;
++--------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------+--------------+
+; |MAQUINA_DE_TROCO                          ; 25 (0)            ; 15 (0)       ; 0           ; 0            ; 0       ; 0         ; 25   ; 0            ; |MAQUINA_DE_TROCO                                                                                           ; work         ;
+;    |BLOCO_OPERACIONAL:U3|                  ; 25 (0)            ; 15 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAQUINA_DE_TROCO|BLOCO_OPERACIONAL:U3                                                                      ; work         ;
+;       |COFRE:C1|                           ; 19 (2)            ; 7 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAQUINA_DE_TROCO|BLOCO_OPERACIONAL:U3|COFRE:C1                                                             ; work         ;
+;          |MOEDA_J_100:MOEDA_100|           ; 13 (0)            ; 7 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAQUINA_DE_TROCO|BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_100:MOEDA_100                                       ; work         ;
+;             |COMPARADOR_ZERO_7:COMP_Z1|    ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAQUINA_DE_TROCO|BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_100:MOEDA_100|COMPARADOR_ZERO_7:COMP_Z1             ; work         ;
+;             |contador_up_dw_7_bits:CONT_M| ; 10 (3)            ; 7 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAQUINA_DE_TROCO|BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_100:MOEDA_100|contador_up_dw_7_bits:CONT_M          ; work         ;
+;                |ffjk:FF0|                  ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAQUINA_DE_TROCO|BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_100:MOEDA_100|contador_up_dw_7_bits:CONT_M|ffjk:FF0 ; work         ;
+;                |ffjk:FF1|                  ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAQUINA_DE_TROCO|BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_100:MOEDA_100|contador_up_dw_7_bits:CONT_M|ffjk:FF1 ; work         ;
+;                |ffjk:FF2|                  ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAQUINA_DE_TROCO|BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_100:MOEDA_100|contador_up_dw_7_bits:CONT_M|ffjk:FF2 ; work         ;
+;                |ffjk:FF3|                  ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAQUINA_DE_TROCO|BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_100:MOEDA_100|contador_up_dw_7_bits:CONT_M|ffjk:FF3 ; work         ;
+;                |ffjk:FF4|                  ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAQUINA_DE_TROCO|BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_100:MOEDA_100|contador_up_dw_7_bits:CONT_M|ffjk:FF4 ; work         ;
+;                |ffjk:FF5|                  ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAQUINA_DE_TROCO|BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_100:MOEDA_100|contador_up_dw_7_bits:CONT_M|ffjk:FF5 ; work         ;
+;                |ffjk:FF6|                  ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAQUINA_DE_TROCO|BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_100:MOEDA_100|contador_up_dw_7_bits:CONT_M|ffjk:FF6 ; work         ;
+;          |SUBTRATOR_10_BITS:SUBTRATOR|     ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAQUINA_DE_TROCO|BLOCO_OPERACIONAL:U3|COFRE:C1|SUBTRATOR_10_BITS:SUBTRATOR                                 ; work         ;
+;             |SUBTRATOR_1_BIT:FF3|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAQUINA_DE_TROCO|BLOCO_OPERACIONAL:U3|COFRE:C1|SUBTRATOR_10_BITS:SUBTRATOR|SUBTRATOR_1_BIT:FF3             ; work         ;
+;             |SUBTRATOR_1_BIT:FF5|          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAQUINA_DE_TROCO|BLOCO_OPERACIONAL:U3|COFRE:C1|SUBTRATOR_10_BITS:SUBTRATOR|SUBTRATOR_1_BIT:FF5             ; work         ;
+;             |SUBTRATOR_1_BIT:FF6|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAQUINA_DE_TROCO|BLOCO_OPERACIONAL:U3|COFRE:C1|SUBTRATOR_10_BITS:SUBTRATOR|SUBTRATOR_1_BIT:FF6             ; work         ;
+;       |VT:V0|                              ; 6 (0)             ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAQUINA_DE_TROCO|BLOCO_OPERACIONAL:U3|VT:V0                                                                ; work         ;
+;          |REGISTRADOR_10_BITS:C000|        ; 6 (0)             ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAQUINA_DE_TROCO|BLOCO_OPERACIONAL:U3|VT:V0|REGISTRADOR_10_BITS:C000                                       ; work         ;
+;             |ffd:FF2|                      ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAQUINA_DE_TROCO|BLOCO_OPERACIONAL:U3|VT:V0|REGISTRADOR_10_BITS:C000|ffd:FF2                               ; work         ;
+;             |ffd:FF3|                      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAQUINA_DE_TROCO|BLOCO_OPERACIONAL:U3|VT:V0|REGISTRADOR_10_BITS:C000|ffd:FF3                               ; work         ;
+;             |ffd:FF4|                      ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAQUINA_DE_TROCO|BLOCO_OPERACIONAL:U3|VT:V0|REGISTRADOR_10_BITS:C000|ffd:FF4                               ; work         ;
+;             |ffd:FF5|                      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAQUINA_DE_TROCO|BLOCO_OPERACIONAL:U3|VT:V0|REGISTRADOR_10_BITS:C000|ffd:FF5                               ; work         ;
+;             |ffd:FF6|                      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAQUINA_DE_TROCO|BLOCO_OPERACIONAL:U3|VT:V0|REGISTRADOR_10_BITS:C000|ffd:FF6                               ; work         ;
+;             |ffd:FF7|                      ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAQUINA_DE_TROCO|BLOCO_OPERACIONAL:U3|VT:V0|REGISTRADOR_10_BITS:C000|ffd:FF7                               ; work         ;
+;             |ffd:FF8|                      ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAQUINA_DE_TROCO|BLOCO_OPERACIONAL:U3|VT:V0|REGISTRADOR_10_BITS:C000|ffd:FF8                               ; work         ;
+;             |ffd:FF9|                      ; 2 (2)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAQUINA_DE_TROCO|BLOCO_OPERACIONAL:U3|VT:V0|REGISTRADOR_10_BITS:C000|ffd:FF9                               ; work         ;
++--------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                                                    ;
-+----------------------------------------------------------------------------------------------+----------------------------------------+
-; Register name                                                                                ; Reason for Removal                     ;
-+----------------------------------------------------------------------------------------------+----------------------------------------+
-; BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_1:MOEDA_1|contador_up_dw_7_bits:CONT_M|ffjk:FF6|qS     ; Stuck at VCC due to stuck port preset  ;
-; BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_1:MOEDA_1|contador_up_dw_7_bits:CONT_M|ffjk:FF5|qS     ; Stuck at VCC due to stuck port preset  ;
-; BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_1:MOEDA_1|contador_up_dw_7_bits:CONT_M|ffjk:FF4|qS     ; Stuck at VCC due to stuck port preset  ;
-; BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_1:MOEDA_1|contador_up_dw_7_bits:CONT_M|ffjk:FF3|qS     ; Stuck at VCC due to stuck port preset  ;
-; BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_1:MOEDA_1|contador_up_dw_7_bits:CONT_M|ffjk:FF2|qS     ; Stuck at VCC due to stuck port preset  ;
-; BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_1:MOEDA_1|contador_up_dw_7_bits:CONT_M|ffjk:FF1|qS     ; Stuck at VCC due to stuck port preset  ;
-; BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_1:MOEDA_1|contador_up_dw_7_bits:CONT_M|ffjk:FF0|qS     ; Stuck at VCC due to stuck port preset  ;
-; BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_5:MOEDA_5|contador_up_dw_7_bits:CONT_M|ffjk:FF6|qS     ; Stuck at VCC due to stuck port preset  ;
-; BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_5:MOEDA_5|contador_up_dw_7_bits:CONT_M|ffjk:FF5|qS     ; Stuck at VCC due to stuck port preset  ;
-; BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_5:MOEDA_5|contador_up_dw_7_bits:CONT_M|ffjk:FF4|qS     ; Stuck at VCC due to stuck port preset  ;
-; BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_5:MOEDA_5|contador_up_dw_7_bits:CONT_M|ffjk:FF3|qS     ; Stuck at VCC due to stuck port preset  ;
-; BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_5:MOEDA_5|contador_up_dw_7_bits:CONT_M|ffjk:FF2|qS     ; Stuck at VCC due to stuck port preset  ;
-; BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_5:MOEDA_5|contador_up_dw_7_bits:CONT_M|ffjk:FF1|qS     ; Stuck at VCC due to stuck port preset  ;
-; BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_5:MOEDA_5|contador_up_dw_7_bits:CONT_M|ffjk:FF0|qS     ; Stuck at VCC due to stuck port preset  ;
-; BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_10:MOEDA_15|contador_up_dw_7_bits:CONT_M|ffjk:FF6|qS   ; Stuck at VCC due to stuck port preset  ;
-; BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_10:MOEDA_15|contador_up_dw_7_bits:CONT_M|ffjk:FF5|qS   ; Stuck at VCC due to stuck port preset  ;
-; BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_10:MOEDA_15|contador_up_dw_7_bits:CONT_M|ffjk:FF4|qS   ; Stuck at VCC due to stuck port preset  ;
-; BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_10:MOEDA_15|contador_up_dw_7_bits:CONT_M|ffjk:FF3|qS   ; Stuck at VCC due to stuck port preset  ;
-; BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_10:MOEDA_15|contador_up_dw_7_bits:CONT_M|ffjk:FF2|qS   ; Stuck at VCC due to stuck port preset  ;
-; BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_10:MOEDA_15|contador_up_dw_7_bits:CONT_M|ffjk:FF1|qS   ; Stuck at VCC due to stuck port preset  ;
-; BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_10:MOEDA_15|contador_up_dw_7_bits:CONT_M|ffjk:FF0|qS   ; Stuck at VCC due to stuck port preset  ;
-; BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_25:MOEDA_25|contador_up_dw_7_bits:CONT_M|ffjk:FF6|qS   ; Stuck at VCC due to stuck port preset  ;
-; BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_25:MOEDA_25|contador_up_dw_7_bits:CONT_M|ffjk:FF5|qS   ; Stuck at VCC due to stuck port preset  ;
-; BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_25:MOEDA_25|contador_up_dw_7_bits:CONT_M|ffjk:FF4|qS   ; Stuck at VCC due to stuck port preset  ;
-; BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_25:MOEDA_25|contador_up_dw_7_bits:CONT_M|ffjk:FF3|qS   ; Stuck at VCC due to stuck port preset  ;
-; BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_25:MOEDA_25|contador_up_dw_7_bits:CONT_M|ffjk:FF2|qS   ; Stuck at VCC due to stuck port preset  ;
-; BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_25:MOEDA_25|contador_up_dw_7_bits:CONT_M|ffjk:FF1|qS   ; Stuck at VCC due to stuck port preset  ;
-; BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_25:MOEDA_25|contador_up_dw_7_bits:CONT_M|ffjk:FF0|qS   ; Stuck at VCC due to stuck port preset  ;
-; BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_50:MOEDA_50|contador_up_dw_7_bits:CONT_M|ffjk:FF6|qS   ; Stuck at VCC due to stuck port preset  ;
-; BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_50:MOEDA_50|contador_up_dw_7_bits:CONT_M|ffjk:FF5|qS   ; Stuck at VCC due to stuck port preset  ;
-; BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_50:MOEDA_50|contador_up_dw_7_bits:CONT_M|ffjk:FF4|qS   ; Stuck at VCC due to stuck port preset  ;
-; BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_50:MOEDA_50|contador_up_dw_7_bits:CONT_M|ffjk:FF3|qS   ; Stuck at VCC due to stuck port preset  ;
-; BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_50:MOEDA_50|contador_up_dw_7_bits:CONT_M|ffjk:FF2|qS   ; Stuck at VCC due to stuck port preset  ;
-; BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_50:MOEDA_50|contador_up_dw_7_bits:CONT_M|ffjk:FF1|qS   ; Stuck at VCC due to stuck port preset  ;
-; BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_50:MOEDA_50|contador_up_dw_7_bits:CONT_M|ffjk:FF0|qS   ; Stuck at VCC due to stuck port preset  ;
-; BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_100:MOEDA_100|contador_up_dw_7_bits:CONT_M|ffjk:FF6|qS ; Stuck at VCC due to stuck port preset  ;
-; BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_100:MOEDA_100|contador_up_dw_7_bits:CONT_M|ffjk:FF5|qS ; Stuck at VCC due to stuck port preset  ;
-; BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_100:MOEDA_100|contador_up_dw_7_bits:CONT_M|ffjk:FF4|qS ; Stuck at VCC due to stuck port preset  ;
-; BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_100:MOEDA_100|contador_up_dw_7_bits:CONT_M|ffjk:FF3|qS ; Stuck at VCC due to stuck port preset  ;
-; BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_100:MOEDA_100|contador_up_dw_7_bits:CONT_M|ffjk:FF2|qS ; Stuck at VCC due to stuck port preset  ;
-; BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_100:MOEDA_100|contador_up_dw_7_bits:CONT_M|ffjk:FF1|qS ; Stuck at VCC due to stuck port preset  ;
-; BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_100:MOEDA_100|contador_up_dw_7_bits:CONT_M|ffjk:FF0|qS ; Stuck at VCC due to stuck port preset  ;
-; BLOCO_OPERACIONAL:U3|COFRE:C1|contador_3_bits:CONTJ|ffjk:FF2|qS                              ; Stuck at VCC due to stuck port preset  ;
-; BLOCO_OPERACIONAL:U3|COFRE:C1|contador_3_bits:CONTJ|ffjk:FF1|qS                              ; Stuck at VCC due to stuck port preset  ;
-; BLOCO_OPERACIONAL:U3|COFRE:C1|contador_3_bits:CONTJ|ffjk:FF0|qS                              ; Stuck at VCC due to stuck port preset  ;
-; bnt_sincrono:U0|ffd:FFD2|q                                                                   ; Stuck at VCC due to stuck port preset  ;
-; bnt_sincrono:U0|ffd:FFD1|q                                                                   ; Stuck at VCC due to stuck port preset  ;
-; REG_ESTADOS_2:U2|ffd:U1|q                                                                    ; Stuck at VCC due to stuck port preset  ;
-; REG_ESTADOS_2:U2|ffd:U0|q                                                                    ; Stuck at VCC due to stuck port preset  ;
-; BLOCO_OPERACIONAL:U3|VT:V0|REGISTRADOR_10_BITS:C000|ffd:FF0|q                                ; Stuck at GND due to stuck port data_in ;
-; BLOCO_OPERACIONAL:U3|VT:V0|REGISTRADOR_10_BITS:C000|ffd:FF1|q                                ; Stuck at GND due to stuck port data_in ;
-; BLOCO_OPERACIONAL:U3|VT:V0|REGISTRADOR_10_BITS:C000|ffd:FF2|q                                ; Stuck at GND due to stuck port data_in ;
-; BLOCO_OPERACIONAL:U3|VT:V0|REGISTRADOR_10_BITS:C000|ffd:FF3|q                                ; Stuck at GND due to stuck port data_in ;
-; BLOCO_OPERACIONAL:U3|VT:V0|REGISTRADOR_10_BITS:C000|ffd:FF4|q                                ; Stuck at GND due to stuck port data_in ;
-; BLOCO_OPERACIONAL:U3|VT:V0|REGISTRADOR_10_BITS:C000|ffd:FF5|q                                ; Stuck at GND due to stuck port data_in ;
-; BLOCO_OPERACIONAL:U3|VT:V0|REGISTRADOR_10_BITS:C000|ffd:FF6|q                                ; Stuck at GND due to stuck port data_in ;
-; BLOCO_OPERACIONAL:U3|VT:V0|REGISTRADOR_10_BITS:C000|ffd:FF7|q                                ; Stuck at GND due to stuck port data_in ;
-; BLOCO_OPERACIONAL:U3|VT:V0|REGISTRADOR_10_BITS:C000|ffd:FF8|q                                ; Stuck at GND due to stuck port data_in ;
-; BLOCO_OPERACIONAL:U3|VT:V0|REGISTRADOR_10_BITS:C000|ffd:FF9|q                                ; Stuck at GND due to stuck port data_in ;
-; Total Number of Removed Registers = 59                                                       ;                                        ;
-+----------------------------------------------------------------------------------------------+----------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                                                     ;
++--------------------------------------------------------------------------------------------+---------------------------------------------------------------------------+
+; Register name                                                                              ; Reason for Removal                                                        ;
++--------------------------------------------------------------------------------------------+---------------------------------------------------------------------------+
+; BLOCO_OPERACIONAL:U3|COFRE:C1|contador_3_bits:CONTJ|ffjk:FF2|qS                            ; Stuck at GND due to stuck port data_in                                    ;
+; BLOCO_OPERACIONAL:U3|COFRE:C1|contador_3_bits:CONTJ|ffjk:FF1|qS                            ; Stuck at GND due to stuck port data_in                                    ;
+; BLOCO_OPERACIONAL:U3|COFRE:C1|contador_3_bits:CONTJ|ffjk:FF0|qS                            ; Stuck at GND due to stuck port data_in                                    ;
+; BLOCO_DE_CONTROLE:U1|MAQUINA_ESTADOS:BC0|ffd:U1|q                                          ; Stuck at VCC due to stuck port data_in                                    ;
+; BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_1:MOEDA_1|contador_up_dw_7_bits:CONT_M|ffjk:FF6|qS   ; Stuck at GND due to stuck port data_in                                    ;
+; BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_1:MOEDA_1|contador_up_dw_7_bits:CONT_M|ffjk:FF5|qS   ; Stuck at GND due to stuck port data_in                                    ;
+; BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_1:MOEDA_1|contador_up_dw_7_bits:CONT_M|ffjk:FF4|qS   ; Stuck at GND due to stuck port data_in                                    ;
+; BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_1:MOEDA_1|contador_up_dw_7_bits:CONT_M|ffjk:FF3|qS   ; Stuck at GND due to stuck port data_in                                    ;
+; BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_1:MOEDA_1|contador_up_dw_7_bits:CONT_M|ffjk:FF2|qS   ; Stuck at GND due to stuck port data_in                                    ;
+; BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_1:MOEDA_1|contador_up_dw_7_bits:CONT_M|ffjk:FF1|qS   ; Stuck at GND due to stuck port data_in                                    ;
+; BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_1:MOEDA_1|contador_up_dw_7_bits:CONT_M|ffjk:FF0|qS   ; Stuck at GND due to stuck port data_in                                    ;
+; BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_5:MOEDA_5|contador_up_dw_7_bits:CONT_M|ffjk:FF6|qS   ; Stuck at GND due to stuck port data_in                                    ;
+; BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_5:MOEDA_5|contador_up_dw_7_bits:CONT_M|ffjk:FF5|qS   ; Stuck at GND due to stuck port data_in                                    ;
+; BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_5:MOEDA_5|contador_up_dw_7_bits:CONT_M|ffjk:FF4|qS   ; Stuck at GND due to stuck port data_in                                    ;
+; BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_5:MOEDA_5|contador_up_dw_7_bits:CONT_M|ffjk:FF3|qS   ; Stuck at GND due to stuck port data_in                                    ;
+; BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_5:MOEDA_5|contador_up_dw_7_bits:CONT_M|ffjk:FF2|qS   ; Stuck at GND due to stuck port data_in                                    ;
+; BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_5:MOEDA_5|contador_up_dw_7_bits:CONT_M|ffjk:FF1|qS   ; Stuck at GND due to stuck port data_in                                    ;
+; BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_5:MOEDA_5|contador_up_dw_7_bits:CONT_M|ffjk:FF0|qS   ; Stuck at GND due to stuck port data_in                                    ;
+; BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_10:MOEDA_15|contador_up_dw_7_bits:CONT_M|ffjk:FF6|qS ; Stuck at GND due to stuck port data_in                                    ;
+; BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_10:MOEDA_15|contador_up_dw_7_bits:CONT_M|ffjk:FF5|qS ; Stuck at GND due to stuck port data_in                                    ;
+; BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_10:MOEDA_15|contador_up_dw_7_bits:CONT_M|ffjk:FF4|qS ; Stuck at GND due to stuck port data_in                                    ;
+; BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_10:MOEDA_15|contador_up_dw_7_bits:CONT_M|ffjk:FF3|qS ; Stuck at GND due to stuck port data_in                                    ;
+; BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_10:MOEDA_15|contador_up_dw_7_bits:CONT_M|ffjk:FF2|qS ; Stuck at GND due to stuck port data_in                                    ;
+; BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_10:MOEDA_15|contador_up_dw_7_bits:CONT_M|ffjk:FF1|qS ; Stuck at GND due to stuck port data_in                                    ;
+; BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_10:MOEDA_15|contador_up_dw_7_bits:CONT_M|ffjk:FF0|qS ; Stuck at GND due to stuck port data_in                                    ;
+; BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_25:MOEDA_25|contador_up_dw_7_bits:CONT_M|ffjk:FF6|qS ; Stuck at GND due to stuck port data_in                                    ;
+; BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_25:MOEDA_25|contador_up_dw_7_bits:CONT_M|ffjk:FF5|qS ; Stuck at GND due to stuck port data_in                                    ;
+; BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_25:MOEDA_25|contador_up_dw_7_bits:CONT_M|ffjk:FF4|qS ; Stuck at GND due to stuck port data_in                                    ;
+; BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_25:MOEDA_25|contador_up_dw_7_bits:CONT_M|ffjk:FF3|qS ; Stuck at GND due to stuck port data_in                                    ;
+; BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_25:MOEDA_25|contador_up_dw_7_bits:CONT_M|ffjk:FF2|qS ; Stuck at GND due to stuck port data_in                                    ;
+; BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_25:MOEDA_25|contador_up_dw_7_bits:CONT_M|ffjk:FF1|qS ; Stuck at GND due to stuck port data_in                                    ;
+; BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_25:MOEDA_25|contador_up_dw_7_bits:CONT_M|ffjk:FF0|qS ; Stuck at GND due to stuck port data_in                                    ;
+; BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_50:MOEDA_50|contador_up_dw_7_bits:CONT_M|ffjk:FF6|qS ; Stuck at GND due to stuck port data_in                                    ;
+; BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_50:MOEDA_50|contador_up_dw_7_bits:CONT_M|ffjk:FF5|qS ; Stuck at GND due to stuck port data_in                                    ;
+; BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_50:MOEDA_50|contador_up_dw_7_bits:CONT_M|ffjk:FF4|qS ; Stuck at GND due to stuck port data_in                                    ;
+; BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_50:MOEDA_50|contador_up_dw_7_bits:CONT_M|ffjk:FF3|qS ; Stuck at GND due to stuck port data_in                                    ;
+; BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_50:MOEDA_50|contador_up_dw_7_bits:CONT_M|ffjk:FF2|qS ; Stuck at GND due to stuck port data_in                                    ;
+; BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_50:MOEDA_50|contador_up_dw_7_bits:CONT_M|ffjk:FF1|qS ; Stuck at GND due to stuck port data_in                                    ;
+; BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_50:MOEDA_50|contador_up_dw_7_bits:CONT_M|ffjk:FF0|qS ; Stuck at GND due to stuck port data_in                                    ;
+; BLOCO_DE_CONTROLE:U1|MAQUINA_ESTADOS:BC0|ffd:U0|q                                          ; Stuck at GND due to stuck port data_in                                    ;
+; BLOCO_OPERACIONAL:U3|VT:V0|REGISTRADOR_10_BITS:C000|ffd:FF1|q                              ; Merged with BLOCO_OPERACIONAL:U3|VT:V0|REGISTRADOR_10_BITS:C000|ffd:FF0|q ;
+; BLOCO_OPERACIONAL:U3|VT:V0|REGISTRADOR_10_BITS:C000|ffd:FF0|q                              ; Stuck at GND due to stuck port data_in                                    ;
+; Total Number of Removed Registers = 42                                                     ;                                                                           ;
++--------------------------------------------------------------------------------------------+---------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                                                                            ;
-+------------------------------------------------------------------------------------------+--------------------------+------------------------------------------------------------------+
-; Register name                                                                            ; Reason for Removal       ; Registers Removed due to This Register                           ;
-+------------------------------------------------------------------------------------------+--------------------------+------------------------------------------------------------------+
-; BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_1:MOEDA_1|contador_up_dw_7_bits:CONT_M|ffjk:FF3|qS ; Stuck at VCC             ; BLOCO_OPERACIONAL:U3|VT:V0|REGISTRADOR_10_BITS:C000|ffd:FF0|q,   ;
-;                                                                                          ; due to stuck port preset ; BLOCO_OPERACIONAL:U3|VT:V0|REGISTRADOR_10_BITS:C000|ffd:FF1|q,   ;
-;                                                                                          ;                          ; BLOCO_OPERACIONAL:U3|VT:V0|REGISTRADOR_10_BITS:C000|ffd:FF2|q,   ;
-;                                                                                          ;                          ; BLOCO_OPERACIONAL:U3|VT:V0|REGISTRADOR_10_BITS:C000|ffd:FF3|q,   ;
-;                                                                                          ;                          ; BLOCO_OPERACIONAL:U3|VT:V0|REGISTRADOR_10_BITS:C000|ffd:FF4|q,   ;
-;                                                                                          ;                          ; BLOCO_OPERACIONAL:U3|VT:V0|REGISTRADOR_10_BITS:C000|ffd:FF5|q,   ;
-;                                                                                          ;                          ; BLOCO_OPERACIONAL:U3|VT:V0|REGISTRADOR_10_BITS:C000|ffd:FF6|q,   ;
-;                                                                                          ;                          ; BLOCO_OPERACIONAL:U3|VT:V0|REGISTRADOR_10_BITS:C000|ffd:FF7|q,   ;
-;                                                                                          ;                          ; BLOCO_OPERACIONAL:U3|VT:V0|REGISTRADOR_10_BITS:C000|ffd:FF8|q,   ;
-;                                                                                          ;                          ; BLOCO_OPERACIONAL:U3|VT:V0|REGISTRADOR_10_BITS:C000|ffd:FF9|q    ;
-; BLOCO_OPERACIONAL:U3|COFRE:C1|contador_3_bits:CONTJ|ffjk:FF2|qS                          ; Stuck at VCC             ; BLOCO_OPERACIONAL:U3|COFRE:C1|contador_3_bits:CONTJ|ffjk:FF0|qS, ;
-;                                                                                          ; due to stuck port preset ; REG_ESTADOS_2:U2|ffd:U0|q                                        ;
-; bnt_sincrono:U0|ffd:FFD2|q                                                               ; Stuck at VCC             ; REG_ESTADOS_2:U2|ffd:U1|q                                        ;
-;                                                                                          ; due to stuck port preset ;                                                                  ;
-+------------------------------------------------------------------------------------------+--------------------------+------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                                 ;
++-----------------------------------------------------------------+---------------------------+---------------------------------------------------------------+
+; Register name                                                   ; Reason for Removal        ; Registers Removed due to This Register                        ;
++-----------------------------------------------------------------+---------------------------+---------------------------------------------------------------+
+; BLOCO_OPERACIONAL:U3|COFRE:C1|contador_3_bits:CONTJ|ffjk:FF2|qS ; Stuck at GND              ; BLOCO_OPERACIONAL:U3|VT:V0|REGISTRADOR_10_BITS:C000|ffd:FF0|q ;
+;                                                                 ; due to stuck port data_in ;                                                               ;
+; BLOCO_DE_CONTROLE:U1|MAQUINA_ESTADOS:BC0|ffd:U1|q               ; Stuck at VCC              ; BLOCO_DE_CONTROLE:U1|MAQUINA_ESTADOS:BC0|ffd:U0|q             ;
+;                                                                 ; due to stuck port data_in ;                                                               ;
++-----------------------------------------------------------------+---------------------------+---------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -355,14 +361,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 0     ;
+; Total registers                              ; 15    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 4     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                      ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------+
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |MAQUINA_DE_TROCO|BLOCO_OPERACIONAL:U3|VT:V0|REGISTRADOR_10_BITS:C000|ffd:FF9|q ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------+
@@ -420,8 +435,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------+-------+----------+---------------------------------------------------------------------------------------------+
 ; Port ; Type  ; Severity ; Details                                                                                     ;
 +------+-------+----------+---------------------------------------------------------------------------------------------+
-; clr  ; Input ; Info     ; Stuck at GND                                                                                ;
-; set  ; Input ; Info     ; Stuck at GND                                                                                ;
+; set  ; Input ; Info     ; Stuck at VCC                                                                                ;
 +------+-------+----------+---------------------------------------------------------------------------------------------+
 
 
@@ -430,8 +444,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------+-------+----------+---------------------------------------------------------------------------------------------+
 ; Port ; Type  ; Severity ; Details                                                                                     ;
 +------+-------+----------+---------------------------------------------------------------------------------------------+
-; clr  ; Input ; Info     ; Stuck at GND                                                                                ;
-; set  ; Input ; Info     ; Stuck at GND                                                                                ;
+; set  ; Input ; Info     ; Stuck at VCC                                                                                ;
 +------+-------+----------+---------------------------------------------------------------------------------------------+
 
 
@@ -440,8 +453,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------+-------+----------+---------------------------------------------------------------------------------------------+
 ; Port ; Type  ; Severity ; Details                                                                                     ;
 +------+-------+----------+---------------------------------------------------------------------------------------------+
-; clr  ; Input ; Info     ; Stuck at GND                                                                                ;
-; set  ; Input ; Info     ; Stuck at GND                                                                                ;
+; set  ; Input ; Info     ; Stuck at VCC                                                                                ;
 +------+-------+----------+---------------------------------------------------------------------------------------------+
 
 
@@ -450,8 +462,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------+-------+----------+---------------------------------------------------------------------------------------------+
 ; Port ; Type  ; Severity ; Details                                                                                     ;
 +------+-------+----------+---------------------------------------------------------------------------------------------+
-; clr  ; Input ; Info     ; Stuck at GND                                                                                ;
-; set  ; Input ; Info     ; Stuck at GND                                                                                ;
+; set  ; Input ; Info     ; Stuck at VCC                                                                                ;
 +------+-------+----------+---------------------------------------------------------------------------------------------+
 
 
@@ -460,8 +471,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------+-------+----------+---------------------------------------------------------------------------------------------+
 ; Port ; Type  ; Severity ; Details                                                                                     ;
 +------+-------+----------+---------------------------------------------------------------------------------------------+
-; clr  ; Input ; Info     ; Stuck at GND                                                                                ;
-; set  ; Input ; Info     ; Stuck at GND                                                                                ;
+; set  ; Input ; Info     ; Stuck at VCC                                                                                ;
 +------+-------+----------+---------------------------------------------------------------------------------------------+
 
 
@@ -470,8 +480,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------+-------+----------+---------------------------------------------------------------------------------------------+
 ; Port ; Type  ; Severity ; Details                                                                                     ;
 +------+-------+----------+---------------------------------------------------------------------------------------------+
-; clr  ; Input ; Info     ; Stuck at GND                                                                                ;
-; set  ; Input ; Info     ; Stuck at GND                                                                                ;
+; set  ; Input ; Info     ; Stuck at VCC                                                                                ;
 +------+-------+----------+---------------------------------------------------------------------------------------------+
 
 
@@ -480,8 +489,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------+-------+----------+---------------------------------------------------------------------------------------------+
 ; Port ; Type  ; Severity ; Details                                                                                     ;
 +------+-------+----------+---------------------------------------------------------------------------------------------+
-; clr  ; Input ; Info     ; Stuck at GND                                                                                ;
-; set  ; Input ; Info     ; Stuck at GND                                                                                ;
+; set  ; Input ; Info     ; Stuck at VCC                                                                                ;
 +------+-------+----------+---------------------------------------------------------------------------------------------+
 
 
@@ -550,19 +558,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------+-------+----------+----------------------------------------------------------------+
 ; Port ; Type  ; Severity ; Details                                                        ;
 +------+-------+----------+----------------------------------------------------------------+
-; clr  ; Input ; Info     ; Stuck at GND                                                   ;
-; set  ; Input ; Info     ; Stuck at GND                                                   ;
+; set  ; Input ; Info     ; Stuck at VCC                                                   ;
 +------+-------+----------+----------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|contador_3_bits:CONTJ|MUX_2x1_1bit:mx2"               ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; a    ; Input  ; Info     ; Stuck at GND                                                                        ;
-; s    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------+
@@ -570,18 +567,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------+-------+----------+----------------------------------------------------------------+
 ; Port ; Type  ; Severity ; Details                                                        ;
 +------+-------+----------+----------------------------------------------------------------+
-; clr  ; Input ; Info     ; Stuck at GND                                                   ;
-; set  ; Input ; Info     ; Stuck at GND                                                   ;
+; set  ; Input ; Info     ; Stuck at VCC                                                   ;
 +------+-------+----------+----------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "BLOCO_OPERACIONAL:U3|COFRE:C1|contador_3_bits:CONTJ|MUX_2x1_1bit:mx1"               ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; s    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------+
@@ -589,8 +576,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------+-------+----------+----------------------------------------------------------------+
 ; Port ; Type  ; Severity ; Details                                                        ;
 +------+-------+----------+----------------------------------------------------------------+
-; clr  ; Input ; Info     ; Stuck at GND                                                   ;
-; set  ; Input ; Info     ; Stuck at GND                                                   ;
+; set  ; Input ; Info     ; Stuck at VCC                                                   ;
 +------+-------+----------+----------------------------------------------------------------+
 
 
@@ -604,33 +590,53 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------+-------+----------+-------------------------------------------------------+
 
 
++----------------------------------------------------------------------------+
+; Port Connectivity Checks: "BLOCO_DE_CONTROLE:U1|bnt_sincrono:BC2|ffd:FFD2" ;
++------+-------+----------+--------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                          ;
++------+-------+----------+--------------------------------------------------+
+; clr  ; Input ; Info     ; Stuck at VCC                                     ;
+; set  ; Input ; Info     ; Stuck at VCC                                     ;
++------+-------+----------+--------------------------------------------------+
+
+
++----------------------------------------------------------------------------+
+; Port Connectivity Checks: "BLOCO_DE_CONTROLE:U1|bnt_sincrono:BC2|ffd:FFD1" ;
++------+-------+----------+--------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                          ;
++------+-------+----------+--------------------------------------------------+
+; clr  ; Input ; Info     ; Stuck at VCC                                     ;
+; set  ; Input ; Info     ; Stuck at VCC                                     ;
++------+-------+----------+--------------------------------------------------+
+
+
++-----------------------------------------------------------------------------+
+; Port Connectivity Checks: "BLOCO_DE_CONTROLE:U1|MAQUINA_ESTADOS:BC0|ffd:U1" ;
++------+-------+----------+---------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                           ;
++------+-------+----------+---------------------------------------------------+
+; clr  ; Input ; Info     ; Stuck at VCC                                      ;
+; set  ; Input ; Info     ; Stuck at VCC                                      ;
++------+-------+----------+---------------------------------------------------+
+
+
++-----------------------------------------------------------------------------+
+; Port Connectivity Checks: "BLOCO_DE_CONTROLE:U1|MAQUINA_ESTADOS:BC0|ffd:U0" ;
++------+-------+----------+---------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                           ;
++------+-------+----------+---------------------------------------------------+
+; clr  ; Input ; Info     ; Stuck at VCC                                      ;
+; set  ; Input ; Info     ; Stuck at VCC                                      ;
++------+-------+----------+---------------------------------------------------+
+
+
 +----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "BLOCO_OPERACIONAL:U3"                                                               ;
+; Port Connectivity Checks: "BLOCO_DE_CONTROLE:U1"                                                               ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port ; Type   ; Severity ; Details                                                                             ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
-; i    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; s    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------+
-; Port Connectivity Checks: "bnt_sincrono:U0|ffd:FFD2" ;
-+------+-------+----------+----------------------------+
-; Port ; Type  ; Severity ; Details                    ;
-+------+-------+----------+----------------------------+
-; clr  ; Input ; Info     ; Stuck at GND               ;
-; set  ; Input ; Info     ; Stuck at GND               ;
-+------+-------+----------+----------------------------+
-
-
-+------------------------------------------------------+
-; Port Connectivity Checks: "bnt_sincrono:U0|ffd:FFD1" ;
-+------+-------+----------+----------------------------+
-; Port ; Type  ; Severity ; Details                    ;
-+------+-------+----------+----------------------------+
-; clr  ; Input ; Info     ; Stuck at GND               ;
-; set  ; Input ; Info     ; Stuck at GND               ;
-+------+-------+----------+----------------------------+
 
 
 +-------------------------------+
@@ -648,7 +654,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sat Nov 25 20:26:34 2023
+    Info: Processing started: Sun Nov 26 08:19:06 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off PROJETO_5 -c PROJETO_5
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file arquivos vhdl/subtrator_10_bits.vhd
@@ -714,9 +720,6 @@ Info (12021): Found 2 design units, including 1 entities, in source file arquivo
 Info (12021): Found 2 design units, including 1 entities, in source file arquivos vhdl/comp_5.vhd
     Info (12022): Found design unit 1: COMP_5-CKT
     Info (12023): Found entity 1: COMP_5
-Info (12021): Found 2 design units, including 1 entities, in source file arquivos vhdl/reg_estados_2.vhd
-    Info (12022): Found design unit 1: REG_ESTADOS_2-CKT
-    Info (12023): Found entity 1: REG_ESTADOS_2
 Info (12021): Found 2 design units, including 1 entities, in source file arquivos vhdl/sinal_estado.vhd
     Info (12022): Found design unit 1: SINAL_ESTADO-CKT
     Info (12023): Found entity 1: SINAL_ESTADO
@@ -765,14 +768,20 @@ Info (12021): Found 2 design units, including 1 entities, in source file arquivo
 Info (12021): Found 2 design units, including 1 entities, in source file arquivos vhdl/moeda_j_1.vhd
     Info (12022): Found design unit 1: MOEDA_J_1-CKT
     Info (12023): Found entity 1: MOEDA_J_1
+Info (12021): Found 2 design units, including 1 entities, in source file arquivos vhdl/maquina_estados.vhd
+    Info (12022): Found design unit 1: MAQUINA_ESTADOS-CKT
+    Info (12023): Found entity 1: MAQUINA_ESTADOS
+Info (12021): Found 2 design units, including 1 entities, in source file arquivos vhdl/circuito_comb.vhd
+    Info (12022): Found design unit 1: CIRCUITO_COMB-CKT
+    Info (12023): Found entity 1: CIRCUITO_COMB
 Info (12127): Elaborating entity "MAQUINA_DE_TROCO" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at MAQUINA_DE_TROCO.vhd(52): object "I_OUT" assigned a value but never read
-Info (12128): Elaborating entity "bnt_sincrono" for hierarchy "bnt_sincrono:U0"
-Info (12128): Elaborating entity "ffd" for hierarchy "bnt_sincrono:U0|ffd:FFD1"
+Warning (10541): VHDL Signal Declaration warning at MAQUINA_DE_TROCO.vhd(37): used implicit default value for signal "S_IN_BO" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10036): Verilog HDL or VHDL warning at MAQUINA_DE_TROCO.vhd(37): object "S_OUT_BC" assigned a value but never read
 Info (12128): Elaborating entity "BLOCO_DE_CONTROLE" for hierarchy "BLOCO_DE_CONTROLE:U1"
-Info (12128): Elaborating entity "REG_ESTADOS_2" for hierarchy "REG_ESTADOS_2:U2"
-Warning (10541): VHDL Signal Declaration warning at REG_ESTADOS_2.vhd(19): used implicit default value for signal "COMUM1" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10541): VHDL Signal Declaration warning at REG_ESTADOS_2.vhd(19): used implicit default value for signal "comum2" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Info (12128): Elaborating entity "MAQUINA_ESTADOS" for hierarchy "BLOCO_DE_CONTROLE:U1|MAQUINA_ESTADOS:BC0"
+Info (12128): Elaborating entity "ffd" for hierarchy "BLOCO_DE_CONTROLE:U1|MAQUINA_ESTADOS:BC0|ffd:U0"
+Info (12128): Elaborating entity "CIRCUITO_COMB" for hierarchy "BLOCO_DE_CONTROLE:U1|CIRCUITO_COMB:BC1"
+Info (12128): Elaborating entity "bnt_sincrono" for hierarchy "BLOCO_DE_CONTROLE:U1|bnt_sincrono:BC2"
 Info (12128): Elaborating entity "BLOCO_OPERACIONAL" for hierarchy "BLOCO_OPERACIONAL:U3"
 Info (12128): Elaborating entity "SINAL_ESTADO" for hierarchy "BLOCO_OPERACIONAL:U3|SINAL_ESTADO:S0"
 Info (12128): Elaborating entity "mux_2x1_10BITS" for hierarchy "BLOCO_OPERACIONAL:U3|mux_2x1_10BITS:M000"
@@ -782,8 +791,6 @@ Info (12128): Elaborating entity "COMPARADOR_ZERO_10" for hierarchy "BLOCO_OPERA
 Info (12128): Elaborating entity "COFRE" for hierarchy "BLOCO_OPERACIONAL:U3|COFRE:C1"
 Warning (10036): Verilog HDL or VHDL warning at COFRE.vhd(27): object "COUT_SUB" assigned a value but never read
 Info (12128): Elaborating entity "contador_3_bits" for hierarchy "BLOCO_OPERACIONAL:U3|COFRE:C1|contador_3_bits:CONTJ"
-Warning (10541): VHDL Signal Declaration warning at contador_3_bits.vhd(23): used implicit default value for signal "S_MUX_1" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10541): VHDL Signal Declaration warning at contador_3_bits.vhd(23): used implicit default value for signal "S_MUX_2" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
 Info (12128): Elaborating entity "MUX_2x1_1bit" for hierarchy "BLOCO_OPERACIONAL:U3|COFRE:C1|contador_3_bits:CONTJ|MUX_2x1_1bit:mx0"
 Info (12128): Elaborating entity "ffjk" for hierarchy "BLOCO_OPERACIONAL:U3|COFRE:C1|contador_3_bits:CONTJ|ffjk:FF0"
 Info (12128): Elaborating entity "COMP_5" for hierarchy "BLOCO_OPERACIONAL:U3|COFRE:C1|COMP_5:COMP5"
@@ -812,35 +819,40 @@ Warning (10036): Verilog HDL or VHDL warning at MOEDA_J_5.vhd(45): object "Cout"
 Info (12128): Elaborating entity "MOEDA_J_1" for hierarchy "BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_1:MOEDA_1"
 Warning (10036): Verilog HDL or VHDL warning at MOEDA_J_1.vhd(45): object "Cout" assigned a value but never read
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "C[0]" is stuck at GND
-    Warning (13410): Pin "C[1]" is stuck at GND
-    Warning (13410): Pin "C[2]" is stuck at GND
-    Warning (13410): Pin "C[3]" is stuck at GND
-    Warning (13410): Pin "C[4]" is stuck at GND
-    Warning (13410): Pin "C[5]" is stuck at GND
+    Warning (13410): Pin "C[1]" is stuck at VCC
+    Warning (13410): Pin "C[2]" is stuck at VCC
+    Warning (13410): Pin "C[3]" is stuck at VCC
+    Warning (13410): Pin "C[4]" is stuck at VCC
+    Warning (13410): Pin "C[5]" is stuck at VCC
+    Warning (13410): Pin "I[0]" is stuck at GND
+    Warning (13410): Pin "I[1]" is stuck at GND
+    Warning (13410): Pin "I[2]" is stuck at GND
+    Warning (13410): Pin "I[3]" is stuck at GND
+    Warning (13410): Pin "I[4]" is stuck at GND
+    Warning (13410): Pin "I[5]" is stuck at GND
     Warning (13410): Pin "led" is stuck at VCC
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 12 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "CLK"
+Warning (21074): Design contains 11 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "T"
     Warning (15610): No output dependent on input pin "V[0]"
     Warning (15610): No output dependent on input pin "V[1]"
-    Warning (15610): No output dependent on input pin "V[2]"
-    Warning (15610): No output dependent on input pin "V[3]"
-    Warning (15610): No output dependent on input pin "V[4]"
-    Warning (15610): No output dependent on input pin "V[5]"
-    Warning (15610): No output dependent on input pin "V[6]"
-    Warning (15610): No output dependent on input pin "V[7]"
-    Warning (15610): No output dependent on input pin "V[8]"
     Warning (15610): No output dependent on input pin "V[9]"
-Info (21057): Implemented 19 device resources after synthesis - the final resource count might be different
+    Warning (15610): No output dependent on input pin "V[8]"
+    Warning (15610): No output dependent on input pin "V[7]"
+    Warning (15610): No output dependent on input pin "V[6]"
+    Warning (15610): No output dependent on input pin "V[5]"
+    Warning (15610): No output dependent on input pin "V[4]"
+    Warning (15610): No output dependent on input pin "V[3]"
+    Warning (15610): No output dependent on input pin "V[2]"
+Info (21057): Implemented 50 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 12 input pins
-    Info (21059): Implemented 7 output pins
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 34 warnings
-    Info: Peak virtual memory: 4642 megabytes
-    Info: Processing ended: Sat Nov 25 20:26:37 2023
-    Info: Elapsed time: 00:00:03
+    Info (21059): Implemented 13 output pins
+    Info (21061): Implemented 25 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 35 warnings
+    Info: Peak virtual memory: 4653 megabytes
+    Info: Processing ended: Sun Nov 26 08:19:08 2023
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 
 

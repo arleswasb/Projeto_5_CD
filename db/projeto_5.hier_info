@@ -1,8 +1,7 @@
 |MAQUINA_DE_TROCO
-CLK => bnt_sincrono:U0.clk
-CLK => REG_ESTADOS_2:U2.cLk
+CLK => BLOCO_DE_CONTROLE:U1.CLK
 CLK => BLOCO_OPERACIONAL:U3.Clock
-T => bnt_sincrono:U0.BTN
+T => BLOCO_DE_CONTROLE:U1.T
 V[0] => BLOCO_OPERACIONAL:U3.V[0]
 V[1] => BLOCO_OPERACIONAL:U3.V[1]
 V[2] => BLOCO_OPERACIONAL:U3.V[2]
@@ -19,57 +18,27 @@ C[2] <= BLOCO_OPERACIONAL:U3.c[2]
 C[3] <= BLOCO_OPERACIONAL:U3.c[3]
 C[4] <= BLOCO_OPERACIONAL:U3.c[4]
 C[5] <= BLOCO_OPERACIONAL:U3.c[5]
+I[0] <= BLOCO_OPERACIONAL:U3.i[0]
+I[1] <= BLOCO_OPERACIONAL:U3.i[1]
+I[2] <= BLOCO_OPERACIONAL:U3.i[2]
+I[3] <= BLOCO_OPERACIONAL:U3.i[3]
+I[4] <= BLOCO_OPERACIONAL:U3.i[4]
+I[5] <= BLOCO_OPERACIONAL:U3.i[5]
 led <= BLOCO_DE_CONTROLE:U1.led
 
 
-|MAQUINA_DE_TROCO|bnt_sincrono:U0
-clk => ffd:FFD1.ck
-clk => ffd:FFD2.ck
-BTN => ffd:FFD1.d
-saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|MAQUINA_DE_TROCO|bnt_sincrono:U0|ffd:FFD1
-ck => q~reg0.CLK
-clr => q.IN0
-set => q.IN1
-set => q~reg0.PRESET
-d => q~reg0.DATAIN
-q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|MAQUINA_DE_TROCO|bnt_sincrono:U0|ffd:FFD2
-ck => q~reg0.CLK
-clr => q.IN0
-set => q.IN1
-set => q~reg0.PRESET
-d => q~reg0.DATAIN
-q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
 |MAQUINA_DE_TROCO|BLOCO_DE_CONTROLE:U1
-S[0] => N.IN0
-S[0] => N.IN0
-S[0] => N.IN0
-S[0] => N.IN0
-S[0] => N.IN0
-S[1] => N.IN1
-S[1] => N.IN0
-S[1] => N.IN1
-S[1] => N.IN1
-S[1] => N.IN1
-S[1] => N.IN0
-BS => N.IN1
-BS => N.IN1
-TT => N.IN1
-F => N.IN1
-F => N.IN1
-N[0] <= N.DB_MAX_OUTPUT_PORT_TYPE
-N[1] <= N.DB_MAX_OUTPUT_PORT_TYPE
-led <= led.DB_MAX_OUTPUT_PORT_TYPE
+CLK => MAQUINA_ESTADOS:BC0.cLk
+CLK => bnt_sincrono:BC2.clk
+T => bnt_sincrono:BC2.BTN
+TT => CIRCUITO_COMB:BC1.TT
+F => CIRCUITO_COMB:BC1.F
+led <= CIRCUITO_COMB:BC1.led
+S[0] <= MAQUINA_ESTADOS:BC0.S[0]
+S[1] <= MAQUINA_ESTADOS:BC0.S[1]
 
 
-|MAQUINA_DE_TROCO|REG_ESTADOS_2:U2
+|MAQUINA_DE_TROCO|BLOCO_DE_CONTROLE:U1|MAQUINA_ESTADOS:BC0
 cLk => ffd:U0.ck
 cLk => ffd:U1.ck
 N[0] => ffd:U0.d
@@ -78,7 +47,7 @@ S[0] <= ffd:U0.q
 S[1] <= ffd:U1.q
 
 
-|MAQUINA_DE_TROCO|REG_ESTADOS_2:U2|ffd:U0
+|MAQUINA_DE_TROCO|BLOCO_DE_CONTROLE:U1|MAQUINA_ESTADOS:BC0|ffd:U0
 ck => q~reg0.CLK
 clr => q.IN0
 set => q.IN1
@@ -87,7 +56,54 @@ d => q~reg0.DATAIN
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|MAQUINA_DE_TROCO|REG_ESTADOS_2:U2|ffd:U1
+|MAQUINA_DE_TROCO|BLOCO_DE_CONTROLE:U1|MAQUINA_ESTADOS:BC0|ffd:U1
+ck => q~reg0.CLK
+clr => q.IN0
+set => q.IN1
+set => q~reg0.PRESET
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MAQUINA_DE_TROCO|BLOCO_DE_CONTROLE:U1|CIRCUITO_COMB:BC1
+S0 => N0.IN0
+S0 => N1.IN0
+S0 => N0.IN0
+S0 => N0.IN0
+S0 => N1.IN0
+S1 => N0.IN1
+S1 => N1.IN0
+S1 => N1.IN1
+S1 => N0.IN1
+S1 => N0.IN0
+S1 => N1.IN1
+BS => N1.IN1
+BS => N0.IN1
+TT => N1.IN1
+F => N0.IN1
+F => N1.IN1
+N0 <= N0.DB_MAX_OUTPUT_PORT_TYPE
+N1 <= N1.DB_MAX_OUTPUT_PORT_TYPE
+led <= led.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MAQUINA_DE_TROCO|BLOCO_DE_CONTROLE:U1|bnt_sincrono:BC2
+clk => ffd:FFD1.ck
+clk => ffd:FFD2.ck
+BTN => ffd:FFD1.d
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MAQUINA_DE_TROCO|BLOCO_DE_CONTROLE:U1|bnt_sincrono:BC2|ffd:FFD1
+ck => q~reg0.CLK
+clr => q.IN0
+set => q.IN1
+set => q~reg0.PRESET
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MAQUINA_DE_TROCO|BLOCO_DE_CONTROLE:U1|bnt_sincrono:BC2|ffd:FFD2
 ck => q~reg0.CLK
 clr => q.IN0
 set => q.IN1
@@ -99,8 +115,8 @@ q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 |MAQUINA_DE_TROCO|BLOCO_OPERACIONAL:U3
 Clock => VT:V0.CLK
 Clock => COFRE:C1.Clk
-S[0] => SINAL_ESTADO:S0.E[0]
-S[1] => SINAL_ESTADO:S0.E[1]
+S_ESTADO[0] => SINAL_ESTADO:S0.E[0]
+S_ESTADO[1] => SINAL_ESTADO:S0.E[1]
 V[0] => mux_2x1_10BITS:M000.EB[0]
 V[1] => mux_2x1_10BITS:M000.EB[1]
 V[2] => mux_2x1_10BITS:M000.EB[2]
@@ -509,6 +525,11 @@ D[9] <= SUBTRATOR_10_BITS:SUBTRATOR.S[9]
 |MAQUINA_DE_TROCO|BLOCO_OPERACIONAL:U3|COFRE:C1|contador_3_bits:CONTJ
 up => MUX_2x1_1bit:mx0.EA
 clr => MUX_2x1_1bit:mx0.A
+clr => ffjk:FF0.clr
+clr => MUX_2x1_1bit:mx1.A
+clr => ffjk:FF1.clr
+clr => MUX_2x1_1bit:mx2.A
+clr => ffjk:FF2.clr
 ck => ffjk:FF0.ck
 ck => ffjk:FF1.ck
 ck => ffjk:FF2.ck
@@ -1285,21 +1306,28 @@ QS <= Q.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |MAQUINA_DE_TROCO|BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_100:MOEDA_100|contador_up_dw_7_bits:CONT_M
-up => FFJK0.IN0
-dw => FFJK0.IN1
+up => ENT_MX0.IN0
+dw => ENT_MX0.IN1
 dw => MUX_2x1_1bit:mx1a.A
 dw => MUX_2x1_1bit:mx2a.A
 dw => MUX_2x1_1bit:mx3a.A
 dw => MUX_2x1_1bit:mx4a.A
 dw => MUX_2x1_1bit:mx5a.A
 dw => MUX_2x1_1bit:mx6a.A
+clr => ffjk:FF0.clr
 clr => MUX_2x1_1bit:mx0.A
 clr => MUX_2x1_1bit:mx1b.A
+clr => ffjk:FF1.clr
 clr => MUX_2x1_1bit:mx2b.A
+clr => ffjk:FF2.clr
 clr => MUX_2x1_1bit:mx3b.A
+clr => ffjk:FF3.clr
 clr => MUX_2x1_1bit:mx4b.A
+clr => ffjk:FF4.clr
 clr => MUX_2x1_1bit:mx5b.A
+clr => ffjk:FF5.clr
 clr => MUX_2x1_1bit:mx6b.A
+clr => ffjk:FF6.clr
 ck => ffjk:FF0.ck
 ck => ffjk:FF1.ck
 ck => ffjk:FF2.ck
@@ -1875,21 +1903,28 @@ QS <= Q.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |MAQUINA_DE_TROCO|BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_50:MOEDA_50|contador_up_dw_7_bits:CONT_M
-up => FFJK0.IN0
-dw => FFJK0.IN1
+up => ENT_MX0.IN0
+dw => ENT_MX0.IN1
 dw => MUX_2x1_1bit:mx1a.A
 dw => MUX_2x1_1bit:mx2a.A
 dw => MUX_2x1_1bit:mx3a.A
 dw => MUX_2x1_1bit:mx4a.A
 dw => MUX_2x1_1bit:mx5a.A
 dw => MUX_2x1_1bit:mx6a.A
+clr => ffjk:FF0.clr
 clr => MUX_2x1_1bit:mx0.A
 clr => MUX_2x1_1bit:mx1b.A
+clr => ffjk:FF1.clr
 clr => MUX_2x1_1bit:mx2b.A
+clr => ffjk:FF2.clr
 clr => MUX_2x1_1bit:mx3b.A
+clr => ffjk:FF3.clr
 clr => MUX_2x1_1bit:mx4b.A
+clr => ffjk:FF4.clr
 clr => MUX_2x1_1bit:mx5b.A
+clr => ffjk:FF5.clr
 clr => MUX_2x1_1bit:mx6b.A
+clr => ffjk:FF6.clr
 ck => ffjk:FF0.ck
 ck => ffjk:FF1.ck
 ck => ffjk:FF2.ck
@@ -2465,21 +2500,28 @@ QS <= Q.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |MAQUINA_DE_TROCO|BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_25:MOEDA_25|contador_up_dw_7_bits:CONT_M
-up => FFJK0.IN0
-dw => FFJK0.IN1
+up => ENT_MX0.IN0
+dw => ENT_MX0.IN1
 dw => MUX_2x1_1bit:mx1a.A
 dw => MUX_2x1_1bit:mx2a.A
 dw => MUX_2x1_1bit:mx3a.A
 dw => MUX_2x1_1bit:mx4a.A
 dw => MUX_2x1_1bit:mx5a.A
 dw => MUX_2x1_1bit:mx6a.A
+clr => ffjk:FF0.clr
 clr => MUX_2x1_1bit:mx0.A
 clr => MUX_2x1_1bit:mx1b.A
+clr => ffjk:FF1.clr
 clr => MUX_2x1_1bit:mx2b.A
+clr => ffjk:FF2.clr
 clr => MUX_2x1_1bit:mx3b.A
+clr => ffjk:FF3.clr
 clr => MUX_2x1_1bit:mx4b.A
+clr => ffjk:FF4.clr
 clr => MUX_2x1_1bit:mx5b.A
+clr => ffjk:FF5.clr
 clr => MUX_2x1_1bit:mx6b.A
+clr => ffjk:FF6.clr
 ck => ffjk:FF0.ck
 ck => ffjk:FF1.ck
 ck => ffjk:FF2.ck
@@ -3055,21 +3097,28 @@ QS <= Q.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |MAQUINA_DE_TROCO|BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_10:MOEDA_15|contador_up_dw_7_bits:CONT_M
-up => FFJK0.IN0
-dw => FFJK0.IN1
+up => ENT_MX0.IN0
+dw => ENT_MX0.IN1
 dw => MUX_2x1_1bit:mx1a.A
 dw => MUX_2x1_1bit:mx2a.A
 dw => MUX_2x1_1bit:mx3a.A
 dw => MUX_2x1_1bit:mx4a.A
 dw => MUX_2x1_1bit:mx5a.A
 dw => MUX_2x1_1bit:mx6a.A
+clr => ffjk:FF0.clr
 clr => MUX_2x1_1bit:mx0.A
 clr => MUX_2x1_1bit:mx1b.A
+clr => ffjk:FF1.clr
 clr => MUX_2x1_1bit:mx2b.A
+clr => ffjk:FF2.clr
 clr => MUX_2x1_1bit:mx3b.A
+clr => ffjk:FF3.clr
 clr => MUX_2x1_1bit:mx4b.A
+clr => ffjk:FF4.clr
 clr => MUX_2x1_1bit:mx5b.A
+clr => ffjk:FF5.clr
 clr => MUX_2x1_1bit:mx6b.A
+clr => ffjk:FF6.clr
 ck => ffjk:FF0.ck
 ck => ffjk:FF1.ck
 ck => ffjk:FF2.ck
@@ -3645,21 +3694,28 @@ QS <= Q.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |MAQUINA_DE_TROCO|BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_5:MOEDA_5|contador_up_dw_7_bits:CONT_M
-up => FFJK0.IN0
-dw => FFJK0.IN1
+up => ENT_MX0.IN0
+dw => ENT_MX0.IN1
 dw => MUX_2x1_1bit:mx1a.A
 dw => MUX_2x1_1bit:mx2a.A
 dw => MUX_2x1_1bit:mx3a.A
 dw => MUX_2x1_1bit:mx4a.A
 dw => MUX_2x1_1bit:mx5a.A
 dw => MUX_2x1_1bit:mx6a.A
+clr => ffjk:FF0.clr
 clr => MUX_2x1_1bit:mx0.A
 clr => MUX_2x1_1bit:mx1b.A
+clr => ffjk:FF1.clr
 clr => MUX_2x1_1bit:mx2b.A
+clr => ffjk:FF2.clr
 clr => MUX_2x1_1bit:mx3b.A
+clr => ffjk:FF3.clr
 clr => MUX_2x1_1bit:mx4b.A
+clr => ffjk:FF4.clr
 clr => MUX_2x1_1bit:mx5b.A
+clr => ffjk:FF5.clr
 clr => MUX_2x1_1bit:mx6b.A
+clr => ffjk:FF6.clr
 ck => ffjk:FF0.ck
 ck => ffjk:FF1.ck
 ck => ffjk:FF2.ck
@@ -4235,21 +4291,28 @@ QS <= Q.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |MAQUINA_DE_TROCO|BLOCO_OPERACIONAL:U3|COFRE:C1|MOEDA_J_1:MOEDA_1|contador_up_dw_7_bits:CONT_M
-up => FFJK0.IN0
-dw => FFJK0.IN1
+up => ENT_MX0.IN0
+dw => ENT_MX0.IN1
 dw => MUX_2x1_1bit:mx1a.A
 dw => MUX_2x1_1bit:mx2a.A
 dw => MUX_2x1_1bit:mx3a.A
 dw => MUX_2x1_1bit:mx4a.A
 dw => MUX_2x1_1bit:mx5a.A
 dw => MUX_2x1_1bit:mx6a.A
+clr => ffjk:FF0.clr
 clr => MUX_2x1_1bit:mx0.A
 clr => MUX_2x1_1bit:mx1b.A
+clr => ffjk:FF1.clr
 clr => MUX_2x1_1bit:mx2b.A
+clr => ffjk:FF2.clr
 clr => MUX_2x1_1bit:mx3b.A
+clr => ffjk:FF3.clr
 clr => MUX_2x1_1bit:mx4b.A
+clr => ffjk:FF4.clr
 clr => MUX_2x1_1bit:mx5b.A
+clr => ffjk:FF5.clr
 clr => MUX_2x1_1bit:mx6b.A
+clr => ffjk:FF6.clr
 ck => ffjk:FF0.ck
 ck => ffjk:FF1.ck
 ck => ffjk:FF2.ck

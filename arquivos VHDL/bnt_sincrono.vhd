@@ -17,8 +17,8 @@ architecture ckt of bnt_sincrono is
 
 begin
 
-FFD1: ffd port map(clk,'0', '0',BTN,S1);
-FFD2: ffd port map(clk,'0', '0', notq, S2);
+FFD1: ffd port map(clk,'1', '1',BTN,S1);
+FFD2: ffd port map(clk,'1', '1', notq, S2);
 
 notq <= (not S1);
 saida <= S1 and S2;

@@ -3,38 +3,1024 @@ K3
 13
 cModel Technology
 Z0 dD:\PROJETO_5\Projeto_5_CD\simulation\modelsim
-Edemux_1x6
-Z1 w1700591460
+Ebloco_de_controle
+Z1 w1700914119
 Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
 Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
 Z4 dD:\PROJETO_5\Projeto_5_CD\simulation\modelsim
-Z5 8D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/Demux_1x6.vhd
-Z6 FD:/PROJETO_5/Projeto_5_CD/arquivos VHDL/Demux_1x6.vhd
+Z5 8D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/BLOCO_DE_CONTROLE.vhd
+Z6 FD:/PROJETO_5/Projeto_5_CD/arquivos VHDL/BLOCO_DE_CONTROLE.vhd
 l0
 L4
-VN8OSmYT6Ecmd[2Smf5HK80
-!s100 zc:j@NCf9PfQIE4afN;8;3
+VPfmQ@8<KWT_IYRMjUUZQ63
 Z7 OV;C;10.1d;51
 31
-!i10b 1
-Z8 !s108 1700595517.398000
-Z9 !s90 -reportprogress|300|-93|-work|work|D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/Demux_1x6.vhd|
-Z10 !s107 D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/Demux_1x6.vhd|
+Z8 !s108 1700955673.119000
+Z9 !s90 -reportprogress|300|-93|-work|work|D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/BLOCO_DE_CONTROLE.vhd|
+Z10 !s107 D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/BLOCO_DE_CONTROLE.vhd|
 Z11 o-93 -work work -O0
 Z12 tExplicit 1
+!s100 8DiYDE=N4Ij6Va?K4;B[30
+!i10b 1
 Ackt
 R2
 R3
-DEx4 work 9 demux_1x6 0 22 N8OSmYT6Ecmd[2Smf5HK80
-l13
-L10
-VW4@gBSdRTjA[H^TSLOlin3
-!s100 4O6oSkE@>J6Q_f<KBMHm?2
+DEx4 work 17 bloco_de_controle 0 22 PfmQ@8<KWT_IYRMjUUZQ63
+l16
+L11
+VP:a29LGFON4i1jclE3]QR2
 R7
 31
-!i10b 1
 R8
 R9
 R10
 R11
 R12
+!s100 =`[1kD@H;X?l[Go6R0]Z30
+!i10b 1
+Ebloco_operacional
+Z13 w1700954793
+R2
+R3
+R4
+Z14 8D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/BLOCO_OPERACIONAL.vhd
+Z15 FD:/PROJETO_5/Projeto_5_CD/arquivos VHDL/BLOCO_OPERACIONAL.vhd
+l0
+L4
+V21m:COG@fNnnNHPcnzD8X3
+R7
+31
+Z16 !s108 1700955673.213000
+Z17 !s90 -reportprogress|300|-93|-work|work|D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/BLOCO_OPERACIONAL.vhd|
+Z18 !s107 D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/BLOCO_OPERACIONAL.vhd|
+R11
+R12
+!s100 X^i]gSDJVJGn:@H0HjCXe1
+!i10b 1
+Ackt
+R2
+R3
+DEx4 work 17 bloco_operacional 0 22 21m:COG@fNnnNHPcnzD8X3
+l47
+L13
+VHW[N2ODPSbhRJ54@UM;Gi0
+R7
+31
+R16
+R17
+R18
+R11
+R12
+!s100 UJIaEC?>KcoFl:XZTKgSX2
+!i10b 1
+Ebnt_sincrono
+Z19 w1700595912
+R2
+R3
+R4
+Z20 8D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/bnt_sincrono.vhd
+Z21 FD:/PROJETO_5/Projeto_5_CD/arquivos VHDL/bnt_sincrono.vhd
+l0
+L4
+VW]RgC06UA9ILnmncSRZzg1
+R7
+31
+Z22 !s108 1700955672.493000
+Z23 !s90 -reportprogress|300|-93|-work|work|D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/bnt_sincrono.vhd|
+Z24 !s107 D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/bnt_sincrono.vhd|
+R11
+R12
+!s100 ]YOe1:=3VM24@zD@AQj:f0
+!i10b 1
+Ackt
+R2
+R3
+DEx4 work 12 bnt_sincrono 0 22 W]RgC06UA9ILnmncSRZzg1
+l18
+L9
+Vc^hd?5Mz>[3N?ebjdJeB=1
+R7
+31
+R22
+R23
+R24
+R11
+R12
+!s100 hTShTih^46C1aZgSRd@OO0
+!i10b 1
+Ecofre
+R13
+R2
+R3
+R4
+Z25 8D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/COFRE.vhd
+Z26 FD:/PROJETO_5/Projeto_5_CD/arquivos VHDL/COFRE.vhd
+l0
+L5
+V5QOGL:`[8cZc<A3cElO]b2
+R7
+31
+Z27 !s108 1700955673.321000
+Z28 !s90 -reportprogress|300|-93|-work|work|D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/COFRE.vhd|
+Z29 !s107 D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/COFRE.vhd|
+R11
+R12
+!s100 fmER?g:GIjE42>oBKE?FA3
+!i10b 1
+Ackt
+R2
+R3
+DEx4 work 5 cofre 0 22 5QOGL:`[8cZc<A3cElO]b2
+l174
+L13
+VBHj]LoV26`gGSn[US?HfY1
+R7
+31
+R27
+R28
+R29
+R11
+R12
+!s100 k8>F;9bc[SVk]a90CEhb=1
+!i10b 1
+Ecomp_5
+Z30 w1700861756
+R2
+R3
+R4
+Z31 8D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/COMP_5.vhd
+Z32 FD:/PROJETO_5/Projeto_5_CD/arquivos VHDL/COMP_5.vhd
+l0
+L4
+VRSz`9oYn>nDk5F=Bo[A8I3
+R7
+31
+Z33 !s108 1700955672.760000
+Z34 !s90 -reportprogress|300|-93|-work|work|D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/COMP_5.vhd|
+Z35 !s107 D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/COMP_5.vhd|
+R11
+R12
+!s100 AQLQj]:B]P[J_d;RN:<=12
+!i10b 1
+Ackt
+R2
+R3
+DEx4 work 6 comp_5 0 22 RSz`9oYn>nDk5F=Bo[A8I3
+l12
+L9
+V^<jdDQMh1R]L`Q68FICZV1
+R7
+31
+R33
+R34
+R35
+R11
+R12
+!s100 gRVS5PMkUDPN2<T3PlhDz2
+!i10b 1
+Ecomparador_10_bits
+Z36 w1700918890
+R2
+R3
+R4
+Z37 8D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/COMPARADOR_10_BITS.vhd
+Z38 FD:/PROJETO_5/Projeto_5_CD/arquivos VHDL/COMPARADOR_10_BITS.vhd
+l0
+L4
+VZ0G]XX`@N``D[KHl5mc`b3
+R7
+31
+Z39 !s108 1700955673.398000
+Z40 !s90 -reportprogress|300|-93|-work|work|D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/COMPARADOR_10_BITS.vhd|
+Z41 !s107 D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/COMPARADOR_10_BITS.vhd|
+R11
+R12
+!s100 1dE<Vm91z5b`OGb6NP7<03
+!i10b 1
+Ackt
+R2
+R3
+DEx4 work 18 comparador_10_bits 0 22 Z0G]XX`@N``D[KHl5mc`b3
+l16
+L9
+V5O<zFezcdRf26Anf3HfW<0
+R7
+31
+R39
+R40
+R41
+R11
+R12
+!s100 cY1hHCH?g2T[SWz2an?lm3
+!i10b 1
+Ecomparador_zero_10
+Z42 w1700798425
+R2
+R3
+R4
+Z43 8D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/COMPARADOR_ZERO_10.vhd
+Z44 FD:/PROJETO_5/Projeto_5_CD/arquivos VHDL/COMPARADOR_ZERO_10.vhd
+l0
+L4
+Vb7Q]XC^RjkPJ3=mkKO>k:0
+R7
+31
+Z45 !s108 1700955672.263000
+Z46 !s90 -reportprogress|300|-93|-work|work|D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/COMPARADOR_ZERO_10.vhd|
+Z47 !s107 D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/COMPARADOR_ZERO_10.vhd|
+R11
+R12
+!s100 44[3zE@m^LZoZRHL;FChE3
+!i10b 1
+Ackt
+R2
+R3
+DEx4 work 18 comparador_zero_10 0 22 b7Q]XC^RjkPJ3=mkKO>k:0
+l13
+L9
+V:Xk[:1B_[l=9Qifh3hXnW2
+R7
+31
+R45
+R46
+R47
+R11
+R12
+!s100 :1Wg02@Ram<=HXPB=:iBi2
+!i10b 1
+Ecomparador_zero_7
+Z48 w1700798350
+R2
+R3
+R4
+Z49 8D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/COMPARADOR_ZERO_7.vhd
+Z50 FD:/PROJETO_5/Projeto_5_CD/arquivos VHDL/COMPARADOR_ZERO_7.vhd
+l0
+L4
+V<M;8iBPPn@FHiY=BzOnE:3
+R7
+31
+Z51 !s108 1700955672.385000
+Z52 !s90 -reportprogress|300|-93|-work|work|D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/COMPARADOR_ZERO_7.vhd|
+Z53 !s107 D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/COMPARADOR_ZERO_7.vhd|
+R11
+R12
+!s100 `;N_62eBR>Y]M8B_DNE4W0
+!i10b 1
+Ackt
+R2
+R3
+DEx4 work 17 comparador_zero_7 0 22 <M;8iBPPn@FHiY=BzOnE:3
+l13
+L9
+VlO]3d[D`3KYz^n=IQB7KW0
+R7
+31
+R51
+R52
+R53
+R11
+R12
+!s100 Z[4kW8T=j7J[;?ch2gXRG1
+!i10b 1
+Econtador_3_bits
+Z54 w1700948459
+R2
+R3
+R4
+Z55 8D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/contador_3_bits.vhd
+Z56 FD:/PROJETO_5/Projeto_5_CD/arquivos VHDL/contador_3_bits.vhd
+l0
+L4
+V85o3>P`HZih1zE55C^V;@3
+R7
+31
+Z57 !s108 1700955672.595000
+Z58 !s90 -reportprogress|300|-93|-work|work|D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/contador_3_bits.vhd|
+Z59 !s107 D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/contador_3_bits.vhd|
+R11
+R12
+!s100 3WQMIE71[3fBg9klL]6Y=3
+!i10b 1
+Ackt
+R2
+R3
+DEx4 work 15 contador_3_bits 0 22 85o3>P`HZih1zE55C^V;@3
+l28
+L9
+V8lbeI8lf;L1O_b@I4ZCK33
+R7
+31
+R57
+R58
+R59
+R11
+R12
+!s100 oCfT1RY4Z>l`2AfQ6D?]l2
+!i10b 1
+Econtador_up_dw_7_bits
+Z60 w1700827303
+R2
+R3
+R4
+Z61 8D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/contador_up_dw_7_bits.vhd
+Z62 FD:/PROJETO_5/Projeto_5_CD/arquivos VHDL/contador_up_dw_7_bits.vhd
+l0
+L4
+VKmTm=l:JSJ@Q75^5341_B0
+R7
+31
+Z63 !s108 1700955672.149000
+Z64 !s90 -reportprogress|300|-93|-work|work|D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/contador_up_dw_7_bits.vhd|
+Z65 !s107 D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/contador_up_dw_7_bits.vhd|
+R11
+R12
+!s100 O1zTZ1ec@Fi5^hPNO:6]43
+!i10b 1
+Ackt
+R2
+R3
+DEx4 work 21 contador_up_dw_7_bits 0 22 KmTm=l:JSJ@Q75^5341_B0
+l29
+L9
+Vmh_Ii=fBA66U_DTPCUOMh2
+R7
+31
+R63
+R64
+R65
+R11
+R12
+!s100 PNI8o^LK4FZT;iMNAW_nA3
+!i10b 1
+Edemux_1x6
+Z66 w1700954270
+R2
+R3
+R4
+Z67 8D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/Demux_1x6.vhd
+Z68 FD:/PROJETO_5/Projeto_5_CD/arquivos VHDL/Demux_1x6.vhd
+l0
+L4
+Vlac634Y_LX>;fz;Ol?5;M0
+R7
+31
+Z69 !s108 1700955672.072000
+Z70 !s90 -reportprogress|300|-93|-work|work|D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/Demux_1x6.vhd|
+Z71 !s107 D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/Demux_1x6.vhd|
+R11
+R12
+!s100 X4C=jR5g9TmLPeJ94fQGW1
+!i10b 1
+Ackt
+R2
+R3
+DEx4 work 9 demux_1x6 0 22 lac634Y_LX>;fz;Ol?5;M0
+l13
+L10
+VBlCnX5`A>cHRTa`S=0cDW2
+R7
+31
+R69
+R70
+R71
+R11
+R12
+!s100 c;eJJWN[BkUZEIiFOV8On1
+!i10b 1
+Effd
+Z72 w1700862617
+R2
+R3
+R4
+Z73 8D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/FFD.vhd
+Z74 FD:/PROJETO_5/Projeto_5_CD/arquivos VHDL/FFD.vhd
+l0
+L4
+V`2;cYd8?Kj07VH5iH;hDZ3
+R7
+31
+Z75 !s108 1700955671.996000
+Z76 !s90 -reportprogress|300|-93|-work|work|D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/FFD.vhd|
+Z77 !s107 D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/FFD.vhd|
+R11
+R12
+!s100 ^<<4Tz4[YNE2TY?1gS:P03
+!i10b 1
+Alogica
+R2
+R3
+DEx4 work 3 ffd 0 22 `2;cYd8?Kj07VH5iH;hDZ3
+l11
+L9
+Vm6a_`o:TP@MO[j=n5@iAe3
+R7
+31
+R75
+R76
+R77
+R11
+R12
+!s100 CZ5Bn_HoW8c8n@hVGVjmR1
+!i10b 1
+Effjk
+Z78 w1700796024
+R2
+R3
+R4
+Z79 8D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/ffjk.vhd
+Z80 FD:/PROJETO_5/Projeto_5_CD/arquivos VHDL/ffjk.vhd
+l0
+L4
+V@3=ng`DPYX?iV3`4AbPc^1
+R7
+31
+Z81 !s108 1700955671.914000
+Z82 !s90 -reportprogress|300|-93|-work|work|D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/ffjk.vhd|
+Z83 !s107 D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/ffjk.vhd|
+R11
+R12
+!s100 Z0lk]oKd=l`^UFP1Q<ENP2
+!i10b 1
+Alogica
+R2
+R3
+DEx4 work 4 ffjk 0 22 @3=ng`DPYX?iV3`4AbPc^1
+l13
+L9
+V8COMShnh<KDTS9iCkPznl0
+R7
+31
+R81
+R82
+R83
+R11
+R12
+!s100 =hVQfS=Ij3OEQgV20=Dmc3
+!i10b 1
+Em_j_7bits
+Z84 w1700948914
+R2
+R3
+R4
+Z85 8D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/M_J_7BITS.vhd
+Z86 FD:/PROJETO_5/Projeto_5_CD/arquivos VHDL/M_J_7BITS.vhd
+l0
+L4
+V<DMNHUEbLeYLelG?J5<m`3
+R7
+31
+Z87 !s108 1700955671.825000
+Z88 !s90 -reportprogress|300|-93|-work|work|D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/M_J_7BITS.vhd|
+Z89 !s107 D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/M_J_7BITS.vhd|
+R11
+R12
+!s100 1R4TlVlMd[=cIX`>W91N=3
+!i10b 1
+Ackt
+R2
+R3
+DEx4 work 9 m_j_7bits 0 22 <DMNHUEbLeYLelG?J5<m`3
+l30
+L10
+VZK:`7WVBljchi=U62=gIU0
+R7
+31
+R87
+R88
+R89
+R11
+R12
+!s100 874RzM_Dbd^cI7X^8Kjo@1
+!i10b 1
+Emaquina_de_troco
+Z90 w1700939145
+R2
+R3
+R4
+Z91 8D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/MAQUINA_DE_TROCO.vhd
+Z92 FD:/PROJETO_5/Projeto_5_CD/arquivos VHDL/MAQUINA_DE_TROCO.vhd
+l0
+L4
+V?4<PJEPnc>^<@6z[RWHm72
+R7
+31
+Z93 !s108 1700955673.478000
+Z94 !s90 -reportprogress|300|-93|-work|work|D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/MAQUINA_DE_TROCO.vhd|
+Z95 !s107 D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/MAQUINA_DE_TROCO.vhd|
+R11
+R12
+!s100 Wd;D51Q3eiZ:V6dJA^_<H1
+!i10b 1
+Ackt
+R2
+R3
+DEx4 work 16 maquina_de_troco 0 22 ?4<PJEPnc>^<@6z[RWHm72
+l56
+L12
+V2eBW@JT5z]5EoJXiGD1iC2
+R7
+31
+R93
+R94
+R95
+R11
+R12
+!s100 Em?>B_UGRokLkS=T_85R61
+!i10b 1
+Emoeda_j_100
+Z96 w1700952817
+R2
+R3
+R4
+Z97 8D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/MOEDA_J_100.vhd
+Z98 FD:/PROJETO_5/Projeto_5_CD/arquivos VHDL/MOEDA_J_100.vhd
+l0
+L4
+VUFjHdD<c^le?1:YRZ0mT20
+!s100 f4IRnzYC963YVBON;O;;a0
+R7
+31
+!i10b 1
+Z99 !s108 1700955673.638000
+Z100 !s90 -reportprogress|300|-93|-work|work|D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/MOEDA_J_100.vhd|
+Z101 !s107 D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/MOEDA_J_100.vhd|
+R11
+R12
+Ackt
+R2
+R3
+DEx4 work 11 moeda_j_100 0 22 UFjHdD<c^le?1:YRZ0mT20
+l47
+L11
+V4AY9G`8f9U>HDOIiFLL>G1
+!s100 HC?IQD9L44ce[GFhZ^<6?2
+R7
+31
+!i10b 1
+R99
+R100
+R101
+R11
+R12
+Emux_2x1_10bits
+Z102 w1700876134
+R2
+R3
+R4
+Z103 8D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/mux_2x1_10BITS.vhd
+Z104 FD:/PROJETO_5/Projeto_5_CD/arquivos VHDL/mux_2x1_10BITS.vhd
+l0
+L4
+V99KGE<09d:J6B@LXLABKI3
+R7
+31
+Z105 !s108 1700955673.555000
+Z106 !s90 -reportprogress|300|-93|-work|work|D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/mux_2x1_10BITS.vhd|
+Z107 !s107 D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/mux_2x1_10BITS.vhd|
+R11
+R12
+!s100 8JZ5gm:ZcQYG6mnM<YI4=0
+!i10b 1
+Ackt
+R2
+R3
+DEx4 work 14 mux_2x1_10bits 0 22 99KGE<09d:J6B@LXLABKI3
+l14
+L10
+VWF=H?A;aI_A?D[4TT3SQg0
+R7
+31
+R105
+R106
+R107
+R11
+R12
+!s100 Rz6<?lFWjYVog`f:[RNOZ0
+!i10b 1
+Emux_2x1_1bit
+Z108 w1700827151
+R2
+R3
+R4
+Z109 8D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/MUX_2x1_1bit.vhd
+Z110 FD:/PROJETO_5/Projeto_5_CD/arquivos VHDL/MUX_2x1_1bit.vhd
+l0
+L4
+VT0=9`EZcnM@Y`Tcz1o;QH3
+R7
+31
+Z111 !s108 1700955671.724000
+Z112 !s90 -reportprogress|300|-93|-work|work|D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/MUX_2x1_1bit.vhd|
+Z113 !s107 D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/MUX_2x1_1bit.vhd|
+R11
+R12
+!s100 b_mmj_U^X:199QG[7[dRV1
+!i10b 1
+Ackt
+R2
+R3
+DEx4 work 12 mux_2x1_1bit 0 22 T0=9`EZcnM@Y`Tcz1o;QH3
+l13
+L10
+VMa9>P=2`iTSNUC_JI8R?F1
+R7
+31
+R111
+R112
+R113
+R11
+R12
+!s100 lD:_dY8`_OmIQgCE4]8ga2
+!i10b 1
+Emux_2x1_7bits
+Z114 w1700857372
+R2
+R3
+R4
+Z115 8D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/mux_2x1_7BITS.vhd
+Z116 FD:/PROJETO_5/Projeto_5_CD/arquivos VHDL/mux_2x1_7BITS.vhd
+l0
+L4
+Vdfn[16S]PkUcBVk<8^fZ_0
+R7
+31
+Z117 !s108 1700955671.627000
+Z118 !s90 -reportprogress|300|-93|-work|work|D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/mux_2x1_7BITS.vhd|
+Z119 !s107 D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/mux_2x1_7BITS.vhd|
+R11
+R12
+!s100 N@E]d?Y9A3YMFT^lOd3UJ1
+!i10b 1
+Ackt
+R2
+R3
+DEx4 work 13 mux_2x1_7bits 0 22 dfn[16S]PkUcBVk<8^fZ_0
+l14
+L10
+V9FzAPW0_4G^2?7zGCbUES2
+R7
+31
+R117
+R118
+R119
+R11
+R12
+!s100 hEfZ6oW2gbK^ZF=;GzzDV2
+!i10b 1
+Emux_6x1
+Z120 w1700946267
+R2
+R3
+R4
+Z121 8D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/Mux_6x1.vhd
+Z122 FD:/PROJETO_5/Projeto_5_CD/arquivos VHDL/Mux_6x1.vhd
+l0
+L5
+VX0@JNb@6am7@g97c;>TTn3
+R7
+31
+Z123 !s108 1700955671.492000
+Z124 !s90 -reportprogress|300|-93|-work|work|D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/Mux_6x1.vhd|
+Z125 !s107 D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/Mux_6x1.vhd|
+R11
+R12
+!s100 CB@V_zED]Z]CE7W`C9iK13
+!i10b 1
+Ackt
+R2
+R3
+DEx4 work 7 mux_6x1 0 22 X0@JNb@6am7@g97c;>TTn3
+l14
+L13
+VHEfL_<]`]C2EXW4[YK@4K0
+R7
+31
+R123
+R124
+R125
+R11
+R12
+!s100 Yo@7[X>B1FjVT0CKVdcDV1
+!i10b 1
+Ereg_estados_2
+Z126 w1700947537
+R2
+R3
+R4
+Z127 8D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/REG_ESTADOS_2.vhd
+Z128 FD:/PROJETO_5/Projeto_5_CD/arquivos VHDL/REG_ESTADOS_2.vhd
+l0
+L4
+V>cNPX`h6Df6UdG?3:CE>00
+R7
+31
+Z129 !s108 1700955672.843000
+Z130 !s90 -reportprogress|300|-93|-work|work|D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/REG_ESTADOS_2.vhd|
+Z131 !s107 D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/REG_ESTADOS_2.vhd|
+R11
+R12
+!s100 _gB_mETFf6<`^D73V^ZXg0
+!i10b 1
+Ackt
+R2
+R3
+DEx4 work 13 reg_estados_2 0 22 >cNPX`h6Df6UdG?3:CE>00
+l22
+L11
+V`?G4Kfi^=4jRIP`@HI]F53
+R7
+31
+R129
+R130
+R131
+R11
+R12
+!s100 [9Cfbe`7ImjfHG2OmMUH_1
+!i10b 1
+Eregistrador_10_bits
+Z132 w1700787436
+R2
+R3
+R4
+Z133 8D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/registrador_10_bits.vhd
+Z134 FD:/PROJETO_5/Projeto_5_CD/arquivos VHDL/registrador_10_bits.vhd
+l0
+L4
+V1F]knfhb8Y0Zab_M3Xdzb3
+R7
+31
+Z135 !s108 1700955671.288000
+Z136 !s90 -reportprogress|300|-93|-work|work|D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/registrador_10_bits.vhd|
+Z137 !s107 D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/registrador_10_bits.vhd|
+R11
+R12
+!s100 ij8o<G0P]Sb6DBZ3zU<QR1
+!i10b 1
+Ackt
+R2
+R3
+DEx4 work 19 registrador_10_bits 0 22 1F]knfhb8Y0Zab_M3Xdzb3
+l19
+L10
+VmJaYfjfocJ<S[YXlGTJko3
+R7
+31
+R135
+R136
+R137
+R11
+R12
+!s100 QkWOB]IGIC8UHhCb_JRnB0
+!i10b 1
+Eregistrador_7_bits
+Z138 w1700787412
+R2
+R3
+R4
+Z139 8D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/registrador_7_bits.vhd
+Z140 FD:/PROJETO_5/Projeto_5_CD/arquivos VHDL/registrador_7_bits.vhd
+l0
+L4
+VK0d6jUcacYegl97kP^n7U3
+R7
+31
+Z141 !s108 1700955671.386000
+Z142 !s90 -reportprogress|300|-93|-work|work|D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/registrador_7_bits.vhd|
+Z143 !s107 D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/registrador_7_bits.vhd|
+R11
+R12
+!s100 BMG_z6_XeREOKia0<nQGJ3
+!i10b 1
+Ackt
+R2
+R3
+DEx4 work 18 registrador_7_bits 0 22 K0d6jUcacYegl97kP^n7U3
+l19
+L10
+V70lhXG:QJW`?0?=L:J:Ac1
+R7
+31
+R141
+R142
+R143
+R11
+R12
+!s100 9ngY5on[[8B[?d>lZ?Ja52
+!i10b 1
+Esinal_estado
+Z144 w1700864025
+R2
+R3
+R4
+Z145 8D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/SINAL_ESTADO.vhd
+Z146 FD:/PROJETO_5/Projeto_5_CD/arquivos VHDL/SINAL_ESTADO.vhd
+l0
+L4
+V:FS?`DBKEWabniScf4zQN0
+R7
+31
+Z147 !s108 1700955672.926000
+Z148 !s90 -reportprogress|300|-93|-work|work|D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/SINAL_ESTADO.vhd|
+Z149 !s107 D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/SINAL_ESTADO.vhd|
+R11
+R12
+!s100 lI:;42of_OPe2CQbKT]Un1
+!i10b 1
+Ackt
+R2
+R3
+DEx4 work 12 sinal_estado 0 22 :FS?`DBKEWabniScf4zQN0
+l13
+L9
+V7JJmO@H]=i4416]S=SOkL1
+R7
+31
+R147
+R148
+R149
+R11
+R12
+!s100 BQJIF^:1hIG>0AA>eFGd?2
+!i10b 1
+Esubtrator_10_bits
+Z150 w1700787486
+Z151 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+R2
+R3
+R4
+Z152 8D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/subtrator_10_bits.vhd
+Z153 FD:/PROJETO_5/Projeto_5_CD/arquivos VHDL/subtrator_10_bits.vhd
+l0
+L5
+V90HOOlc2d3H11eR[0AIgB3
+R7
+31
+Z154 !s108 1700955671.025000
+Z155 !s90 -reportprogress|300|-93|-work|work|D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/subtrator_10_bits.vhd|
+Z156 !s107 D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/subtrator_10_bits.vhd|
+R11
+R12
+!s100 ^TII8BB<N;fW^DFXHd_DR1
+!i10b 1
+Ackt
+R151
+R2
+R3
+DEx4 work 17 subtrator_10_bits 0 22 90HOOlc2d3H11eR[0AIgB3
+l25
+L13
+VCM:27:NOI>nAUB1b5VHgD1
+R7
+31
+R154
+R155
+R156
+R11
+R12
+!s100 B;CGolNnWC?8NTgk=zVcB1
+!i10b 1
+Esubtrator_1_bit
+Z157 w1700787453
+R151
+R2
+R3
+R4
+Z158 8D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/subtrator_1_bit.vhd
+Z159 FD:/PROJETO_5/Projeto_5_CD/arquivos VHDL/subtrator_1_bit.vhd
+l0
+L5
+VGLA?c2mC?]a5UG9PaC9IL2
+R7
+31
+Z160 !s108 1700955671.195000
+Z161 !s90 -reportprogress|300|-93|-work|work|D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/subtrator_1_bit.vhd|
+Z162 !s107 D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/subtrator_1_bit.vhd|
+R11
+R12
+!s100 oQ<2F9o4?Im2Z0WHgLJ0L2
+!i10b 1
+Ackt
+R151
+R2
+R3
+DEx4 work 15 subtrator_1_bit 0 22 GLA?c2mC?]a5UG9PaC9IL2
+l15
+L13
+V5J8Mc2abROjFj7zF4<HXo2
+R7
+31
+R160
+R161
+R162
+R11
+R12
+!s100 LAEje69=Y>fRgLCk8?X1z1
+!i10b 1
+Esubtrator_7_bits
+Z163 w1700787472
+R151
+R2
+R3
+R4
+Z164 8D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/subtrator_7_bits.vhd
+Z165 FD:/PROJETO_5/Projeto_5_CD/arquivos VHDL/subtrator_7_bits.vhd
+l0
+L5
+VQbf;4d0T^eS=X@;Nhz>fk1
+R7
+31
+Z166 !s108 1700955671.119000
+Z167 !s90 -reportprogress|300|-93|-work|work|D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/subtrator_7_bits.vhd|
+Z168 !s107 D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/subtrator_7_bits.vhd|
+R11
+R12
+!s100 6De@i^[e;cgb<<EVToUKV0
+!i10b 1
+Ackt
+R151
+R2
+R3
+DEx4 work 16 subtrator_7_bits 0 22 Qbf;4d0T^eS=X@;Nhz>fk1
+l25
+L13
+Vz<31>`<z3PRalF0<mJESN0
+R7
+31
+R166
+R167
+R168
+R11
+R12
+!s100 nCRk@7]i`ZA2d>]]OLN@12
+!i10b 1
+Evalor_m
+Z169 w1700948159
+R2
+R3
+R4
+Z170 8D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/VALOR_M.vhd
+Z171 FD:/PROJETO_5/Projeto_5_CD/arquivos VHDL/VALOR_M.vhd
+l0
+L4
+V>4=5nNTSQG3NHz_L141o_0
+R7
+31
+Z172 !s108 1700955672.679000
+Z173 !s90 -reportprogress|300|-93|-work|work|D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/VALOR_M.vhd|
+Z174 !s107 D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/VALOR_M.vhd|
+R11
+R12
+!s100 ?b:=KSle97N5G;=UnCOY50
+!i10b 1
+Ackt
+R2
+R3
+DEx4 work 7 valor_m 0 22 >4=5nNTSQG3NHz_L141o_0
+l17
+L9
+VndQbkdl7LEORac0>7`hja0
+R7
+31
+R172
+R173
+R174
+R11
+R12
+!s100 3HFAkHF]S7DhA6J??^6:P1
+!i10b 1
+Evt
+Z175 w1700947035
+R2
+R3
+R4
+Z176 8D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/VT.vhd
+Z177 FD:/PROJETO_5/Projeto_5_CD/arquivos VHDL/VT.vhd
+l0
+L4
+VXXjNnVXB4:=ZN=_Rg0ZeM1
+R7
+31
+Z178 !s108 1700955673.030000
+Z179 !s90 -reportprogress|300|-93|-work|work|D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/VT.vhd|
+Z180 !s107 D:/PROJETO_5/Projeto_5_CD/arquivos VHDL/VT.vhd|
+R11
+R12
+!s100 lLX2Y6RA]GlijA8E1GRgS3
+!i10b 1
+Ackt
+R2
+R3
+DEx4 work 2 vt 0 22 XXjNnVXB4:=ZN=_Rg0ZeM1
+l28
+L10
+VTz:EHOS2]C8JiXMz_1B_f2
+R7
+31
+R178
+R179
+R180
+R11
+R12
+!s100 n1KVS]C_09<d?Y2i0JCLS1
+!i10b 1

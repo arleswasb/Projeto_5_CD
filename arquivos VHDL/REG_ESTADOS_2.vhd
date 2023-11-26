@@ -3,8 +3,8 @@ use ieee.std_logic_1164.all;
 
 entity REG_ESTADOS_2 is
    port (cLk : in  std_logic; 
-			N : in  std_logic_VECTOR(1 downto 0); -- N REPRESENTA O NUMERO DE ESTADOS
-             S : out std_logic_VECTOR(1 downto 0));
+	N : in  std_logic_VECTOR(1 downto 0); -- N REPRESENTA O NUMERO DE ESTADOS
+        S : out std_logic_VECTOR(1 downto 0));
 				 
 end REG_ESTADOS_2;
 
@@ -16,17 +16,18 @@ COMPONENT ffd is
                        q : out std_logic);
 end COMPONENT;
 
-SIGNAL COMUM1,comum2:std_logic; ---LIGA O CLEAR DO FFD0 AO PRESET DO FFD1
+
 SIGNAL FDD0Q,FDD1Q:std_logic; ---LIGA O CLEAR DO FFD0 AO PRESET DO FFD1
 
 begin
    
-U0: FFD PORT MAP (CLK, comum1,comum2,N(0),FDD0Q);
+U0: FFD PORT MAP (CLK,'1','1',N(0),FDD0Q);
 
-U1: FFD PORT MAP (CLK, comum1,comum2,N(1),FDD1Q);
+U1: FFD PORT MAP (CLK, '1','1',N(1),FDD1Q);
 
-S(1) <= FDD1Q;
+
 S(0) <= FDD0Q;
+S(1) <= FDD1Q;
 
 
 

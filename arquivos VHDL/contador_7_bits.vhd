@@ -35,48 +35,48 @@ FFJK0 <= FFJK0Q;
 ------------------------------------------------------------
 aux_MUX01 <= FFJK0Q and mux00;--SINAL DE ENTRADA DO MUX 1
 
-mx1: MUX_2x1_1bit  port map (aux_MUX01,FFJK1,mux01);
-FF1: ffjk  port map (ck,'0','0',mux01,mux01,FFJK1Q);
+mx1: MUX_2x1_1bit  port map (CLR,aux_MUX01,FFJK1,mux01);
+FF1: ffjk  port map (ck,clr,'1',mux01,mux01,FFJK1Q);
 
 FFJK1 <= FFJK1Q;
 
 ------------------------------------------------------------
 aux_MUX02 <= FFJK1Q and mux01;--SINAL DE ENTRADA DO MUX 2
 
-mx2: MUX_2x1_1bit  port map (aux_MUX02,FFJK2,mux02);
-FF2: ffjk  port map (ck,'0','0',mux02,mux02,FFJK2Q);
+mx2: MUX_2x1_1bit  port map (CLR,aux_MUX02,FFJK2,mux02);
+FF2: ffjk  port map (ck,clr,'1',mux02,mux02,FFJK2Q);
 
 FFJK2 <= FFJK2Q;
 
 ------------------------------------------------------------
 aux_MUX03 <= FFJK2Q and mux02;--SINAL DE ENTRADA DO MUX 3
 
-mx3: MUX_2x1_1bit  port map (aux_MUX03,FFJK3,mux03);
-FF3: ffjk  port map (ck,'0','0',mux03,mux03,FFJK3Q);
+mx3: MUX_2x1_1bit  port map (CLR,aux_MUX03,FFJK3,mux03);
+FF3: ffjk  port map (ck,clr,'1',mux03,mux03,FFJK3Q);
 
 FFJK3 <= FFJK3Q;
 
 ------------------------------------------------------------
 aux_MUX04 <= FFJK3Q and mux03;--SINAL DE ENTRADA DO MUX 4
 
-mx4: MUX_2x1_1bit  port map (aux_MUX04,FFJK4,mux04);
-FF4: ffjk  port map (ck,'0','0',mux04,mux04,FFJK4Q);
+mx4: MUX_2x1_1bit  port map (CLR,aux_MUX04,FFJK4,mux04);
+FF4: ffjk  port map (ck,clr,'1',mux04,mux04,FFJK4Q);
 
 FFJK4 <= FFJK4Q;
 
 ------------------------------------------------------------
 aux_MUX05 <= FFJK4Q and mux04;--SINAL DE ENTRADA DO MUX 5
 
-mx5: MUX_2x1_1bit  port map (aux_MUX05,FFJK5,mux05);
-FF5: ffjk  port map (ck,'0','0',mux05,mux05,FFJK5Q);
+mx5: MUX_2x1_1bit  port map (CLR,aux_MUX05,FFJK5,mux05);
+FF5: ffjk  port map (ck,clr,'1',mux05,mux05,FFJK5Q);
 
 FFJK5 <= FFJK5Q;
 
 ------------------------------------------------------------
 aux_MUX06 <= FFJK5Q and mux05;--SINAL DE ENTRADA DO MUX 6
 
-mx6: MUX_2x1_1bit  port map (aux_MUX06,FFJK6,mux06);
-FF6: ffjk  port map (ck,'0','0',mux06,mux06,FFJK6Q);
+mx6: MUX_2x1_1bit  port map (CLR,aux_MUX06,FFJK6,mux06);
+FF6: ffjk  port map (ck,clr,'1',mux06,mux06,FFJK6Q);
 
 FFJK6 <= FFJK6Q;
 ------------------------------------------------------------
