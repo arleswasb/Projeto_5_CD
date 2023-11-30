@@ -11,22 +11,14 @@ end CIRCUITO_COMB;
 
 architecture CKT of CIRCUITO_COMB is
 
-signal A,B,C,D,E : STD_LOGIC;
-
-
 begin
 
-A <= S1;
-B <= S0;
-C <= BS;
-D <= TT;
-E <= F;
    
-N0 <= ((NOT A) and (NOT B)) or ((NOT A) and (NOT C)) or ((NOT B) and E) or (A and B);
+N0 <= ((NOT S1) and (NOT S0)) or ((NOT S1) and (NOT BS)) or ((NOT S0) and F) or (S1 and S0);
 
-N1 <= (A and (not E)) or ((not A) and B and C) or (A and (not B) and D);
+N1 <= (S1 and (not F)) or ((not S1) and S0 and BS) or (S1 and (not S0) and TT);
 
-led <= (A and not(E)) or (not(A) and B and C) or (A and not(B) and D);
+led <= (S1 and not(F)) or (not(S1) and S0 and BS) or (S1 and not(S0) and TT);
 	
 	
 end CKT;

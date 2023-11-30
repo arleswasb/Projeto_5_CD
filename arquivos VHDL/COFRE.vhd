@@ -3,7 +3,7 @@ library ieee;
 use ieee.std_logic_1164.all;
 
 entity COFRE is
-  port (Clk, load_M, setup, standby, teste, troco: in std_logic; --ENTRADAS DO COFRE
+  port (clr_A,Clk,clr, load_M, setup, standby, teste, troco: in std_logic; --ENTRADAS DO COFRE
 				VT: in std_logic_vector(9 downto 0); -- ENTRADA EXTERNAA (VALOR DE TESTE)
 				LOAD_VT,F: out std_logic; -- SAIDA INTERNA AO COFRE
 				I,C: out std_logic_vector(5 downto 0); --SAIDA EXTERNA PARA INDICAR A SITUAÇÃO DOS COFRES(CHEIO OU VAZIO)
@@ -17,7 +17,7 @@ architecture ckt of COFRE is
 SIGNAL J_UP							:	STD_LOGIC; --(J++) É O SINAL GERADO NA SAIDA DO BLOCO DE MUX 6X1 E MUX 2X1 
 SIGNAL C_OUT						:	STD_LOGIC; --C_OUT É O SINAL GERADO NA SAIDA DO BLOCO DE MUX 6X1 DO J++
 SIGNAL Z_OUT						:	STD_LOGIC; --Z_OUT É O SINAL GERADO NA SAIDA DO BLOCO DE MUX 6X1 DO J++
-SIGNAL C_EXTERNO, I_EXTERNO	:  std_logic_vector(5 downto 0);
+SIGNAL C_EXTERNO, I_EXTERNO				:  	std_logic_vector(5 downto 0);
 SIGNAL C_int						:	std_logic_vector(5 downto 0); --C(X) É O SINAL GERADO NA SAIDA DAS LOGICAS DAS MOEDAS USADO NO MUX_000 
 SIGNAL Z_int						:	std_logic_vector(5 downto 0); --Z(X) É O SINAL GERADO NA SAIDA DAS LOGICAS DAS MOEDAS USADO NO MUX_001
 SIGNAL I_int						:	std_logic_vector(5 downto 0); --Z(X) É O SINAL GERADO NA SAIDA DAS LOGICAS DAS MOEDAS USADO NO MUX_001
@@ -31,7 +31,7 @@ SIGNAL COUT_SUB					:	STD_LOGIC; -- SINAL DE COUT NO SUBTRATOR
 -- COMPONENTES DO CONTADOR J
 
 COMPONENT contador_3_bits is --- USADO NO CONTADOR J
-   Port ( up,clr,ck : in STD_LOGIC;
+   Port (CLR_A, up,clr,ck : in STD_LOGIC;
          	S: out std_logic_vector(2 downto 0));
 end COMPONENT;
 
@@ -43,9 +43,9 @@ end COMPONENT;
 -- SINAIS DO CONTADOR J
 
 
-SIGNAL J_OUT,J_IN,J		:  std_logic_vector(2 downto 0); --SAIDA J DO CONTADOR
-SIGNAL F_IN, F_OUT, F_CLEAR	:	STD_LOGIC; --F_OUT É O SINAL GERADO NA SAIDA DA PORTA END, F_IN É O MESMO SINAL F_OUT USADO PARA DA UM CLEAR NO CONTADOR F
-SIGNAL AUX_1,AUX_2	:	STD_LOGIC;--AUX_1 USADO NA SAIDA DO COMP5, AUX_2 USADO NA ENTRADA DA PORTA END
+SIGNAL J_OUT,J_IN,J		:std_logic_vector(2 downto 0); --SAIDA J DO CONTADOR
+SIGNAL F_IN, F_OUT 		:STD_LOGIC; --F_OUT É O SINAL GERADO NA SAIDA DA PORTA END, F_IN É O MESMO SINAL F_OUT USADO PARA DA UM CLEAR NO CONTADOR F
+SIGNAL AUX_1,AUX_2		:STD_LOGIC;--AUX_1 USADO NA SAIDA DO COMP5, AUX_2 USADO NA ENTRADA DA PORTA END
 -------------------------------------------------------------------------------------------------------------------------------
 
 -- COMPONENTES DO VALOR DE M
@@ -77,7 +77,7 @@ COMPONENT MUX_2x1_1bit is -- multiplexador 2X1
 	     	S : out std_logic); -- SAIDA
 end COMPONENT;
 
-SIGNAL mux1_out, mux2_out		:  std_logic; --SAIDA DO VALOR dos dois mux de 6 canais
+SIGNAL mux1_out		:  std_logic; --SAIDA DO VALOR do 1 MUX de 6 canais
 SIGNAL AUX_3 					:  std_logic; -- SINAL AUXILIAR RETIRADO NA SAIDA DA PORTA OU
 SIGNAL mux3_out 					:  std_logic; --SAIDA DO VALOR do mux de 2 canais
 
@@ -88,7 +88,7 @@ SIGNAL mux3_out 					:  std_logic; --SAIDA DO VALOR do mux de 2 canais
 COMPONENT Demux_1x6 is -- entrada de valor teste E E CONT_M  para ENTRADA por moeda
 
    Port (ENT: in std_logic;
-			sel:  in std_logic_vector(2 downto 0);
+	sel:  in std_logic_vector(2 downto 0);
          S: out std_logic_vector(5 downto 0));
 end COMPONENT;
 
@@ -100,7 +100,7 @@ SIGNAL AUX_4 					:  std_logic; -- SINAL AUXILIAR RETIRADO NA SAIDA DA PORTA END
 -- COMPONENTES DO CONTADOR DE MOEDAS 100
 
 COMPONENT MOEDA_J_100 is
-   port (cLk,LOAD_M, SET_M,UP_CONT_M, TROCO_J,clr_CONT_M 	: in  std_logic;
+   port (clr_A,cLk,LOAD_M, SET_M,UP_CONT_M, TROCO_J,clr_CONT_M 	: in  std_logic;
 		   C_J, CONT_Z_J, I_J 											: out std_logic);
 							
 end COMPONENT;
@@ -109,7 +109,7 @@ end COMPONENT;
 -- COMPONENTES DO CONTADOR DE MOEDAS 100
 
 COMPONENT MOEDA_J_50 is
-   port (cLk,LOAD_M, SET_M,UP_CONT_M, TROCO_J,clr_CONT_M 	: in  std_logic;
+   port (clr_A,cLk,LOAD_M, SET_M,UP_CONT_M, TROCO_J,clr_CONT_M 	: in  std_logic;
 		   C_J, CONT_Z_J, I_J 											: out std_logic);
 							
 end COMPONENT;
@@ -118,7 +118,7 @@ end COMPONENT;
 -- COMPONENTES DO CONTADOR DE MOEDAS 25
 
 COMPONENT MOEDA_J_25 is
-   port (cLk,LOAD_M, SET_M,UP_CONT_M, TROCO_J,clr_CONT_M 	: in  std_logic;
+   port (clr_A,cLk,LOAD_M, SET_M,UP_CONT_M, TROCO_J,clr_CONT_M 	: in  std_logic;
 		   C_J, CONT_Z_J, I_J 											: out std_logic);
 							
 end COMPONENT;
@@ -126,7 +126,7 @@ end COMPONENT;
 -- COMPONENTES DO CONTADOR DE MOEDAS 10
 
 COMPONENT MOEDA_J_10 is
-   port (cLk,LOAD_M, SET_M,UP_CONT_M, TROCO_J,clr_CONT_M 	: in  std_logic;
+   port (clr_A,cLk,LOAD_M, SET_M,UP_CONT_M, TROCO_J,clr_CONT_M 	: in  std_logic;
 		   C_J, CONT_Z_J, I_J 											: out std_logic);
 							
 end COMPONENT;
@@ -134,16 +134,16 @@ end COMPONENT;
 -- COMPONENTES DO CONTADOR DE MOEDAS 5
 
 COMPONENT MOEDA_J_5 is
-   port (cLk,LOAD_M, SET_M,UP_CONT_M, TROCO_J,clr_CONT_M 	: in  std_logic;
-		   C_J, CONT_Z_J, I_J 											: out std_logic);
+   port (clr_A,cLk,LOAD_M, SET_M,UP_CONT_M, TROCO_J,clr_CONT_M 	: in  std_logic;
+		   C_J, CONT_Z_J, I_J 				: out std_logic);
 							
 end COMPONENT;
 ---------------------------------------------------------------------------------------------------------------------------------------------
 -- COMPONENTES DO CONTADOR DE MOEDAS 1
 
 COMPONENT MOEDA_J_1 is
-   port (cLk,LOAD_M, SET_M,UP_CONT_M, TROCO_J,clr_CONT_M 	: in  std_logic;
-		   C_J, CONT_Z_J, I_J 											: out std_logic);
+   port (clr_A,cLk,LOAD_M, SET_M,UP_CONT_M, TROCO_J,clr_CONT_M 	: in  std_logic;
+		   C_J, CONT_Z_J, I_J 				: out std_logic);
 							
 end COMPONENT;
 ---------------------------------------------------------------------------------------------------------------------------------------------
@@ -177,7 +177,7 @@ begin
 --CONTADOR J
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
-CONTJ: contador_3_bits PORT MAP (J_UP,F_IN,CLK,J_OUT);
+CONTJ: contador_3_bits PORT MAP (CLR_A,J_UP,F_IN,CLK,J_OUT);
 COMP5: COMP_5 PORT MAP (J_IN,AUX_1);
 J_IN <= J_OUT;
 AUX_2 <= J_UP;
@@ -218,6 +218,12 @@ MAIOR_IGUAL <= AUX_5;
 LOAD_VT <= (NOT C_OUT) AND AUX_5; 
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------
 -- CALCULO DO D (PARA RETROALIMENTAR O VALOR DE VT)
 
 SUBTRATOR: SUBTRATOR_10_BITS PORT MAP (VT,VAL_M, '0', D, Cout_SUB);
@@ -238,6 +244,9 @@ C(2) <= C_int(2);
 C(1) <= C_int(1);
 C(0) <= C_int(0);
 
+I_EXTERNO <= I_INT;
+C_EXTERNO <= C_INT;
+
 
 
 
@@ -247,12 +256,12 @@ C(0) <= C_int(0);
 ---------------------------------------------------------------------------------------------------------------------------------------------
 -- CONTADOR DE MOEDA1
 
-MOEDA_100: MOEDA_J_100 PORT MAP (cLk,LOAD_M, SETUP,CONT_M_int(0),TROCO_int(0),STANDBY, C_int(0), Z_int(0), I_int(0));
-MOEDA_50:  MOEDA_J_50 PORT MAP  (cLk,LOAD_M, SETUP,CONT_M_int(1),TROCO_int(1),STANDBY, C_int(1), Z_int(1), I_int(1));
-MOEDA_25:  MOEDA_J_25 PORT MAP  (cLk,LOAD_M, SETUP,CONT_M_int(2),TROCO_int(2),STANDBY, C_int(2), Z_int(2), I_int(2));
-MOEDA_15:  MOEDA_J_10 PORT MAP  (cLk,LOAD_M, SETUP,CONT_M_int(3),TROCO_int(3),STANDBY, C_int(3), Z_int(3), I_int(3)); 
-MOEDA_5:   MOEDA_J_5 PORT MAP   (cLk,LOAD_M, SETUP,CONT_M_int(4),TROCO_int(4),STANDBY, C_int(4), Z_int(4), I_int(4));
-MOEDA_1:   MOEDA_J_1 PORT MAP   (cLk,LOAD_M, SETUP,CONT_M_int(5),TROCO_int(5),STANDBY, C_int(5), Z_int(5), I_int(5));
+MOEDA_100: MOEDA_J_100 PORT MAP (clr_A,cLk,LOAD_M, SETUP,CONT_M_int(0),TROCO_int(0),STANDBY, C_int(0), Z_int(0), I_int(0));
+MOEDA_50:  MOEDA_J_50 PORT MAP  (clr_A,cLk,LOAD_M, SETUP,CONT_M_int(1),TROCO_int(1),STANDBY, C_int(1), Z_int(1), I_int(1));
+MOEDA_25:  MOEDA_J_25 PORT MAP  (clr_A,cLk,LOAD_M, SETUP,CONT_M_int(2),TROCO_int(2),STANDBY, C_int(2), Z_int(2), I_int(2));
+MOEDA_15:  MOEDA_J_10 PORT MAP  (clr_A,cLk,LOAD_M, SETUP,CONT_M_int(3),TROCO_int(3),STANDBY, C_int(3), Z_int(3), I_int(3)); 
+MOEDA_5:   MOEDA_J_5 PORT MAP   (clr_A,cLk,LOAD_M, SETUP,CONT_M_int(4),TROCO_int(4),STANDBY, C_int(4), Z_int(4), I_int(4));
+MOEDA_1:   MOEDA_J_1 PORT MAP   (clr_A,cLk,LOAD_M, SETUP,CONT_M_int(5),TROCO_int(5),STANDBY, C_int(5), Z_int(5), I_int(5));
 
  
  

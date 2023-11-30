@@ -2,7 +2,7 @@ library ieee;
 use ieee.std_logic_1164.all;
 
 entity bnt_sincrono is
-    port(clk, BTN: in std_logic;
+    port(clk,clr, BTN: in std_logic;
         saida: out std_logic);
 end bnt_sincrono;
 
@@ -17,8 +17,8 @@ architecture ckt of bnt_sincrono is
 
 begin
 
-FFD1: ffd port map(clk,'1', '1',BTN,S1);
-FFD2: ffd port map(clk,'1', '1', notq, S2);
+FFD1: ffd port map(clk,clr, '0',BTN,S1);
+FFD2: ffd port map(clk,clr, '0', notq, S2);
 
 notq <= (not S1);
 saida <= S1 and S2;

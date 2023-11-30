@@ -2,7 +2,7 @@ library ieee;
 use ieee.std_logic_1164.all;
 
 entity MOEDA_J_5 is
-   port (cLk,LOAD_M, SET_M,UP_CONT_M, TROCO_J,clr_CONT_M : in  std_logic;
+   port (clr_A,cLk,LOAD_M, SET_M,UP_CONT_M, TROCO_J,clr_CONT_M : in  std_logic;
 		
                      C_J, CONT_Z_J, I_J 						: out std_logic);
 							
@@ -27,7 +27,7 @@ end component;
 
 ----------------------------------------------------------------------------------------
 component contador_up_dw_7_bits is
-   Port ( up, dw,clr,ck	: in STD_LOGIC;
+   Port ( clr_A,up, dw,clr,ck	: in STD_LOGIC;
 							S	: out std_logic_vector(6 downto 0));
 end component;
 
@@ -59,7 +59,7 @@ SUB0: SUBTRATOR_7_BITS PORT MAP (SUBTRACT_IN,CONT_M_OUT,'0',SUBTRACT_OUT,Cout);
 COMP_Z1: COMPARADOR_ZERO_7 PORT MAP (COMP_ZERO1_IN,C_J);
 COMP_Z2: COMPARADOR_ZERO_7 PORT MAP (COMP_ZERO2_IN,COMP_ZERO2_OUT);
 --------------------------------------------------------------------------------------------------------
-CONT_M: contador_up_dw_7_bits PORT MAP (UP_CONT_M, DW_CONT_M,CLR_CONT_M, CLK, CONT_M_OUT);
+CONT_M: contador_up_dw_7_bits PORT MAP (clr_A,UP_CONT_M, DW_CONT_M,CLR_CONT_M, CLK, CONT_M_OUT);
 ---------------------------------------------------------------------------------------------------------
 
 DW_CONT_M <= (TROCO_J AND (NOT COMP_ZERO2_OUT));

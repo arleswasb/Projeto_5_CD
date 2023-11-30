@@ -3,7 +3,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity M_J_7BITS is -- 
    Port ( SUBT: in std_logic_vector(6 downto 0);
-			CLK,LOAD_M,SET_M:  in std_logic;
+	CLK,LOAD_M,SET_M:  in std_logic;
          M: out std_logic_vector(6 downto 0));
 end M_J_7BITS;
 
@@ -22,7 +22,7 @@ COMPONENT REGISTRADOR_7_BITS is
 end COMPONENT;
 
 SIGNAL S0_MUX,S1_MUX:std_logic_vector(6 downto 0);
-SIGNAL ENTRADA_INT,SAIDA_INT,SAIDA_REG:std_logic_vector(6 downto 0);
+SIGNAL ENTRADA_INT,SAIDA_REG:std_logic_vector(6 downto 0);
 SIGNAL CEM:std_logic_vector(6 downto 0); --- VALOR CONSTARANTE 100 NA ENTRADA DO MUX2X1
  
 

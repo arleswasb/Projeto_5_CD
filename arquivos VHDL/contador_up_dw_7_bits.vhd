@@ -2,7 +2,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
 entity contador_up_dw_7_bits is
-   Port ( up, dw,clr,ck : in STD_LOGIC;
+   Port (clr_A, up, dw,clr,ck : in STD_LOGIC;
          	S: out std_logic_vector(6 downto 0));
 end contador_up_dw_7_bits;
 
@@ -28,12 +28,12 @@ signal 		FFJK6Q,FFJK5Q,FFJK4Q,FFJK3Q,FFJK2Q,FFJK1Q,FFJK0Q  :  	std_logic;
 
 begin
 
-SEL <= CLR; -- O CLEAR SERÃ A CHAVE SELETORA
+SEL <= CLR; -- O CLEAR SERÁ A CHAVE SELETORA
 
 ENT_MX0 <= UP OR DW; -- bit menos significativo FF0
 FFJK0 <= FFJK0Q; 
 mx0: MUX_2x1_1bit  port map (SEL,ENT_MX0,FFJK0,mux00);
-FF0: ffjk  port map (ck,CLR,'1',mux00,mux00,FFJK0Q);
+FF0: ffjk  port map (ck,clr_A,'1',mux00,mux00,FFJK0Q);
 ------------------------------------------------------------
 FFJK1 <=  NOT FFJK0Q;
 
@@ -41,7 +41,7 @@ mx1a: MUX_2x1_1bit  port map (DW,FFJK0Q,FFJK1,mux01a);
 aux_MUX01a <= mux01a and mux00;
 mx1b: MUX_2x1_1bit  port map (sel,aux_MUX01a,FFJK1Q,mux01b);
 
-FF1: ffjk  port map (ck,CLR,'1',mux01b,mux01b,FFJK1Q);
+FF1: ffjk  port map (ck,clr_A,'1',mux01b,mux01b,FFJK1Q);
 ------------------------------------------------------------
 FFJK2 <=  NOT FFJK1Q;
 
@@ -49,7 +49,7 @@ mx2a: MUX_2x1_1bit  port map (DW,FFJK1Q,FFJK2,mux02a);
 aux_MUX02a <= mux02a and mux01b;
 mx2b: MUX_2x1_1bit  port map (sel,aux_MUX02a,FFJK2Q,mux02b);
 
-FF2: ffjk  port map (ck,CLR,'1',mux02b,mux02b,FFJK2Q);
+FF2: ffjk  port map (ck,clr_A,'1',mux02b,mux02b,FFJK2Q);
 ------------------------------------------------------------
 FFJK3 <=  NOT FFJK2Q;
 
@@ -57,7 +57,7 @@ mx3a: MUX_2x1_1bit  port map (DW,FFJK2Q,FFJK3,mux03a);
 aux_MUX03a <= mux03a and mux02b;
 mx3b: MUX_2x1_1bit  port map (sel,aux_MUX03a,FFJK3Q,mux03b);
 
-FF3: ffjk  port map (ck,CLR,'1',mux03b,mux03b,FFJK3Q);
+FF3: ffjk  port map (ck,clr_A,'1',mux03b,mux03b,FFJK3Q);
 ------------------------------------------------------------
 FFJK4 <=  NOT FFJK3Q;
 
@@ -65,7 +65,7 @@ mx4a: MUX_2x1_1bit  port map (DW,FFJK3Q,FFJK4,mux04a);
 aux_MUX04a <= mux04a and mux03b;
 mx4b: MUX_2x1_1bit  port map (sel,aux_MUX04a,FFJK4Q,mux04b);
 
-FF4: ffjk  port map (ck,CLR,'1',mux04b,mux04b,FFJK4Q);
+FF4: ffjk  port map (ck,clr_A,'1',mux04b,mux04b,FFJK4Q);
 ------------------------------------------------------------
 FFJK5 <=  NOT FFJK4Q;
 
@@ -73,7 +73,7 @@ mx5a: MUX_2x1_1bit  port map (DW,FFJK4Q,FFJK5,mux05a);
 aux_MUX05a <= mux05a and mux04b;
 mx5b: MUX_2x1_1bit  port map (sel,aux_MUX05a,FFJK5Q,mux05b);
 
-FF5: ffjk  port map (ck,CLR,'1',mux05b,mux05b,FFJK5Q);
+FF5: ffjk  port map (ck,clr_A,'1',mux05b,mux05b,FFJK5Q);
 ------------------------------------------------------------
 FFJK6 <=  NOT FFJK5Q;
 
@@ -81,7 +81,7 @@ mx6a: MUX_2x1_1bit  port map (DW,FFJK5Q,FFJK6,mux06a);
 aux_MUX06a <= mux06a and mux05b;
 mx6b: MUX_2x1_1bit  port map (sel,aux_MUX06a,FFJK6Q,mux06b);
 
-FF6: ffjk  port map (ck,CLR,'1',mux06b,mux06b,FFJK6Q);
+FF6: ffjk  port map (ck,clr_A,'1',mux06b,mux06b,FFJK6Q);
 
 
 

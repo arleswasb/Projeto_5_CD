@@ -1,0 +1,332 @@
+{C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/BLOCO_CONTROLE.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/BLOCO_CONTROLE.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity BLOCO_DE_CONTROLE
+-- Compiling architecture CKT of BLOCO_DE_CONTROLE
+
+} {} {}} {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/MOEDA_J_25.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/MOEDA_J_25.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity MOEDA_J_25
+-- Compiling architecture CKT of MOEDA_J_25
+
+} {} {}} {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/contador_3_bits.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/contador_3_bits.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity contador_3_bits
+-- Compiling architecture ckt of contador_3_bits
+
+} {} {}} {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/subtrator_7_bits.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/subtrator_7_bits.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity SUBTRATOR_7_BITS
+-- Compiling architecture ckt of SUBTRATOR_7_BITS
+
+} {} {}} {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/COMPARADOR_ZERO_7.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/COMPARADOR_ZERO_7.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity COMPARADOR_ZERO_7
+-- Compiling architecture CKT of COMPARADOR_ZERO_7
+
+} {} {}} {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/M_J_7BITS.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/M_J_7BITS.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity M_J_7BITS
+-- Compiling architecture ckt of M_J_7BITS
+
+} {} {}} {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/MAQUINA_ESTADOS.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/MAQUINA_ESTADOS.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity MAQUINA_ESTADOS
+-- Compiling architecture CKT of MAQUINA_ESTADOS
+
+} {} {}} {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/mux_2x1_10BITS.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/mux_2x1_10BITS.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux_2x1_10BITS
+-- Compiling architecture ckt of mux_2x1_10BITS
+
+} {} {}} {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/MOEDA_J_10.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/MOEDA_J_10.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity MOEDA_J_10
+-- Compiling architecture CKT of MOEDA_J_10
+
+} {} {}} {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/registrador_10_bits.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/registrador_10_bits.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity REGISTRADOR_10_BITS
+-- Compiling architecture ckt of REGISTRADOR_10_BITS
+
+} {} {}} {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/COMPARADOR_ZERO_10.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/COMPARADOR_ZERO_10.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity COMPARADOR_ZERO_10
+-- Compiling architecture CKT of COMPARADOR_ZERO_10
+
+} {} {}} {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/FFD.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/FFD.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity ffd
+-- Compiling architecture logica of ffd
+
+} {} {}} {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/contador_7_bits.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/contador_7_bits.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity contador_7_bits
+-- Compiling architecture ckt of contador_7_bits
+
+} {} {}} {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/REG_ESTADOS_2.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/REG_ESTADOS_2.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity REG_ESTADOS_2
+-- Compiling architecture CKT of REG_ESTADOS_2
+
+} {} {}} {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/registrador_3_bits.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/registrador_3_bits.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity REGISTRADOR_3_BITS
+-- Compiling architecture ckt of REGISTRADOR_3_BITS
+
+} {} {}} {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/ffjk.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/ffjk.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity ffjk
+-- Compiling architecture logica of ffjk
+
+} {} {}} {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/CIRCUITO_COMB.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/CIRCUITO_COMB.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity CIRCUITO_COMB
+-- Compiling architecture CKT of CIRCUITO_COMB
+
+} {} {}} {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/MOEDA_J_50.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/MOEDA_J_50.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity MOEDA_J_50
+-- Compiling architecture CKT of MOEDA_J_50
+
+} {} {}} {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/MUX_2x1_1bit.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/MUX_2x1_1bit.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity MUX_2x1_1bit
+-- Compiling architecture ckt of MUX_2x1_1bit
+
+} {} {}} {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/BLOCO_OPERACIONAL.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/BLOCO_OPERACIONAL.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity BLOCO_OPERACIONAL
+-- Compiling architecture CKT of BLOCO_OPERACIONAL
+
+} {} {}} {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/MUX_1x2.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/MUX_1x2.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity MUX_1x2
+-- Compiling architecture ckt of MUX_1x2
+
+} {} {}} {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/mux_2x1_7BITS.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/mux_2x1_7BITS.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux_2x1_7BITS
+-- Compiling architecture ckt of mux_2x1_7BITS
+
+} {} {}} {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/subtrator_1_bit.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/subtrator_1_bit.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity SUBTRATOR_1_BIT
+-- Compiling architecture ckt of SUBTRATOR_1_BIT
+
+} {} {}} {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/registrador_7_bits.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/registrador_7_bits.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity REGISTRADOR_7_BITS
+-- Compiling architecture ckt of REGISTRADOR_7_BITS
+
+} {} {}} {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/SINAL_ESTADO.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/SINAL_ESTADO.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity SINAL_ESTADO
+-- Compiling architecture CKT of SINAL_ESTADO
+
+} {} {}} {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/bnt_sincrono.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/bnt_sincrono.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity bnt_sincrono
+-- Compiling architecture ckt of bnt_sincrono
+
+} {} {}} {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/MOEDA_J_100.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/MOEDA_J_100.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity MOEDA_J_100
+-- Compiling architecture CKT of MOEDA_J_100
+
+} {} {}} {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/contador_up_dw_7_bits.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/contador_up_dw_7_bits.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity contador_up_dw_7_bits
+-- Compiling architecture ckt of contador_up_dw_7_bits
+
+} {} {}} {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/subtrator_10_bits.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/subtrator_10_bits.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity SUBTRATOR_10_BITS
+-- Compiling architecture ckt of SUBTRATOR_10_BITS
+
+} {} {}} {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/MOEDA_J_1.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/MOEDA_J_1.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity MOEDA_J_1
+-- Compiling architecture CKT of MOEDA_J_1
+
+} {} {}} {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/COFRE.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/COFRE.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity COFRE
+-- Compiling architecture ckt of COFRE
+
+} {} {}} {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/ck_div.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/ck_div.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity ck_div
+-- Compiling architecture logica of ck_div
+
+} {} {}} {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/Mux_6x1.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/Mux_6x1.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux_6x1
+-- Compiling architecture ckt of mux_6x1
+
+} {} {}} {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/registrador_2_bits.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/registrador_2_bits.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity REGISTRADOR_2_BITS
+-- Compiling architecture ckt of REGISTRADOR_2_BITS
+
+} {} {}} {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/VALOR_M.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/VALOR_M.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity VALOR_M
+-- Compiling architecture ckt of VALOR_M
+
+} {} {}} {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/COMPARADOR_10_BITS.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/COMPARADOR_10_BITS.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity COMPARADOR_10_BITS
+-- Compiling architecture CKT of COMPARADOR_10_BITS
+
+} {} {}} {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/Demux_1x6.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/Demux_1x6.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Demux_1x6
+-- Compiling architecture ckt of Demux_1x6
+
+} {} {}} {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/VT.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/VT.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity VT
+-- Compiling architecture ckt of VT
+
+} {} {}} {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/MAQUINA_DE_TROCO.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/MAQUINA_DE_TROCO.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity MAQUINA_DE_TROCO
+-- Compiling architecture CKT of MAQUINA_DE_TROCO
+
+} {} {}} {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/MOEDA_J_5.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/MOEDA_J_5.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity MOEDA_J_5
+-- Compiling architecture CKT of MOEDA_J_5
+
+} {} {}} {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/COMP_5.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/intelFPGA/18.0/projeto_5/Projeto_5_CD/arquivos VHDL/COMP_5.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity COMP_5
+-- Compiling architecture CKT of COMP_5
+
+} {} {}}

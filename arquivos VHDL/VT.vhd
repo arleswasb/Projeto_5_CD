@@ -3,7 +3,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity VT is -- VALOR DE TROCO 
    Port ( D: in std_logic_vector(9 downto 0);
-			CLK,LOAD_VT:  in std_logic;
+			CLK,clr,LOAD_VT:  in std_logic;
          VT: out std_logic_vector(9 downto 0));
 end VT;
 
@@ -31,7 +31,7 @@ begin
 
 U000: mux_2x1_10BITS PORT MAP (ENTRADA_INT,D,LOAD_VT,MUX_sig);
 -------------------------------------------------------------------------------------------------------
-C000: REGISTRADOR_10_BITS PORT MAP (CLK,'1','1',MUX_sig,SAIDA_INT);
+C000: REGISTRADOR_10_BITS PORT MAP (CLK,clr,'1',MUX_sig,SAIDA_INT);
 
 ENTRADA_INT <= SAIDA_INT;
 VT 			<= SAIDA_INT;	 
